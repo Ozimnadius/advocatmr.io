@@ -1,0 +1,115 @@
+//variables
+$vh: 1080;
+
+@function rem($size) {
+  $remSize: $size / $font-size;
+  @return $remSize * 1rem;
+}
+
+@mixin fz($size) {
+  font-size: $size;
+  font-size: rem($size);
+}
+
+@function lh($size1, $size2) {
+  $lh: $size2 / $size1;
+  @return $lh;
+}
+
+@function vh($size) {
+  @return $size/$vh *100*1vh;
+}
+
+@mixin tr(){
+  transition: .3s;
+}
+
+@mixin content() {
+  ul {
+    margin-bottom: 20px;
+    padding-left: 40px;
+    li {
+      list-style: disc;
+    }
+  }
+
+  h1 {
+    margin-bottom: 20px;
+  }
+  h2 {
+    margin-bottom: 20px;
+  }
+  h3 {
+    margin-bottom: 20px;
+  }
+  h4 {
+    margin-bottom: 20px;
+  }
+  h5 {
+    margin-bottom: 20px;
+  }
+  h5 {
+    margin-bottom: 20px;
+  }
+  p {
+    color: $text;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: lh(16px,22.72px);
+    margin-bottom: 20px;
+  }
+  a{
+    color: #d49f40;
+    text-decoration: underline;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: lh(16px,22.72px);
+    @include tr;
+
+    &:hover{
+      text-decoration: none;
+      color: #adadad;
+    }
+  }
+}
+
+@mixin headers() {
+  h1 {
+    font-family: "Roboto Slab";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: lh(40,56.8);
+  }
+  h2 {
+    font-family: "Roboto Slab";
+    font-size: 32px;
+    font-weight: 400;
+    line-height: lh(32px,45.44px);
+  }
+  h3 {
+    font-family: "Roboto Slab";
+    font-size: 26px;
+    font-weight: 400;
+    line-height: lh(26px,36.92px);
+  }
+  h4 {
+    font-family: "Roboto Slab";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: lh(24px,34.08px);
+  }
+  h5 {
+    font-size: 0.875rem;
+    font-family: "Roboto Slab";
+  }
+  h6 {
+    font-size: 0.75rem;
+    font-family: "Roboto Slab";
+  }
+}
+
+@mixin font2(){
+  font-family: $font2;
+}

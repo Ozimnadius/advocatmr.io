@@ -1,0 +1,18 @@
+extends ../main
+
+block variables
+    - var title = 'Главная'
+    - var main = true
+
+block content
+    main.index
+        .container
+            h1 Страничка "Главная"
+            a(href='').btn
+                span.btn__text Перейти к услугам
+                +icon('line','btn__svg')
+            a(href='').btn2
+                span.btn2__text перейти в раздел
+            a(href='').btn3
+                +icon('load','btn3__svg')
+                span.btn3__text Загрузить еще

@@ -1,0 +1,393 @@
+/*-----------------SECTION-MIXINS--------------------*/
+/*------------------------SECTION-FONTS----------------*/
+@font-face {
+  font-family: 'Roboto';
+  src: local("Roboto Bold"), local("Roboto-Bold"), url("../fonts/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local("Roboto Medium"), local("Roboto-Medium"), url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local("Roboto"), local("Roboto-Regular"), url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local("Roboto Light"), local("Roboto-Light"), url("../fonts/Roboto-Light.woff2") format("woff2"), url("../fonts/Roboto-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  src: local("Roboto Slab Regular"), local("RobotoSlab-Regular"), url("../fonts/RobotoSlab-Regular.woff2") format("woff2"), url("../fonts/RobotoSlab-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  src: local("Roboto Slab Light"), local("RobotoSlab-Light"), url("../fonts/RobotoSlab-Light.woff2") format("woff2"), url("../fonts/RobotoSlab-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  src: local("Roboto Slab Bold"), local("RobotoSlab-Bold"), url("../fonts/RobotoSlab-Bold.woff2") format("woff2"), url("../fonts/RobotoSlab-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/*------------------------SECTION-SMART-GRID----------------*/
+/*------------------------SECTION-ADJUSTMENT----------------*/
+input::-ms-clear {
+  display: none;
+}
+
+html.ie9 * {
+  border-radius: 0 !important;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  font-family: "Roboto", Arial, sans-serif;
+  color: #404040;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.page {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (max-width: 1240px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 768px;
+  }
+}
+
+@media screen and (max-width: 991.99px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 768px;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 320px;
+  }
+}
+
+@media screen and (max-width: 575.99px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 320px;
+  }
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+@media screen and (max-width: 790px) {
+  .row {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+}
+
+@media screen and (max-width: 575.99px) {
+  .row {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+}
+
+.content ul {
+  margin-bottom: 20px;
+  padding-left: 40px;
+}
+
+.content ul li {
+  list-style: disc;
+}
+
+.content h1 {
+  margin-bottom: 20px;
+}
+
+.content h2 {
+  margin-bottom: 20px;
+}
+
+.content h3 {
+  margin-bottom: 20px;
+}
+
+.content h4 {
+  margin-bottom: 20px;
+}
+
+.content h5 {
+  margin-bottom: 20px;
+}
+
+.content h5 {
+  margin-bottom: 20px;
+}
+
+.content p {
+  color: #404040;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.42;
+  margin-bottom: 20px;
+}
+
+.content a {
+  color: #d49f40;
+  text-decoration: underline;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.42;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.content a:hover {
+  text-decoration: none;
+  color: #adadad;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  font: inherit;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+input, textarea {
+  border: none;
+  background: none;
+  outline: none;
+  font: inherit;
+}
+
+/*------------------------SECTION-COMMON----------------*/
+.link {
+  color: #d49f40;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.link:hover {
+  color: #adadad;
+}
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.btn:hover .btn__text {
+  color: #adadad;
+}
+
+.btn:hover .btn__svg {
+  stroke: #adadad;
+}
+
+.btn__text {
+  color: #fec86a;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.255;
+  text-transform: uppercase;
+  margin-right: 25px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.btn__svg {
+  width: 71px;
+  height: 10px;
+  stroke: #fec86a;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.btn2 {
+  width: 330px;
+  height: 69px;
+  border-radius: 6px;
+  border: 2px solid #8e6a2c;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffc677), to(#b08336));
+  background-image: -webkit-linear-gradient(top, #ffc677 0%, #b08336 100%);
+  background-image: -o-linear-gradient(top, #ffc677 0%, #b08336 100%);
+  background-image: linear-gradient(180deg, #ffc677 0%, #b08336 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.btn2:hover {
+  border: 2px solid #8e6a2c;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff177), to(#b08336));
+  background-image: -webkit-linear-gradient(top, #fff177 0%, #b08336 100%);
+  background-image: -o-linear-gradient(top, #fff177 0%, #b08336 100%);
+  background-image: linear-gradient(180deg, #fff177 0%, #b08336 100%);
+}
+
+.btn2__text {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.btn3 {
+  width: 308px;
+  height: 65px;
+  border-radius: 4px;
+  border: 2px solid #de9b27;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.btn3:hover {
+  background-image: -webkit-linear-gradient(281.98deg, #d4b172 0%, #f3c168 18%, #deb66f 79%, #d4b172 100%);
+  background-image: -o-linear-gradient(281.98deg, #d4b172 0%, #f3c168 18%, #deb66f 79%, #d4b172 100%);
+  background-image: linear-gradient(168.02deg, #d4b172 0%, #f3c168 18%, #deb66f 79%, #d4b172 100%);
+}
+
+.btn3:hover .btn3__svg {
+  fill: #ffffff;
+}
+
+.btn3:hover .btn3__text {
+  color: #ffffff;
+}
+
+.btn3__svg {
+  width: 22px;
+  height: 19px;
+  fill: #de9b27;
+  margin-right: 20px;
+}
+
+.btn3__text {
+  color: #de9b27;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/*------------------------SECTION-HEADER----------------*/
+/*------------------------SECTION-FOOTER---------------------*/
+
+/*# sourceMappingURL=main.css.map */
