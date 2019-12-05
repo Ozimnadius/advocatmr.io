@@ -1,14 +1,27 @@
 mixin icon(iconName, iconClass)
-  svg(class=`${iconClass}`)
-    use(xlink:href=`/images/icons/sprite.svg#${iconName}`)
+    svg(class=`${iconClass}`)
+        use(xlink:href=`/images/icons/sprite.svg#${iconName}`)
 
 mixin iconPath(iconPath,iconName, iconClass)
-  svg(class=`${iconClass}`)
-    use(xlink:href=`${iconPath}/sprite.svg#${iconName}`)
+    svg(class=`${iconClass}`)
+        use(xlink:href=`${iconPath}/sprite.svg#${iconName}`)
 
 mixin image(imagePath, imageAlt, imageClass)
-  if imageAlt
-    - var alt = 'lorem'
-  else
-    - var alt = imageAlt
-  img(src=`${imagePath}`, alt=`${alt}`, class=`${imageClass}`)
+    if imageAlt
+        - var alt = 'lorem'
+    else
+        - var alt = imageAlt
+    img(src=`${imagePath}`, alt=`${alt}`, class=`${imageClass}`)
+
+mixin logo(dopClass)
+    if dopClass
+        - var cls = dopClass
+    else
+        - var cls = 'main'
+
+    a(href='/' class='logo_'+cls).logo
+        span(class='logo__left_'+cls).logo__left
+            +icon('logo1','logo__1 logo__1_'+cls)
+        span(class='logo__right_'+cls).logo__right
+            +icon('logo2','logo__2 logo__2_'+cls)
+            +icon('logo3','logo__3 logo__3_'+cls)

@@ -6,13 +6,367 @@ block variables
 
 block content
     main.index
-        .container
-            h1 Страничка "Главная"
-            a(href='').btn
-                span.btn__text Перейти к услугам
-                +icon('line','btn__svg')
-            a(href='').btn2
-                span.btn2__text перейти в раздел
-            a(href='').btn3
-                +icon('load','btn3__svg')
-                span.btn3__text Загрузить еще
+        //- banner
+        section.index__banner
+            .ibanner
+                .container.ibanner__container
+                    .ibanner__row
+                        //- left
+                        .ibanner__left
+                            .ibanner__desc
+                                //- letter
+                                .ibanner__letter К
+                                //- position
+                                .ibanner__position
+                                    //- title
+                                    .ibanner__title Квалифицированная юридическая помощь
+                                    //- sub
+                                    .ibanner__sub Вперед к победе, в сопровождении  уверенного, профессионального адвоката.
+                                    //- btn
+                                    a(href='services.html').btn.ibanner__btn
+                                        span.btn__text Перейти к услугам
+                                        +icon('line','btn__svg')
+
+
+                        //- center
+                        .ibanner__center
+                            .ibanner__img
+                                +image('images/content/index/banner/quad.png','ibanner__img-img')
+
+                        //- right
+                        .ibanner__right
+                            .socials
+                                a(href='/').social
+                                    +icon('vk','social__svg social__svg_vk')
+                                a(href='/').social
+                                    +icon('fb','social__svg social__svg_fb')
+                                a(href='/').social
+                                    +icon('inst','social__svg social__svg_inst')
+                                a(href='/').social
+                                    +icon('yt','social__svg social__svg_yt')
+
+                    //- girl
+                    .ibanner__girl
+                        +image('images/content/index/banner/girl.png','','ibanner__girl-img')
+        //- bg
+        section.index__bg
+            //- about
+            .index__about
+                .container
+                    .iabout
+                        .iabout__wrapper
+                            .row.iabout__row
+                                //-left
+                                .iabout__left
+                                    .iabout__img1
+                                        +image('images/content/index/about/img1.jpg','','iabout__img1-img')
+                                    .iabout__img2
+                                        +image('images/content/index/about/img2.jpg','','iabout__img2-img')
+
+
+
+                                //- right
+                                .iabout__right
+                                    .iabout__desc
+                                        .iabout__letter А
+                                        .iabout__position
+                                            .iabout__title
+                                                | Адвокат
+                                                br
+                                                | Матвеева Мария Алексеевна
+                                            .iabout__sub Рада приветствовать вас на своем сайте!
+                                            .iabout__txt Я готова оказать вам квалифицированную юридическую помощь. С основными направлениями работы вы можете ознакомиться на данной странице сайта или на странице Услуги.
+                                            a(href='about.html').btn.iabout__link
+                                                span.btn__text Подробнее
+                                                +icon('line','btn__svg')
+            //- services
+            .index__services
+                .container
+                    .iservices
+                        //- title
+                        .iservices__title
+                            .iservices__title-letter У
+                            .iservices__title-position
+                                .iservices__title-sub Основная специализация
+                                .iservices__title-title Наши услуги
+                        //- list
+                        .iservices__list
+                            .iservices__row
+                                each i,x in iservices
+                                    a(href='service.html').iservice
+                                        //- img
+                                        span(style='background-image:url(images/content/index/services/' + (x + 1) + '.jpg)').iservice__img
+                                        //- position
+                                        span.iservice__pos
+                                            span.iservice__num= '0' + (x + 1)
+                                            span.iservice__title= i
+                                            span.iservice__btn.btn
+                                                +icon('line','btn__svg iservice__btn-svg')
+                                                span.btn__text.iservice__btn-txt Подробнее
+
+                        //- link
+                        a(href='services.html').btn2.iservices__link
+                            span.btn2__text перейти в раздел
+        //- why
+        section.index__why
+            .iwhy
+                .iwhy__wrap
+                    .container.iwhy__container
+                        //- title
+                        .iwhy__title Почему клиенты выбирают нас
+
+                        //- sub
+                        .iwhy__sub Каждое дело, за которое мы взялись, важно не только для клиента, но и для нас!
+
+                        //- list
+                        .iwhy__list
+                            .row
+                                each i in iwhy
+                                    .iwhy__item
+                                        .iwhy__item-title= i.title
+                                        .iwhy__item-txt= i.txt
+        //- steps
+        section.index__steps
+            .isteps
+                .container.isteps__container
+                    //- title
+                    .isteps__title
+                        .isteps__title-title Этапы работы
+                    //- list
+                    .isteps__list
+                        .row
+                            each i,x in isteps
+                                .istep
+                                    .istep__num= '0' + (x + 1)
+                                    .istep__title= i.title
+                                    .istep__txt= i.txt
+                    //- link
+                    a(href='#').btn2.jsCallback.isteps__btn
+                        span.btn2__text Получить консультацию
+        //- help
+        section.index__help
+            .ihelp
+                .container.ihelp__container
+                    .row.ihelp__row
+                        .ihelp__left
+                            //- title
+                            .ihelp__title Вам нужна помощь адвоката?
+
+                            //- txt
+                            .ihelp__txt Свяжитесь с нами. Мы решаем сложные юридические вопросы. Первая консультация бесплатно.
+
+                            //- btn
+                            a(href='#').ihelp__btn.btn2.jsCallback
+                                span.btn2__text Получить консультацию
+
+                        .ihelp__right
+                            .ihelp__img
+                                +image('images/content/index/help/img.png','','ihelp__img-img')
+        //- media
+        section.index__media
+            .imedia
+                .container.imedia__container
+                    //- title
+                    .isteps__title.imedia__title
+                        .isteps__title-title Я в сми
+                    //- row
+                    .row.imedia__row
+                        //- left
+                        .imedia__left
+                            a(href='https://www.youtube.com/watch?v=GhPBvgew_a8' data-fancybox).imedia__fancy
+                                +image('images/content/index/media/img.jpg','','imedia__fancy-img')
+                                span.imedia__watch
+                                    span.imedia__watch-wrap
+
+
+                        //- right
+                        .imedia__right
+                            .imedia__sub Адвокат Мария Матвеева выступила в необычной для себя роли прокурора в телепрограмме телеканала НТВ “Суд присяжных”
+                            .imedia__txt Женщина поссорилась с соседкой по коммунальной квартире и, почувствовав себя плохо, вызвала скорую. Поскольку соседка не унималась, женщине пришлось ждать медиков во дворе, где она встретила своего сына. Молодой человек отправил мать в больницу, а сам поднялся к ней домой поговорить со скандалисткой. Беседой на повышенных тонах парень не ограничился. Он ловко схватил немолодую даму и ударил ее головой об угол стола. Увидев, что та не подает признаков жизни, юноша с места преступления скрылся…
+                            a(href='media.html').imedia__link.btn
+                                span.btn__text Перейти в раздел
+                                +icon('line','btn__svg')
+
+                        //- list
+                        .imedia__list
+                            .row
+                                each i,x in imedia
+                                    a(href='media.html').imedia__item.imitem
+                                        span.imitem__img
+                                            +image('images/content/index/media/' + (x + 1) + '.jpg','','imitem__img-img')
+                                        span.imitem__title= i.title
+                                        span.imitem__txt= i.txt
+
+
+                        //- link
+                    a(href='media.html').imedia__all.btn2
+                        span.btn2__text перейти в раздел
+        //- feed
+        section.index__feed
+            .ifeed
+                .container.ifeed__container
+                    //- row
+                    .row.ifeed__row
+                        //- left
+                        .ifeed__left
+                            .ifeed__title Запишитесь на юридическую консультацию
+                            blockquote.ifeed__quote
+                                b 96%
+                                | &nbsp;клиентов рекомендуют нас своим знакомым и коллегам
+
+                            .ifeed__desc
+                                p Мы осбудим задачу, определим возможные пути решения и согласуем условия сотрудничества
+                                p Стоимость первой консультации бесплатно
+
+                        //- right
+                        .ifeed__right
+                            form.ifeed__form
+                                .ifeed__form-wrap
+                                    .ifeed__fields
+                                        input(type='text' name='iname' placeholder='Введите ваше имя:').ifeed__input
+                                        input(type='email' name='iemail' placeholder='Введите ваш E-mail:').ifeed__input
+                                        input(type='tel' name='itel' placeholder='Введите ваш номер:').ifeed__input
+
+                                    .ifeed__policy
+                                        | Заполняя данную форму Вы соглашаетесь с
+                                        br
+                                        a(href='policy.html') Политикой обработки персональных данных
+                                    button(type='submit').ifeed__submit.btn2
+                                        span.btn2__text отправить
+
+                    //- img
+                    .ifeed__img
+                        +image('images/content/index/feed/img.png','','ifeed__img-img')
+        //- news
+        section.index__news
+            .inews
+                .container.inews__container
+                    //- title
+                    .isteps__title.inews__title
+                        .isteps__title-title Новости
+
+                    //- nav
+                    .inews__nav
+                        a(href='#').inews__arr.inews__prev
+                            +icon('arr-prev', 'inews__arr-svg')
+                        .inews__pag.ipag
+                            .swiper-container.ipag__container
+                                .swiper-wrapper
+                                    each i in inews
+                                        div(data-id=i.title).swiper-slide.ipag__slide= i.title
+
+                        a(href='#').inews__arr.inews__next
+                            +icon('arr-next', 'inews__arr-svg')
+
+                    //- slider
+                    .inews__slider
+                        .swiper-container.inews__slider-container
+                            .swiper-wrapper
+                                each slide in inews
+                                    div(data-id=slide.title).swiper-slide.inews__slide
+                                        .inews__list
+                                            each i in slide.list
+                                                .inew
+                                                    .inew__date= i.date
+                                                    .inew__cat= i.cat
+                                                    .inew__title= i.title
+                                                    .inew__txt= i.txt
+                                                    a(href='new.html').inew__link
+                                                        span.inew__link-title Подробнее
+                                                        +icon('arr','inew__link-svg')
+
+                    //- link
+                    a(href='news.html').inews__link.btn2
+                        span.btn2__text перейти в раздел
+        //- partners
+        section.index__partners
+            .slider
+                .container.slider__container
+                    .slider__title Партнеры
+                    .slider__slider
+                        //- btns
+                        button(type='button').slider__btn.slider__prev
+                            +icon('prev','slider__btn-svg')
+                        button(type='button').slider__btn.slider__next
+                            +icon('next','slider__btn-svg')
+
+                        //- swiper
+                        .swiper-container.slider__container
+                            .swiper-wrapper
+                                each i in ipartners
+                                    a(href=i.href).swiper-slide.slide
+                                        //- img
+                                        span.slide__img
+                                            span.slide__img-wrap
+                                                +image(i.src,'','slide__img-img')
+                                        //- desc
+                                        span.slide__desc
+                                            //- title
+                                            span.slide__title= i.title
+                                            //- exp
+                                            span.slide__exp= i.exp
+                                            //- txt
+                                            span.slide__txt= i.txt
+                                        //- bottom
+                                        span.slide__bottom
+                                            span.slide__link.btn
+                                                span.btn__text.slide__link-txt Подробнее
+                                                +icon('line','btn__svg slide__link-svg')
+        //- articles
+        section.index__articles
+            .iarts
+                .container.iarts__container
+                    //- title
+                    .isteps__title.iarts__title
+                        .isteps__title-title Полезно знать
+                    //- list
+                    .iarts__list
+                        .row
+                            each i,x in iarts
+                                .iart
+                                    .iart__img
+                                        +image('images/content/index/articles/' + (x + 1) + '.jpg','','iart__img-img')
+                                    .iart__title= i.title
+                                    .iart__txt= i.txt
+                                    a(href='article.html').iart__link
+                                        span.iart__link-txt Подробнее
+                                        +icon('arr','iart__link-svg')
+
+                    //- link
+                    a(href='articles.html').iarts__link.btn2
+                        span.btn2__text перейти в раздел
+        //- map
+        section.imap
+            //- left
+            .imap__left
+                #imap
+
+            //- right
+            .imap__right
+                .imap__title Как добраться
+                .imap__txt Я готова оказать вам квалифицированную юридическую помощь. С основными направлениями работы вы можете ознакомиться на данной странице сайта или на странице Услуги. Я готова оказать вам квалифицированную юридическую помощь. С основными направлениями работы вы можете ознакомиться на данной странице сайта или на странице Услуги.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

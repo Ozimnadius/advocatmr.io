@@ -7,6 +7,8 @@
     <title>Portfolio | Главная</title>
     <link rel="stylesheet" href="css/vendor.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <!-- Для изменений после верстки-->
+    <link rel="stylesheet" href="css/custom.css">
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
@@ -17,26 +19,1004 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <nav class="nav">
-          <div class="nav__item">Page1</div>
-          <div class="nav__item">Page2</div>
-          <div class="nav__item">Page3</div>
-        </nav>
+        <div class="container">
+          <div class="row header__row">
+            <div class="header__left"><a class="header__btn" href="#">
+                <svg class="header__btn-svg">
+                  <use xlink:href="/images/icons/sprite.svg#menu"></use>
+                </svg></a>
+              <div class="header__logo"><a class="logo_main logo" href="/"><span class="logo__left_main logo__left">
+                    <svg class="logo__1 logo__1_main">
+                      <use xlink:href="/images/icons/sprite.svg#logo1"></use>
+                    </svg></span><span class="logo__right_main logo__right">
+                    <svg class="logo__2 logo__2_main">
+                      <use xlink:href="/images/icons/sprite.svg#logo2"></use>
+                    </svg>
+                    <svg class="logo__3 logo__3_main">
+                      <use xlink:href="/images/icons/sprite.svg#logo3"></use>
+                    </svg></span></a>
+              </div>
+            </div>
+            <div class="header__right">
+              <div class="header__tel">
+                <div class="htel"><a class="htel__tel" href="tel:+7(495)766-57-54"><span class="htel__wrap">
+                      <svg class="htel__tel-svg">
+                        <use xlink:href="/images/icons/sprite.svg#tel"></use>
+                      </svg><span class="htel__tel-tel">+7 (495) 766-57-54</span></span><span class="htel__txt">бесплатная консультация</span></a></div>
+              </div>
+              <div class="header__search"><a class="search" href="search.html">
+                  <svg class="search__svg">
+                    <use xlink:href="/images/icons/sprite.svg#search"></use>
+                  </svg></a></div>
+            </div>
+          </div>
+        </div>
       </header>
       <div class="page">
         <main class="index">
-          <div class="container">
-            <h1>Страничка "Главная"</h1><a class="btn" href=""><span class="btn__text">Перейти к услугам</span>
-              <svg class="btn__svg">
-                <use xlink:href="/images/icons/sprite.svg#line"></use>
-              </svg></a><a class="btn2" href=""><span class="btn2__text">перейти в раздел</span></a><a class="btn3" href="">
-              <svg class="btn3__svg">
-                <use xlink:href="/images/icons/sprite.svg#load"></use>
-              </svg><span class="btn3__text">Загрузить еще</span></a>
-          </div>
+          <section class="index__banner">
+            <div class="ibanner">
+              <div class="container ibanner__container">
+                <div class="ibanner__row">
+                  <div class="ibanner__left">
+                    <div class="ibanner__desc">
+                      <div class="ibanner__letter">К</div>
+                      <div class="ibanner__position">
+                        <div class="ibanner__title">Квалифицированная юридическая помощь</div>
+                        <div class="ibanner__sub">Вперед к победе, в сопровождении  уверенного, профессионального адвоката.</div><a class="btn ibanner__btn" href="services.html"><span class="btn__text">Перейти к услугам</span>
+                          <svg class="btn__svg">
+                            <use xlink:href="/images/icons/sprite.svg#line"></use>
+                          </svg></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ibanner__center">
+                    <div class="ibanner__img"><img class="undefined" src="images/content/index/banner/quad.png" alt="lorem"/>
+                    </div>
+                  </div>
+                  <div class="ibanner__right">
+                    <div class="socials"><a class="social" href="/">
+                        <svg class="social__svg social__svg_vk">
+                          <use xlink:href="/images/icons/sprite.svg#vk"></use>
+                        </svg></a><a class="social" href="/">
+                        <svg class="social__svg social__svg_fb">
+                          <use xlink:href="/images/icons/sprite.svg#fb"></use>
+                        </svg></a><a class="social" href="/">
+                        <svg class="social__svg social__svg_inst">
+                          <use xlink:href="/images/icons/sprite.svg#inst"></use>
+                        </svg></a><a class="social" href="/">
+                        <svg class="social__svg social__svg_yt">
+                          <use xlink:href="/images/icons/sprite.svg#yt"></use>
+                        </svg></a></div>
+                  </div>
+                </div>
+                <div class="ibanner__girl"><img class="ibanner__girl-img" src="images/content/index/banner/girl.png" alt=""/>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="index__bg">
+            <div class="index__about">
+              <div class="container">
+                <div class="iabout">
+                  <div class="iabout__wrapper">
+                    <div class="row iabout__row">
+                      <div class="iabout__left">
+                        <div class="iabout__img1"><img class="iabout__img1-img" src="images/content/index/about/img1.jpg" alt=""/>
+                        </div>
+                        <div class="iabout__img2"><img class="iabout__img2-img" src="images/content/index/about/img2.jpg" alt=""/>
+                        </div>
+                      </div>
+                      <div class="iabout__right">
+                        <div class="iabout__desc">
+                          <div class="iabout__letter">А</div>
+                          <div class="iabout__position">
+                            <div class="iabout__title">Адвокат<br>Матвеева Мария Алексеевна</div>
+                            <div class="iabout__sub">Рада приветствовать вас на своем сайте!</div>
+                            <div class="iabout__txt">Я готова оказать вам квалифицированную юридическую помощь. С основными направлениями работы вы можете ознакомиться на данной странице сайта или на странице Услуги.</div><a class="btn iabout__link" href="about.html"><span class="btn__text">Подробнее</span>
+                              <svg class="btn__svg">
+                                <use xlink:href="/images/icons/sprite.svg#line"></use>
+                              </svg></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="index__services">
+              <div class="container">
+                <div class="iservices">
+                  <div class="iservices__title">
+                    <div class="iservices__title-letter">У</div>
+                    <div class="iservices__title-position">
+                      <div class="iservices__title-sub">Основная специализация</div>
+                      <div class="iservices__title-title">Наши услуги</div>
+                    </div>
+                  </div>
+                  <div class="iservices__list">
+                    <div class="iservices__row"><a class="iservice" href="service.html"><span class="iservice__img" style="background-image:url(images/content/index/services/1.jpg)"></span><span class="iservice__pos"><span class="iservice__num">01</span><span class="iservice__title">Экономические преступления</span><span class="iservice__btn btn">
+                            <svg class="btn__svg iservice__btn-svg">
+                              <use xlink:href="/images/icons/sprite.svg#line"></use>
+                            </svg><span class="btn__text iservice__btn-txt">Подробнее</span></span></span></a><a class="iservice" href="service.html"><span class="iservice__img" style="background-image:url(images/content/index/services/2.jpg)"></span><span class="iservice__pos"><span class="iservice__num">02</span><span class="iservice__title">Арбитражные споры</span><span class="iservice__btn btn">
+                            <svg class="btn__svg iservice__btn-svg">
+                              <use xlink:href="/images/icons/sprite.svg#line"></use>
+                            </svg><span class="btn__text iservice__btn-txt">Подробнее</span></span></span></a><a class="iservice" href="service.html"><span class="iservice__img" style="background-image:url(images/content/index/services/3.jpg)"></span><span class="iservice__pos"><span class="iservice__num">03</span><span class="iservice__title">Адвокат при проверках ОБЭП (УЭБиПК), ОУР</span><span class="iservice__btn btn">
+                            <svg class="btn__svg iservice__btn-svg">
+                              <use xlink:href="/images/icons/sprite.svg#line"></use>
+                            </svg><span class="btn__text iservice__btn-txt">Подробнее</span></span></span></a><a class="iservice" href="service.html"><span class="iservice__img" style="background-image:url(images/content/index/services/4.jpg)"></span><span class="iservice__pos"><span class="iservice__num">04</span><span class="iservice__title">Уголовный адвокат</span><span class="iservice__btn btn">
+                            <svg class="btn__svg iservice__btn-svg">
+                              <use xlink:href="/images/icons/sprite.svg#line"></use>
+                            </svg><span class="btn__text iservice__btn-txt">Подробнее</span></span></span></a><a class="iservice" href="service.html"><span class="iservice__img" style="background-image:url(images/content/index/services/5.jpg)"></span><span class="iservice__pos"><span class="iservice__num">05</span><span class="iservice__title">Адвокат по гражданским делам</span><span class="iservice__btn btn">
+                            <svg class="btn__svg iservice__btn-svg">
+                              <use xlink:href="/images/icons/sprite.svg#line"></use>
+                            </svg><span class="btn__text iservice__btn-txt">Подробнее</span></span></span></a><a class="iservice" href="service.html"><span class="iservice__img" style="background-image:url(images/content/index/services/6.jpg)"></span><span class="iservice__pos"><span class="iservice__num">06</span><span class="iservice__title">Адвокат по исполнительному производству</span><span class="iservice__btn btn">
+                            <svg class="btn__svg iservice__btn-svg">
+                              <use xlink:href="/images/icons/sprite.svg#line"></use>
+                            </svg><span class="btn__text iservice__btn-txt">Подробнее</span></span></span></a>
+                    </div>
+                  </div><a class="btn2 iservices__link" href="services.html"><span class="btn2__text">перейти в раздел</span></a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="index__why">
+            <div class="iwhy">
+              <div class="iwhy__wrap">
+                <div class="container iwhy__container">
+                  <div class="iwhy__title">Почему клиенты выбирают нас</div>
+                  <div class="iwhy__sub">Каждое дело, за которое мы взялись, важно не только для клиента, но и для нас!</div>
+                  <div class="iwhy__list">
+                    <div class="row">
+                      <div class="iwhy__item">
+                        <div class="iwhy__item-title">892+</div>
+                        <div class="iwhy__item-txt">Общее количество дел</div>
+                      </div>
+                      <div class="iwhy__item">
+                        <div class="iwhy__item-title">65%</div>
+                        <div class="iwhy__item-txt">Юридических лиц</div>
+                      </div>
+                      <div class="iwhy__item">
+                        <div class="iwhy__item-title">35%</div>
+                        <div class="iwhy__item-txt">Физических лиц</div>
+                      </div>
+                      <div class="iwhy__item">
+                        <div class="iwhy__item-title">89%</div>
+                        <div class="iwhy__item-txt">Средний процент выигранных дел</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="index__steps">
+            <div class="isteps">
+              <div class="container isteps__container">
+                <div class="isteps__title">
+                  <div class="isteps__title-title">Этапы работы</div>
+                </div>
+                <div class="isteps__list">
+                  <div class="row">
+                    <div class="istep">
+                      <div class="istep__num">01</div>
+                      <div class="istep__title">Предварительная консультация</div>
+                      <div class="istep__txt">На предварительной консультации осуществляется общее знакомство с проблемной ситуацией и ее предварительная оценка. </div>
+                    </div>
+                    <div class="istep">
+                      <div class="istep__num">02</div>
+                      <div class="istep__title">Оценка информации и выбор стратегии защиты</div>
+                      <div class="istep__txt">Повседневная практика показывает, что реализация намеченных плановых заданий позволяет оценить значение системы обучения кадров, соответствует насущным потребностям. </div>
+                    </div>
+                    <div class="istep">
+                      <div class="istep__num">03</div>
+                      <div class="istep__title">Представительство и защита интересов</div>
+                      <div class="istep__txt">Повседневная практика показывает, что реализация намеченных плановых заданий позволяет оценить значение системы обучения кадров, соответствует насущным потребностям. </div>
+                    </div>
+                    <div class="istep">
+                      <div class="istep__num">04</div>
+                      <div class="istep__title">Звонок и консультация</div>
+                      <div class="istep__txt">Повседневная практика показывает, что реализация намеченных плановых заданий позволяет оценить значение системы обучения кадров, соответствует насущным потребностям. </div>
+                    </div>
+                    <div class="istep">
+                      <div class="istep__num">05</div>
+                      <div class="istep__title">Соглашение и подготовка документов</div>
+                      <div class="istep__txt">Повседневная практика показывает, что реализация намеченных плановых заданий позволяет оценить значение системы обучения кадров, соответствует насущным потребностям. </div>
+                    </div>
+                    <div class="istep">
+                      <div class="istep__num">06</div>
+                      <div class="istep__title">Представительство и защита интересов</div>
+                      <div class="istep__txt">Повседневная практика показывает, что реализация намеченных плановых заданий позволяет оценить значение системы обучения кадров, соответствует насущным потребностям. </div>
+                    </div>
+                  </div>
+                </div><a class="btn2 jsCallback isteps__btn" href="#"><span class="btn2__text">Получить консультацию</span></a>
+              </div>
+            </div>
+          </section>
+          <section class="index__help">
+            <div class="ihelp">
+              <div class="container ihelp__container">
+                <div class="row ihelp__row">
+                  <div class="ihelp__left">
+                    <div class="ihelp__title">Вам нужна помощь адвоката?</div>
+                    <div class="ihelp__txt">Свяжитесь с нами. Мы решаем сложные юридические вопросы. Первая консультация бесплатно.</div><a class="ihelp__btn btn2 jsCallback" href="#"><span class="btn2__text">Получить консультацию</span></a>
+                  </div>
+                  <div class="ihelp__right">
+                    <div class="ihelp__img"><img class="ihelp__img-img" src="images/content/index/help/img.png" alt=""/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="index__media">
+            <div class="imedia">
+              <div class="container imedia__container">
+                <div class="isteps__title imedia__title">
+                  <div class="isteps__title-title">Я в сми</div>
+                </div>
+                <div class="row imedia__row">
+                  <div class="imedia__left"><a class="imedia__fancy" href="https://www.youtube.com/watch?v=GhPBvgew_a8" data-fancybox><img class="imedia__fancy-img" src="images/content/index/media/img.jpg" alt=""/><span class="imedia__watch"><span class="imedia__watch-wrap"></span></span></a></div>
+                  <div class="imedia__right">
+                    <div class="imedia__sub">Адвокат Мария Матвеева выступила в необычной для себя роли прокурора в телепрограмме телеканала НТВ “Суд присяжных”</div>
+                    <div class="imedia__txt">Женщина поссорилась с соседкой по коммунальной квартире и, почувствовав себя плохо, вызвала скорую. Поскольку соседка не унималась, женщине пришлось ждать медиков во дворе, где она встретила своего сына. Молодой человек отправил мать в больницу, а сам поднялся к ней домой поговорить со скандалисткой. Беседой на повышенных тонах парень не ограничился. Он ловко схватил немолодую даму и ударил ее головой об угол стола. Увидев, что та не подает признаков жизни, юноша с места преступления скрылся…</div><a class="imedia__link btn" href="media.html"><span class="btn__text">Перейти в раздел</span>
+                      <svg class="btn__svg">
+                        <use xlink:href="/images/icons/sprite.svg#line"></use>
+                      </svg></a>
+                  </div>
+                  <div class="imedia__list">
+                    <div class="row"><a class="imedia__item imitem" href="media.html"><span class="imitem__img"><img class="imitem__img-img" src="images/content/index/media/1.jpg" alt=""/></span><span class="imitem__title">Адвокат Мария Матвеева приняла участие в программе “Мужское/женское” на Первом</span><span class="imitem__txt">55-летняя Альфия Шамсутдинова из Башкирии более двух лет борется за право самостоятельно воспитывать внуков</span></a><a class="imedia__item imitem" href="media.html"><span class="imitem__img"><img class="imitem__img-img" src="images/content/index/media/2.jpg" alt=""/></span><span class="imitem__title">Адвокат Мария Матвеева дала комментарии телеканалу НТВ</span><span class="imitem__txt">Власти США развернули кампанию по противодействию российским СМИ</span></a><a class="imedia__item imitem" href="media.html"><span class="imitem__img"><img class="imitem__img-img" src="images/content/index/media/3.jpg" alt=""/></span><span class="imitem__title">Адвокат Мария Матвеева выступила в необычной для себя роли прокурора в телепрограмме телеканала НТВ “Суд присяжных”</span><span class="imitem__txt">Власти США развернули кампанию по противодействию российским СМИ</span></a><a class="imedia__item imitem" href="media.html"><span class="imitem__img"><img class="imitem__img-img" src="images/content/index/media/4.jpg" alt=""/></span><span class="imitem__title">19 марта 1474 года в Венеции впервые в мире был применен закон об авторских правах Мария Матвеева об авторских правах</span><span class="imitem__txt">Власти США развернули кампанию по противодействию российским СМИ</span></a>
+                    </div>
+                  </div>
+                </div><a class="imedia__all btn2" href="media.html"><span class="btn2__text">перейти в раздел</span></a>
+              </div>
+            </div>
+          </section>
+          <section class="index__feed">
+            <div class="ifeed">
+              <div class="container ifeed__container">
+                <div class="row ifeed__row">
+                  <div class="ifeed__left">
+                    <div class="ifeed__title">Запишитесь на юридическую консультацию</div>
+                    <blockquote class="ifeed__quote"><b>96%</b>&nbsp;клиентов рекомендуют нас своим знакомым и коллегам</blockquote>
+                    <div class="ifeed__desc">
+                      <p>Мы осбудим задачу, определим возможные пути решения и согласуем условия сотрудничества</p>
+                      <p>Стоимость первой консультации бесплатно</p>
+                    </div>
+                  </div>
+                  <div class="ifeed__right">
+                    <form class="ifeed__form">
+                      <div class="ifeed__form-wrap">
+                        <div class="ifeed__fields">
+                          <input class="ifeed__input" type="text" name="iname" placeholder="Введите ваше имя:">
+                          <input class="ifeed__input" type="email" name="iemail" placeholder="Введите ваш E-mail:">
+                          <input class="ifeed__input" type="tel" name="itel" placeholder="Введите ваш номер:">
+                        </div>
+                        <div class="ifeed__policy">Заполняя данную форму Вы соглашаетесь с<br><a href="policy.html">Политикой обработки персональных данных</a></div>
+                        <button class="ifeed__submit btn2" type="submit"><span class="btn2__text">отправить</span></button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="ifeed__img"><img class="ifeed__img-img" src="images/content/index/feed/img.png" alt=""/>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="index__news">
+            <div class="inews">
+              <div class="container inews__container">
+                <div class="isteps__title inews__title">
+                  <div class="isteps__title-title">Новости</div>
+                </div>
+                <div class="inews__nav"><a class="inews__arr inews__prev" href="#">
+                    <svg class="inews__arr-svg">
+                      <use xlink:href="/images/icons/sprite.svg#arr-prev"></use>
+                    </svg></a>
+                  <div class="inews__pag ipag">
+                    <div class="swiper-container ipag__container">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide ipag__slide" data-id="Все новости">Все новости</div>
+                        <div class="swiper-slide ipag__slide" data-id="Бизнес">Бизнес</div>
+                        <div class="swiper-slide ipag__slide" data-id="Наследство">Наследство</div>
+                        <div class="swiper-slide ipag__slide" data-id="Госконтракты">Госконтракты</div>
+                        <div class="swiper-slide ipag__slide" data-id="Авторские права">Авторские права</div>
+                        <div class="swiper-slide ipag__slide" data-id="Категория 6">Категория 6</div>
+                        <div class="swiper-slide ipag__slide" data-id="Категория 7">Категория 7</div>
+                        <div class="swiper-slide ipag__slide" data-id="Категория 8">Категория 8</div>
+                      </div>
+                    </div>
+                  </div><a class="inews__arr inews__next" href="#">
+                    <svg class="inews__arr-svg">
+                      <use xlink:href="/images/icons/sprite.svg#arr-next"></use>
+                    </svg></a>
+                </div>
+                <div class="inews__slider">
+                  <div class="swiper-container inews__slider-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide inews__slide" data-id="Все новости">
+                        <div class="inews__list">
+                          <div class="inew">
+                            <div class="inew__date">24 сентября 2019</div>
+                            <div class="inew__cat">Уголовное право</div>
+                            <div class="inew__title">Верховный суд разъяснил, какие права есть у заключенных</div>
+                            <div class="inew__txt">Какие права имеются у заключенных независимо от того, где именно они находятся – уже отбывают наказание в колонии, ожидают суда в следственном изоляторе или доставляются на судебное заседание либо для проведения... </div><a class="inew__link" href="new.html"><span class="inew__link-title">Подробнее</span>
+                              <svg class="inew__link-svg">
+                                <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                              </svg></a>
+                          </div>
+                          <div class="inew">
+                            <div class="inew__date">06 марта 2019</div>
+                            <div class="inew__cat">Бизнес</div>
+                            <div class="inew__title">Конституционный Суд РФ защитил руководителей компаний-банкротов</div>
+                            <div class="inew__txt">Конституционный суд РФ запретил автоматически возлагать ответственность за убытки, полученные в ходе банкротства предприятия, на руководителя компании-должника. В постановлении КС подчеркивается, что без исследования всех обстоятельств и действий других лиц невозможно однозначно установить степень его вины, и следовательно, ответственности. С просьбой о проверке положений Федерального…</div><a class="inew__link" href="new.html"><span class="inew__link-title">Подробнее</span>
+                              <svg class="inew__link-svg">
+                                <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                              </svg></a>
+                          </div>
+                          <div class="inew">
+                            <div class="inew__date">24 сентября 2019</div>
+                            <div class="inew__cat">Бизнес</div>
+                            <div class="inew__title">Единый реестр проверок субъектов предпринимательства пополнится информацией о новых проверках...</div>
+                            <div class="inew__txt">Правительством Российской Федерации были внесены изменения в Правила формирования и ведения единого реестра проверок. В реестр будут добавлена информация о проверках... </div><a class="inew__link" href="new.html"><span class="inew__link-title">Подробнее</span>
+                              <svg class="inew__link-svg">
+                                <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                              </svg></a>
+                          </div>
+                          <div class="inew">
+                            <div class="inew__date">24 сентября 2019</div>
+                            <div class="inew__cat">Бизнес</div>
+                            <div class="inew__title">Предпринимателей не будут наказывать Уголовным кодексом за нетяжкие экономические преступления... </div>
+                            <div class="inew__txt">Президентский закон на эту тему Госдума приняла окончательно. Предпринимателей не будут наказывать Уголовным кодексом за нетяжкие экономические преступления, совершенные впервые и ущерб по которым был полностью погашен. Президентский закон на эту тему Госдума приняла окончательно. О необходимости таких...</div><a class="inew__link" href="new.html"><span class="inew__link-title">Подробнее</span>
+                              <svg class="inew__link-svg">
+                                <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                              </svg></a>
+                          </div>
+                          <div class="inew">
+                            <div class="inew__date">24 сентября 2019</div>
+                            <div class="inew__cat">Бизнес</div>
+                            <div class="inew__title">Минфин России предложил закрепить неналоговые платежи в Налоговом кодексе</div>
+                            <div class="inew__txt">При этом предлагается установить мораторий на 10 лет на уголовную ответственность за неуплату этих платежей, сообщили в пресс-службе ведомства. В частности, речь идет...</div><a class="inew__link" href="new.html"><span class="inew__link-title">Подробнее</span>
+                              <svg class="inew__link-svg">
+                                <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                              </svg></a>
+                          </div>
+                          <div class="inew">
+                            <div class="inew__date">23 января 2019</div>
+                            <div class="inew__cat">Бизнес</div>
+                            <div class="inew__title">25 января вступит в силу Положение ЦБ РФ «Об общих собраниях акционеров».</div>
+                            <div class="inew__txt">25 января вступит в силу Положение ЦБ РФ от 16.11.2018 № 660 «Об общих собраниях акционеров». Действие Положения «Об общих собраниях акционеров» распространяется на внеочередные и годовые собрания акционеров публичных и непубличных АО и их заочное голосование...</div><a class="inew__link" href="new.html"><span class="inew__link-title">Подробнее</span>
+                              <svg class="inew__link-svg">
+                                <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                              </svg></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide inews__slide" data-id="Бизнес">
+                        <div class="inews__list">
+                          <div class="inew">
+                            <div class="inew__date">24 сентября 2019</div>
+                            <div class="inew__cat">Уголовное право</div>
+                            <div class="inew__title">Верховный суд разъяснил, какие права есть у заключенных</div>
+                            <div class="inew__txt">Какие права имеются у заключенных независимо от того, где именно они находятся – уже отбывают наказание в колонии, ожидают суда в следственном изоляторе или доставляются на судебное заседание либо для проведения... </div><a class="inew__link" href="new.html"><span class="inew__link-title">Подробнее</span>
+                              <svg class="inew__link-svg">
+                                <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                              </svg></a>
+                          </div>
+                          <div class="inew">
+                            <div class="inew__date">06 марта 2019</div>
+                            <div class="inew__cat">Бизнес</div>
+                            <div class="inew__title">Конституционный Суд РФ защитил руководителей компаний-банкротов</div>
+                            <div class="inew__txt">Конституционный суд РФ запретил автоматически возлагать ответственность за убытки, полученные в ходе банкротства предприятия, на руководителя компании-должника. В постановлении КС подчеркивается, что без исследования всех обстоятельств и действий других лиц невозможно однозначно установить степень его вины, и следовательно, ответственности. С просьбой о проверке положений Федерального…</div><a class="inew__link" href="new.html"><span class="inew__link-title">Подробнее</span>
+                              <svg class="inew__link-svg">
+                                <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                              </svg></a>
+                          </div>
+                          <div class="inew">
+                            <div class="inew__date">24 сентября 2019</div>
+                            <div class="inew__cat">Бизнес</div>
+                            <div class="inew__title">Единый реестр проверок субъектов предпринимательства пополнится информацией о новых проверках...</div>
+                            <div class="inew__txt">Правительством Российской Федерации были внесены изменения в Правила формирования и ведения единого реестра проверок. В реестр будут добавлена информация о проверках... </div><a class="inew__link" href="new.html"><span class="inew__link-title">Подробнее</span>
+                              <svg class="inew__link-svg">
+                                <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                              </svg></a>
+                          </div>
+                          <div class="inew">
+                            <div class="inew__date">24 сентября 2019</div>
+                            <div class="inew__cat">Бизнес</div>
+                            <div class="inew__title">Предпринимателей не будут наказывать Уголовным кодексом за нетяжкие экономические преступления... </div>
+                            <div class="inew__txt">Президентский закон на эту тему Госдума приняла окончательно. Предпринимателей не будут наказывать Уголовным кодексом за нетяжкие экономические преступления, совершенные впервые и ущерб по которым был полностью погашен. Президентский закон на эту тему Госдума приняла окончательно. О необходимости таких...</div><a class="inew__link" href="new.html"><span class="inew__link-title">Подробнее</span>
+                              <svg class="inew__link-svg">
+                                <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                              </svg></a>
+                          </div>
+                          <div class="inew">
+                            <div class="inew__date">24 сентября 2019</div>
+                            <div class="inew__cat">Бизнес</div>
+                            <div class="inew__title">Минфин России предложил закрепить неналоговые платежи в Налоговом кодексе</div>
+                            <div class="inew__txt">При этом предлагается установить мораторий на 10 лет на уголовную ответственность за неуплату этих платежей, сообщили в пресс-службе ведомства. В частности, речь идет...</div><a class="inew__link" href="new.html"><span class="inew__link-title">Подробнее</span>
+                              <svg class="inew__link-svg">
+                                <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                              </svg></a>
+                          </div>
+                          <div class="inew">
+                            <div class="inew__date">23 января 2019</div>
+                            <div class="inew__cat">Бизнес</div>
+                            <div class="inew__title">25 января вступит в силу Положение ЦБ РФ «Об общих собраниях акционеров».</div>
+                            <div class="inew__txt">25 января вступит в силу Положение ЦБ РФ от 16.11.2018 № 660 «Об общих собраниях акционеров». Действие Положения «Об общих собраниях акционеров» распространяется на внеочередные и годовые собрания акционеров публичных и непубличных АО и их заочное голосование...</div><a class="inew__link" href="new.html"><span class="inew__link-title">Подробнее</span>
+                              <svg class="inew__link-svg">
+                                <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                              </svg></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide inews__slide" data-id="Наследство">
+                        <div class="inews__list">
+                          <div class="inew">
+                            <div class="inew__date">24 сентября 2019</div>
+                            <div class="inew__cat">Уголовное право</div>
+                            <div class="inew__title">Верховный суд разъяснил, какие права есть у заключенных</div>
+                            <div class="inew__txt">Какие права имеются у заключенных независимо от того, где именно они находятся – уже отбывают наказание в колонии, ожидают суда в следственном изоляторе или доставляются на судебное заседание либо для проведения... </div><a class="inew__link" href="new.html"><span class="inew__link-title">Подробнее</span>
+                              <svg class="inew__link-svg">
+                                <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                              </svg></a>
+                          </div>
+                          <div class="inew">
+                            <div class="inew__date">06 марта 2019</div>
+                            <div class="inew__cat">Бизнес</div>
+                            <div class="inew__title">Конституционный Суд РФ защитил руководителей компаний-банкротов</div>
+                            <div class="inew__txt">Конституционный суд РФ запретил автоматически возлагать ответственность за убытки, полученные в ходе банкротства предприятия, на руководителя компании-должника. В постановлении КС подчеркивается, что без исследования всех обстоятельств и действий других лиц невозможно однозначно установить степень его вины, и следовательно, ответственности. С просьбой о проверке положений Федерального…</div><a class="inew__link" href="new.html"><span class="inew__link-title">Подробнее</span>
+                              <svg class="inew__link-svg">
+                                <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                              </svg></a>
+                          </div>
+                          <div class="inew">
+                            <div class="inew__date">24 сентября 2019</div>
+                            <div class="inew__cat">Бизнес</div>
+                            <div class="inew__title">Единый реестр проверок субъектов предпринимательства пополнится информацией о новых проверках...</div>
+                            <div class="inew__txt">Правительством Российской Федерации были внесены изменения в Правила формирования и ведения единого реестра проверок. В реестр будут добавлена информация о проверках... </div><a class="inew__link" href="new.html"><span class="inew__link-title">Подробнее</span>
+                              <svg class="inew__link-svg">
+                                <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                              </svg></a>
+                          </div>
+                          <div class="inew">
+                            <div class="inew__date">24 сентября 2019</div>
+                            <div class="inew__cat">Бизнес</div>
+                            <div class="inew__title">Предпринимателей не будут наказывать Уголовным кодексом за нетяжкие экономические преступления... </div>
+                            <div class="inew__txt">Президентский закон на эту тему Госдума приняла окончательно. Предпринимателей не будут наказывать Уголовным кодексом за нетяжкие экономические преступления, совершенные впервые и ущерб по которым был полностью погашен. Президентский закон на эту тему Госдума приняла окончательно. О необходимости таких...</div><a class="inew__link" href="new.html"><span class="inew__link-title">Подробнее</span>
+                              <svg class="inew__link-svg">
+                                <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                              </svg></a>
+                          </div>
+                          <div class="inew">
+                            <div class="inew__date">24 сентября 2019</div>
+                            <div class="inew__cat">Бизнес</div>
+                            <div class="inew__title">Минфин России предложил закрепить неналоговые платежи в Налоговом кодексе</div>
+                            <div class="inew__txt">При этом предлагается установить мораторий на 10 лет на уголовную ответственность за неуплату этих платежей, сообщили в пресс-службе ведомства. В частности, речь идет...</div><a class="inew__link" href="new.html"><span class="inew__link-title">Подробнее</span>
+                              <svg class="inew__link-svg">
+                                <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                              </svg></a>
+                          </div>
+                          <div class="inew">
+                            <div class="inew__date">23 января 2019</div>
+                            <div class="inew__cat">Бизнес</div>
+                            <div class="inew__title">25 января вступит в силу Положение ЦБ РФ «Об общих собраниях акционеров».</div>
+                            <div class="inew__txt">25 января вступит в силу Положение ЦБ РФ от 16.11.2018 № 660 «Об общих собраниях акционеров». Действие Положения «Об общих собраниях акционеров» распространяется на внеочередные и годовые собрания акционеров публичных и непубличных АО и их заочное голосование...</div><a class="inew__link" href="new.html"><span class="inew__link-title">Подробнее</span>
+                              <svg class="inew__link-svg">
+                                <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                              </svg></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide inews__slide" data-id="Госконтракты">
+                        <div class="inews__list">
+                          <div class="inew">
+                            <div class="inew__date">24 сентября 2019</div>
+                            <div class="inew__cat">Уголовное право</div>
+                            <div class="inew__title">Верховный суд разъяснил, какие права есть у заключенных</div>
+                            <div class="inew__txt">Какие права имеются у заключенных независимо от того, где именно они находятся – уже отбывают наказание в колонии, ожидают суда в следственном изоляторе или доставляются на судебное заседание либо для проведения... </div><a class="inew__link" href="new.html"><span class="inew__link-title">Подробнее</span>
+                              <svg class="inew__link-svg">
+                                <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                              </svg></a>
+                          </div>
+                          <div class="inew">
+                            <div class="inew__date">06 марта 2019</div>
+                            <div class="inew__cat">Бизнес</div>
+                            <div class="inew__title">Конституционный Суд РФ защитил руководителей компаний-банкротов</div>
+                            <div class="inew__txt">Конституционный суд РФ запретил автоматически возлагать ответственность за убытки, полученные в ходе банкротства предприятия, на руководителя компании-должника. В постановлении КС подчеркивается, что без исследования всех обстоятельств и действий других лиц невозможно однозначно установить степень его вины, и следовательно, ответственности. С просьбой о проверке положений Федерального…</div><a class="inew__link" href="new.html"><span class="inew__link-title">Подробнее</span>
+                              <svg class="inew__link-svg">
+                                <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                              </svg></a>
+                          </div>
+                          <div class="inew">
+                            <div class="inew__date">24 сентября 2019</div>
+                            <div class="inew__cat">Бизнес</div>
+                            <div class="inew__title">Единый реестр проверок субъектов предпринимательства пополнится информацией о новых проверках...</div>
+                            <div class="inew__txt">Правительством Российской Федерации были внесены изменения в Правила формирования и ведения единого реестра проверок. В реестр будут добавлена информация о проверках... </div><a class="inew__link" href="new.html"><span class="inew__link-title">Подробнее</span>
+                              <svg class="inew__link-svg">
+                                <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                              </svg></a>
+                          </div>
+                          <div class="inew">
+                            <div class="inew__date">24 сентября 2019</div>
+                            <div class="inew__cat">Бизнес</div>
+                            <div class="inew__title">Предпринимателей не будут наказывать Уголовным кодексом за нетяжкие экономические преступления... </div>
+                            <div class="inew__txt">Президентский закон на эту тему Госдума приняла окончательно. Предпринимателей не будут наказывать Уголовным кодексом за нетяжкие экономические преступления, совершенные впервые и ущерб по которым был полностью погашен. Президентский закон на эту тему Госдума приняла окончательно. О необходимости таких...</div><a class="inew__link" href="new.html"><span class="inew__link-title">Подробнее</span>
+                              <svg class="inew__link-svg">
+                                <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                              </svg></a>
+                          </div>
+                          <div class="inew">
+                            <div class="inew__date">24 сентября 2019</div>
+                            <div class="inew__cat">Бизнес</div>
+                            <div class="inew__title">Минфин России предложил закрепить неналоговые платежи в Налоговом кодексе</div>
+                            <div class="inew__txt">При этом предлагается установить мораторий на 10 лет на уголовную ответственность за неуплату этих платежей, сообщили в пресс-службе ведомства. В частности, речь идет...</div><a class="inew__link" href="new.html"><span class="inew__link-title">Подробнее</span>
+                              <svg class="inew__link-svg">
+                                <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                              </svg></a>
+                          </div>
+                          <div class="inew">
+                            <div class="inew__date">23 января 2019</div>
+                            <div class="inew__cat">Бизнес</div>
+                            <div class="inew__title">25 января вступит в силу Положение ЦБ РФ «Об общих собраниях акционеров».</div>
+                            <div class="inew__txt">25 января вступит в силу Положение ЦБ РФ от 16.11.2018 № 660 «Об общих собраниях акционеров». Действие Положения «Об общих собраниях акционеров» распространяется на внеочередные и годовые собрания акционеров публичных и непубличных АО и их заочное голосование...</div><a class="inew__link" href="new.html"><span class="inew__link-title">Подробнее</span>
+                              <svg class="inew__link-svg">
+                                <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                              </svg></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide inews__slide" data-id="Авторские права">
+                        <div class="inews__list">
+                          <div class="inew">
+                            <div class="inew__date">24 сентября 2019</div>
+                            <div class="inew__cat">Уголовное право</div>
+                            <div class="inew__title">Верховный суд разъяснил, какие права есть у заключенных</div>
+                            <div class="inew__txt">Какие права имеются у заключенных независимо от того, где именно они находятся – уже отбывают наказание в колонии, ожидают суда в следственном изоляторе или доставляются на судебное заседание либо для проведения... </div><a class="inew__link" href="new.html"><span class="inew__link-title">Подробнее</span>
+                              <svg class="inew__link-svg">
+                                <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                              </svg></a>
+                          </div>
+                          <div class="inew">
+                            <div class="inew__date">06 марта 2019</div>
+                            <div class="inew__cat">Бизнес</div>
+                            <div class="inew__title">Конституционный Суд РФ защитил руководителей компаний-банкротов</div>
+                            <div class="inew__txt">Конституционный суд РФ запретил автоматически возлагать ответственность за убытки, полученные в ходе банкротства предприятия, на руководителя компании-должника. В постановлении КС подчеркивается, что без исследования всех обстоятельств и действий других лиц невозможно однозначно установить степень его вины, и следовательно, ответственности. С просьбой о проверке положений Федерального…</div><a class="inew__link" href="new.html"><span class="inew__link-title">Подробнее</span>
+                              <svg class="inew__link-svg">
+                                <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                              </svg></a>
+                          </div>
+                          <div class="inew">
+                            <div class="inew__date">24 сентября 2019</div>
+                            <div class="inew__cat">Бизнес</div>
+                            <div class="inew__title">Единый реестр проверок субъектов предпринимательства пополнится информацией о новых проверках...</div>
+                            <div class="inew__txt">Правительством Российской Федерации были внесены изменения в Правила формирования и ведения единого реестра проверок. В реестр будут добавлена информация о проверках... </div><a class="inew__link" href="new.html"><span class="inew__link-title">Подробнее</span>
+                              <svg class="inew__link-svg">
+                                <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                              </svg></a>
+                          </div>
+                          <div class="inew">
+                            <div class="inew__date">24 сентября 2019</div>
+                            <div class="inew__cat">Бизнес</div>
+                            <div class="inew__title">Предпринимателей не будут наказывать Уголовным кодексом за нетяжкие экономические преступления... </div>
+                            <div class="inew__txt">Президентский закон на эту тему Госдума приняла окончательно. Предпринимателей не будут наказывать Уголовным кодексом за нетяжкие экономические преступления, совершенные впервые и ущерб по которым был полностью погашен. Президентский закон на эту тему Госдума приняла окончательно. О необходимости таких...</div><a class="inew__link" href="new.html"><span class="inew__link-title">Подробнее</span>
+                              <svg class="inew__link-svg">
+                                <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                              </svg></a>
+                          </div>
+                          <div class="inew">
+                            <div class="inew__date">24 сентября 2019</div>
+                            <div class="inew__cat">Бизнес</div>
+                            <div class="inew__title">Минфин России предложил закрепить неналоговые платежи в Налоговом кодексе</div>
+                            <div class="inew__txt">При этом предлагается установить мораторий на 10 лет на уголовную ответственность за неуплату этих платежей, сообщили в пресс-службе ведомства. В частности, речь идет...</div><a class="inew__link" href="new.html"><span class="inew__link-title">Подробнее</span>
+                              <svg class="inew__link-svg">
+                                <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                              </svg></a>
+                          </div>
+                          <div class="inew">
+                            <div class="inew__date">23 января 2019</div>
+                            <div class="inew__cat">Бизнес</div>
+                            <div class="inew__title">25 января вступит в силу Положение ЦБ РФ «Об общих собраниях акционеров».</div>
+                            <div class="inew__txt">25 января вступит в силу Положение ЦБ РФ от 16.11.2018 № 660 «Об общих собраниях акционеров». Действие Положения «Об общих собраниях акционеров» распространяется на внеочередные и годовые собрания акционеров публичных и непубличных АО и их заочное голосование...</div><a class="inew__link" href="new.html"><span class="inew__link-title">Подробнее</span>
+                              <svg class="inew__link-svg">
+                                <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                              </svg></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide inews__slide" data-id="Категория 6">
+                        <div class="inews__list">
+                          <div class="inew">
+                            <div class="inew__date">24 сентября 2019</div>
+                            <div class="inew__cat">Уголовное право</div>
+                            <div class="inew__title">Верховный суд разъяснил, какие права есть у заключенных</div>
+                            <div class="inew__txt">Какие права имеются у заключенных независимо от того, где именно они находятся – уже отбывают наказание в колонии, ожидают суда в следственном изоляторе или доставляются на судебное заседание либо для проведения... </div><a class="inew__link" href="new.html"><span class="inew__link-title">Подробнее</span>
+                              <svg class="inew__link-svg">
+                                <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                              </svg></a>
+                          </div>
+                          <div class="inew">
+                            <div class="inew__date">06 марта 2019</div>
+                            <div class="inew__cat">Бизнес</div>
+                            <div class="inew__title">Конституционный Суд РФ защитил руководителей компаний-банкротов</div>
+                            <div class="inew__txt">Конституционный суд РФ запретил автоматически возлагать ответственность за убытки, полученные в ходе банкротства предприятия, на руководителя компании-должника. В постановлении КС подчеркивается, что без исследования всех обстоятельств и действий других лиц невозможно однозначно установить степень его вины, и следовательно, ответственности. С просьбой о проверке положений Федерального…</div><a class="inew__link" href="new.html"><span class="inew__link-title">Подробнее</span>
+                              <svg class="inew__link-svg">
+                                <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                              </svg></a>
+                          </div>
+                          <div class="inew">
+                            <div class="inew__date">24 сентября 2019</div>
+                            <div class="inew__cat">Бизнес</div>
+                            <div class="inew__title">Единый реестр проверок субъектов предпринимательства пополнится информацией о новых проверках...</div>
+                            <div class="inew__txt">Правительством Российской Федерации были внесены изменения в Правила формирования и ведения единого реестра проверок. В реестр будут добавлена информация о проверках... </div><a class="inew__link" href="new.html"><span class="inew__link-title">Подробнее</span>
+                              <svg class="inew__link-svg">
+                                <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                              </svg></a>
+                          </div>
+                          <div class="inew">
+                            <div class="inew__date">24 сентября 2019</div>
+                            <div class="inew__cat">Бизнес</div>
+                            <div class="inew__title">Предпринимателей не будут наказывать Уголовным кодексом за нетяжкие экономические преступления... </div>
+                            <div class="inew__txt">Президентский закон на эту тему Госдума приняла окончательно. Предпринимателей не будут наказывать Уголовным кодексом за нетяжкие экономические преступления, совершенные впервые и ущерб по которым был полностью погашен. Президентский закон на эту тему Госдума приняла окончательно. О необходимости таких...</div><a class="inew__link" href="new.html"><span class="inew__link-title">Подробнее</span>
+                              <svg class="inew__link-svg">
+                                <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                              </svg></a>
+                          </div>
+                          <div class="inew">
+                            <div class="inew__date">24 сентября 2019</div>
+                            <div class="inew__cat">Бизнес</div>
+                            <div class="inew__title">Минфин России предложил закрепить неналоговые платежи в Налоговом кодексе</div>
+                            <div class="inew__txt">При этом предлагается установить мораторий на 10 лет на уголовную ответственность за неуплату этих платежей, сообщили в пресс-службе ведомства. В частности, речь идет...</div><a class="inew__link" href="new.html"><span class="inew__link-title">Подробнее</span>
+                              <svg class="inew__link-svg">
+                                <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                              </svg></a>
+                          </div>
+                          <div class="inew">
+                            <div class="inew__date">23 января 2019</div>
+                            <div class="inew__cat">Бизнес</div>
+                            <div class="inew__title">25 января вступит в силу Положение ЦБ РФ «Об общих собраниях акционеров».</div>
+                            <div class="inew__txt">25 января вступит в силу Положение ЦБ РФ от 16.11.2018 № 660 «Об общих собраниях акционеров». Действие Положения «Об общих собраниях акционеров» распространяется на внеочередные и годовые собрания акционеров публичных и непубличных АО и их заочное голосование...</div><a class="inew__link" href="new.html"><span class="inew__link-title">Подробнее</span>
+                              <svg class="inew__link-svg">
+                                <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                              </svg></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide inews__slide" data-id="Категория 7">
+                        <div class="inews__list">
+                          <div class="inew">
+                            <div class="inew__date">24 сентября 2019</div>
+                            <div class="inew__cat">Уголовное право</div>
+                            <div class="inew__title">Верховный суд разъяснил, какие права есть у заключенных</div>
+                            <div class="inew__txt">Какие права имеются у заключенных независимо от того, где именно они находятся – уже отбывают наказание в колонии, ожидают суда в следственном изоляторе или доставляются на судебное заседание либо для проведения... </div><a class="inew__link" href="new.html"><span class="inew__link-title">Подробнее</span>
+                              <svg class="inew__link-svg">
+                                <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                              </svg></a>
+                          </div>
+                          <div class="inew">
+                            <div class="inew__date">06 марта 2019</div>
+                            <div class="inew__cat">Бизнес</div>
+                            <div class="inew__title">Конституционный Суд РФ защитил руководителей компаний-банкротов</div>
+                            <div class="inew__txt">Конституционный суд РФ запретил автоматически возлагать ответственность за убытки, полученные в ходе банкротства предприятия, на руководителя компании-должника. В постановлении КС подчеркивается, что без исследования всех обстоятельств и действий других лиц невозможно однозначно установить степень его вины, и следовательно, ответственности. С просьбой о проверке положений Федерального…</div><a class="inew__link" href="new.html"><span class="inew__link-title">Подробнее</span>
+                              <svg class="inew__link-svg">
+                                <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                              </svg></a>
+                          </div>
+                          <div class="inew">
+                            <div class="inew__date">24 сентября 2019</div>
+                            <div class="inew__cat">Бизнес</div>
+                            <div class="inew__title">Единый реестр проверок субъектов предпринимательства пополнится информацией о новых проверках...</div>
+                            <div class="inew__txt">Правительством Российской Федерации были внесены изменения в Правила формирования и ведения единого реестра проверок. В реестр будут добавлена информация о проверках... </div><a class="inew__link" href="new.html"><span class="inew__link-title">Подробнее</span>
+                              <svg class="inew__link-svg">
+                                <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                              </svg></a>
+                          </div>
+                          <div class="inew">
+                            <div class="inew__date">24 сентября 2019</div>
+                            <div class="inew__cat">Бизнес</div>
+                            <div class="inew__title">Предпринимателей не будут наказывать Уголовным кодексом за нетяжкие экономические преступления... </div>
+                            <div class="inew__txt">Президентский закон на эту тему Госдума приняла окончательно. Предпринимателей не будут наказывать Уголовным кодексом за нетяжкие экономические преступления, совершенные впервые и ущерб по которым был полностью погашен. Президентский закон на эту тему Госдума приняла окончательно. О необходимости таких...</div><a class="inew__link" href="new.html"><span class="inew__link-title">Подробнее</span>
+                              <svg class="inew__link-svg">
+                                <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                              </svg></a>
+                          </div>
+                          <div class="inew">
+                            <div class="inew__date">24 сентября 2019</div>
+                            <div class="inew__cat">Бизнес</div>
+                            <div class="inew__title">Минфин России предложил закрепить неналоговые платежи в Налоговом кодексе</div>
+                            <div class="inew__txt">При этом предлагается установить мораторий на 10 лет на уголовную ответственность за неуплату этих платежей, сообщили в пресс-службе ведомства. В частности, речь идет...</div><a class="inew__link" href="new.html"><span class="inew__link-title">Подробнее</span>
+                              <svg class="inew__link-svg">
+                                <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                              </svg></a>
+                          </div>
+                          <div class="inew">
+                            <div class="inew__date">23 января 2019</div>
+                            <div class="inew__cat">Бизнес</div>
+                            <div class="inew__title">25 января вступит в силу Положение ЦБ РФ «Об общих собраниях акционеров».</div>
+                            <div class="inew__txt">25 января вступит в силу Положение ЦБ РФ от 16.11.2018 № 660 «Об общих собраниях акционеров». Действие Положения «Об общих собраниях акционеров» распространяется на внеочередные и годовые собрания акционеров публичных и непубличных АО и их заочное голосование...</div><a class="inew__link" href="new.html"><span class="inew__link-title">Подробнее</span>
+                              <svg class="inew__link-svg">
+                                <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                              </svg></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide inews__slide" data-id="Категория 8">
+                        <div class="inews__list">
+                          <div class="inew">
+                            <div class="inew__date">24 сентября 2019</div>
+                            <div class="inew__cat">Уголовное право</div>
+                            <div class="inew__title">Верховный суд разъяснил, какие права есть у заключенных</div>
+                            <div class="inew__txt">Какие права имеются у заключенных независимо от того, где именно они находятся – уже отбывают наказание в колонии, ожидают суда в следственном изоляторе или доставляются на судебное заседание либо для проведения... </div><a class="inew__link" href="new.html"><span class="inew__link-title">Подробнее</span>
+                              <svg class="inew__link-svg">
+                                <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                              </svg></a>
+                          </div>
+                          <div class="inew">
+                            <div class="inew__date">06 марта 2019</div>
+                            <div class="inew__cat">Бизнес</div>
+                            <div class="inew__title">Конституционный Суд РФ защитил руководителей компаний-банкротов</div>
+                            <div class="inew__txt">Конституционный суд РФ запретил автоматически возлагать ответственность за убытки, полученные в ходе банкротства предприятия, на руководителя компании-должника. В постановлении КС подчеркивается, что без исследования всех обстоятельств и действий других лиц невозможно однозначно установить степень его вины, и следовательно, ответственности. С просьбой о проверке положений Федерального…</div><a class="inew__link" href="new.html"><span class="inew__link-title">Подробнее</span>
+                              <svg class="inew__link-svg">
+                                <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                              </svg></a>
+                          </div>
+                          <div class="inew">
+                            <div class="inew__date">24 сентября 2019</div>
+                            <div class="inew__cat">Бизнес</div>
+                            <div class="inew__title">Единый реестр проверок субъектов предпринимательства пополнится информацией о новых проверках...</div>
+                            <div class="inew__txt">Правительством Российской Федерации были внесены изменения в Правила формирования и ведения единого реестра проверок. В реестр будут добавлена информация о проверках... </div><a class="inew__link" href="new.html"><span class="inew__link-title">Подробнее</span>
+                              <svg class="inew__link-svg">
+                                <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                              </svg></a>
+                          </div>
+                          <div class="inew">
+                            <div class="inew__date">24 сентября 2019</div>
+                            <div class="inew__cat">Бизнес</div>
+                            <div class="inew__title">Предпринимателей не будут наказывать Уголовным кодексом за нетяжкие экономические преступления... </div>
+                            <div class="inew__txt">Президентский закон на эту тему Госдума приняла окончательно. Предпринимателей не будут наказывать Уголовным кодексом за нетяжкие экономические преступления, совершенные впервые и ущерб по которым был полностью погашен. Президентский закон на эту тему Госдума приняла окончательно. О необходимости таких...</div><a class="inew__link" href="new.html"><span class="inew__link-title">Подробнее</span>
+                              <svg class="inew__link-svg">
+                                <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                              </svg></a>
+                          </div>
+                          <div class="inew">
+                            <div class="inew__date">24 сентября 2019</div>
+                            <div class="inew__cat">Бизнес</div>
+                            <div class="inew__title">Минфин России предложил закрепить неналоговые платежи в Налоговом кодексе</div>
+                            <div class="inew__txt">При этом предлагается установить мораторий на 10 лет на уголовную ответственность за неуплату этих платежей, сообщили в пресс-службе ведомства. В частности, речь идет...</div><a class="inew__link" href="new.html"><span class="inew__link-title">Подробнее</span>
+                              <svg class="inew__link-svg">
+                                <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                              </svg></a>
+                          </div>
+                          <div class="inew">
+                            <div class="inew__date">23 января 2019</div>
+                            <div class="inew__cat">Бизнес</div>
+                            <div class="inew__title">25 января вступит в силу Положение ЦБ РФ «Об общих собраниях акционеров».</div>
+                            <div class="inew__txt">25 января вступит в силу Положение ЦБ РФ от 16.11.2018 № 660 «Об общих собраниях акционеров». Действие Положения «Об общих собраниях акционеров» распространяется на внеочередные и годовые собрания акционеров публичных и непубличных АО и их заочное голосование...</div><a class="inew__link" href="new.html"><span class="inew__link-title">Подробнее</span>
+                              <svg class="inew__link-svg">
+                                <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                              </svg></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><a class="inews__link btn2" href="news.html"><span class="btn2__text">перейти в раздел</span></a>
+              </div>
+            </div>
+          </section>
+          <section class="index__partners">
+            <div class="slider">
+              <div class="container slider__container">
+                <div class="slider__title">Партнеры</div>
+                <div class="slider__slider">
+                  <button class="slider__btn slider__prev" type="button">
+                    <svg class="slider__btn-svg">
+                      <use xlink:href="/images/icons/sprite.svg#prev"></use>
+                    </svg>
+                  </button>
+                  <button class="slider__btn slider__next" type="button">
+                    <svg class="slider__btn-svg">
+                      <use xlink:href="/images/icons/sprite.svg#next"></use>
+                    </svg>
+                  </button>
+                  <div class="swiper-container slider__container">
+                    <div class="swiper-wrapper"><a class="swiper-slide slide" href="partner.html"><span class="slide__img"><span class="slide__img-wrap"><img class="slide__img-img" src="images/content/partners/1.jpg" alt=""/></span></span><span class="slide__desc"><span class="slide__title">Виктор Алексеевич</span><span class="slide__exp">опыт работы 10 лет</span><span class="slide__txt">Повседневная практика показывает, что реализация намеченных плановых заданий позволяет потребностям. Повседневная практика показывает, что реализация намеченных...</span></span><span class="slide__bottom"><span class="slide__link btn"><span class="btn__text slide__link-txt">Подробнее</span>
+                            <svg class="btn__svg slide__link-svg">
+                              <use xlink:href="/images/icons/sprite.svg#line"></use>
+                            </svg></span></span></a><a class="swiper-slide slide" href="partner.html"><span class="slide__img"><span class="slide__img-wrap"><img class="slide__img-img" src="images/content/partners/2.jpg" alt=""/></span></span><span class="slide__desc"><span class="slide__title">Генадий Андреевич</span><span class="slide__exp">опыт работы 10 лет</span><span class="slide__txt">Повседневная практика показывает, что реализация намеченных плановых заданий позволяет потребностям. Повседневная практика показывает, что реализация намеченных...</span></span><span class="slide__bottom"><span class="slide__link btn"><span class="btn__text slide__link-txt">Подробнее</span>
+                            <svg class="btn__svg slide__link-svg">
+                              <use xlink:href="/images/icons/sprite.svg#line"></use>
+                            </svg></span></span></a><a class="swiper-slide slide" href="partner.html"><span class="slide__img"><span class="slide__img-wrap"><img class="slide__img-img" src="images/content/partners/3.jpg" alt=""/></span></span><span class="slide__desc"><span class="slide__title">Наталья Сергеевна</span><span class="slide__exp">опыт работы 10 лет</span><span class="slide__txt">Повседневная практика показывает, что реализация намеченных плановых заданий позволяет потребностям. Повседневная практика показывает, что реализация намеченных...</span></span><span class="slide__bottom"><span class="slide__link btn"><span class="btn__text slide__link-txt">Подробнее</span>
+                            <svg class="btn__svg slide__link-svg">
+                              <use xlink:href="/images/icons/sprite.svg#line"></use>
+                            </svg></span></span></a><a class="swiper-slide slide" href="partner.html"><span class="slide__img"><span class="slide__img-wrap"><img class="slide__img-img" src="images/content/partners/1.jpg" alt=""/></span></span><span class="slide__desc"><span class="slide__title">Виктор Алексеевич</span><span class="slide__exp">опыт работы 10 лет</span><span class="slide__txt">Повседневная практика показывает, что реализация намеченных плановых заданий позволяет потребностям. Повседневная практика показывает, что реализация намеченных...</span></span><span class="slide__bottom"><span class="slide__link btn"><span class="btn__text slide__link-txt">Подробнее</span>
+                            <svg class="btn__svg slide__link-svg">
+                              <use xlink:href="/images/icons/sprite.svg#line"></use>
+                            </svg></span></span></a><a class="swiper-slide slide" href="partner.html"><span class="slide__img"><span class="slide__img-wrap"><img class="slide__img-img" src="images/content/partners/2.jpg" alt=""/></span></span><span class="slide__desc"><span class="slide__title">Генадий Андреевич</span><span class="slide__exp">опыт работы 10 лет</span><span class="slide__txt">Повседневная практика показывает, что реализация намеченных плановых заданий позволяет потребностям. Повседневная практика показывает, что реализация намеченных...</span></span><span class="slide__bottom"><span class="slide__link btn"><span class="btn__text slide__link-txt">Подробнее</span>
+                            <svg class="btn__svg slide__link-svg">
+                              <use xlink:href="/images/icons/sprite.svg#line"></use>
+                            </svg></span></span></a><a class="swiper-slide slide" href="partner.html"><span class="slide__img"><span class="slide__img-wrap"><img class="slide__img-img" src="images/content/partners/3.jpg" alt=""/></span></span><span class="slide__desc"><span class="slide__title">Наталья Сергеевна</span><span class="slide__exp">опыт работы 10 лет</span><span class="slide__txt">Повседневная практика показывает, что реализация намеченных плановых заданий позволяет потребностям. Повседневная практика показывает, что реализация намеченных...</span></span><span class="slide__bottom"><span class="slide__link btn"><span class="btn__text slide__link-txt">Подробнее</span>
+                            <svg class="btn__svg slide__link-svg">
+                              <use xlink:href="/images/icons/sprite.svg#line"></use>
+                            </svg></span></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="index__articles">
+            <div class="iarts">
+              <div class="container iarts__container">
+                <div class="isteps__title iarts__title">
+                  <div class="isteps__title-title">Полезно знать</div>
+                </div>
+                <div class="iarts__list">
+                  <div class="row">
+                    <div class="iart">
+                      <div class="iart__img"><img class="iart__img-img" src="images/content/index/articles/1.jpg" alt=""/>
+                      </div>
+                      <div class="iart__title">Как можно снизить размер алиментов</div>
+                      <div class="iart__txt">К основаниям, по которым может быть уменьшен размер выплачиваемых алиментов...</div><a class="iart__link" href="article.html"><span class="iart__link-txt">Подробнее</span>
+                        <svg class="iart__link-svg">
+                          <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                        </svg></a>
+                    </div>
+                    <div class="iart">
+                      <div class="iart__img"><img class="iart__img-img" src="images/content/index/articles/2.jpg" alt=""/>
+                      </div>
+                      <div class="iart__title">Как заключить мировое соглашение</div>
+                      <div class="iart__txt">К основаниям, по которым может быть уменьшен размер выплачиваемых алиментов...</div><a class="iart__link" href="article.html"><span class="iart__link-txt">Подробнее</span>
+                        <svg class="iart__link-svg">
+                          <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                        </svg></a>
+                    </div>
+                    <div class="iart">
+                      <div class="iart__img"><img class="iart__img-img" src="images/content/index/articles/3.jpg" alt=""/>
+                      </div>
+                      <div class="iart__title">Как правильно написать ходатайство о восстановлении пропущенного срока?</div>
+                      <div class="iart__txt">К основаниям, по которым может быть уменьшен размер выплачиваемых алиментов...</div><a class="iart__link" href="article.html"><span class="iart__link-txt">Подробнее</span>
+                        <svg class="iart__link-svg">
+                          <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                        </svg></a>
+                    </div>
+                    <div class="iart">
+                      <div class="iart__img"><img class="iart__img-img" src="images/content/index/articles/4.jpg" alt=""/>
+                      </div>
+                      <div class="iart__title">Как можно снизить размер алиментов</div>
+                      <div class="iart__txt">К основаниям, по которым может быть уменьшен размер выплачиваемых алиментов...</div><a class="iart__link" href="article.html"><span class="iart__link-txt">Подробнее</span>
+                        <svg class="iart__link-svg">
+                          <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                        </svg></a>
+                    </div>
+                    <div class="iart">
+                      <div class="iart__img"><img class="iart__img-img" src="images/content/index/articles/5.jpg" alt=""/>
+                      </div>
+                      <div class="iart__title">Как заключить мировое соглашение</div>
+                      <div class="iart__txt">К основаниям, по которым может быть уменьшен размер выплачиваемых алиментов...</div><a class="iart__link" href="article.html"><span class="iart__link-txt">Подробнее</span>
+                        <svg class="iart__link-svg">
+                          <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                        </svg></a>
+                    </div>
+                    <div class="iart">
+                      <div class="iart__img"><img class="iart__img-img" src="images/content/index/articles/6.jpg" alt=""/>
+                      </div>
+                      <div class="iart__title">Как правильно написать ходатайство о восстановлении пропущенного срока?</div>
+                      <div class="iart__txt">К основаниям, по которым может быть уменьшен размер выплачиваемых алиментов...</div><a class="iart__link" href="article.html"><span class="iart__link-txt">Подробнее</span>
+                        <svg class="iart__link-svg">
+                          <use xlink:href="/images/icons/sprite.svg#arr"></use>
+                        </svg></a>
+                    </div>
+                  </div>
+                </div><a class="iarts__link btn2" href="articles.html"><span class="btn2__text">перейти в раздел</span></a>
+              </div>
+            </div>
+          </section>
+          <section class="imap">
+            <div class="imap__left">
+              <div id="imap"></div>
+            </div>
+            <div class="imap__right">
+              <div class="imap__title">Как добраться</div>
+              <div class="imap__txt">Я готова оказать вам квалифицированную юридическую помощь. С основными направлениями работы вы можете ознакомиться на данной странице сайта или на странице Услуги. Я готова оказать вам квалифицированную юридическую помощь. С основными направлениями работы вы можете ознакомиться на данной странице сайта или на странице Услуги.</div>
+            </div>
+          </section>
         </main>
       </div>
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="footer__feed">
+          <form class="ffeed">
+            <div class="container">
+              <div class="row">
+                <div class="ffeed__left">
+                  <div class="ffeed__title">Укажите свое имя и контактный номер и мы свами свяжемся</div>
+                </div>
+                <div class="ffeed__right">
+                  <div class="ffeed__fields">
+                    <div class="ffeed__field">
+                      <input class="ffeed__input" type="text" name="fname" placeholder="Имя">
+                    </div>
+                    <div class="ffeed__field">
+                      <input class="ffeed__input" type="tel" name="ftel" placeholder="+7(__) ___-__-__">
+                    </div>
+                    <div class="ffeed__field">
+                      <button class="btn2 ffeed__submit" type="submit"><span class="btn2__text">заказать звонок</span></button>
+                    </div>
+                  </div>
+                  <div class="ffeed__policy">Заполняя данную форму Вы соглашаетесь с&nbsp;<a href="policy.html">Политикой обработки персональных данных</a></div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="footer__top">
+          <div class="container">
+            <div class="row">
+              <div class="footer__left">
+                <div class="footer__logo"><a class="logo_footer logo" href="/"><span class="logo__left_footer logo__left">
+                      <svg class="logo__1 logo__1_footer">
+                        <use xlink:href="/images/icons/sprite.svg#logo1"></use>
+                      </svg></span><span class="logo__right_footer logo__right">
+                      <svg class="logo__2 logo__2_footer">
+                        <use xlink:href="/images/icons/sprite.svg#logo2"></use>
+                      </svg>
+                      <svg class="logo__3 logo__3_footer">
+                        <use xlink:href="/images/icons/sprite.svg#logo3"></use>
+                      </svg></span></a>
+                </div>
+                <div class="footer__txt">Я готова оказать вам квалифицированную юридическую помощь. С основными направлениями работы вы можете ознакомиться на данной странице сайта или на странице Услуги.</div>
+              </div>
+              <div class="footer__center">
+                <div class="footer__list">
+                  <div class="flist">
+                    <div class="flist__col"><a class="flist__item" href="about.html">Адвокат</a><a class="flist__item" href="services.html">Услуги</a><a class="flist__item" href="articles.html">Статьи</a><a class="flist__item" href="news.html">Новости</a>
+                    </div>
+                    <div class="flist__col"><a class="flist__item" href="contacts.html">Контакты</a><a class="flist__item" href="media.html">Я в СМИ</a><a class="flist__item" href="partners.html">Партнеры</a><a class="flist__item" href="prices.html">Цены</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer__right">
+                <div class="footer__contacts">
+                  <div class="fcontacts">
+                    <div class="fcontacts__title">Контакты</div>
+                    <div class="fcontacts__list"><a class="fcontact" href="tel:+7(495)766-57-54" target="_blank">
+                        <svg class="fcontact__svg fcontact__svg_phone">
+                          <use xlink:href="/images/icons/sprite.svg#phone"></use>
+                        </svg><span class="fcontact__title">+7 (495) 766-57-54</span></a><a class="fcontact" href="mailto:advokat103@list.ru" target="_blank">
+                        <svg class="fcontact__svg fcontact__svg_email">
+                          <use xlink:href="/images/icons/sprite.svg#email"></use>
+                        </svg><span class="fcontact__title">advokat103@list.ru</span></a><a class="fcontact" href="https://yandex.ru/maps/-/CGd0yAl6" target="_blank">
+                        <svg class="fcontact__svg fcontact__svg_pin">
+                          <use xlink:href="/images/icons/sprite.svg#pin"></use>
+                        </svg><span class="fcontact__title">Москва, ул. Дружинниковская, 15 (киноцентр на Красной Пресне)</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer__socials">
+                <div class="fsocials"><a class="fsocial" href="/">
+                    <svg class="fsocial__svg fsocial__svg_vk">
+                      <use xlink:href="/images/icons/sprite.svg#vk"></use>
+                    </svg></a><a class="fsocial" href="/">
+                    <svg class="fsocial__svg fsocial__svg_inst">
+                      <use xlink:href="/images/icons/sprite.svg#inst"></use>
+                    </svg></a><a class="fsocial" href="/">
+                    <svg class="fsocial__svg fsocial__svg_yt">
+                      <use xlink:href="/images/icons/sprite.svg#yt"></use>
+                    </svg></a><a class="fsocial" href="/">
+                    <svg class="fsocial__svg fsocial__svg_fb">
+                      <use xlink:href="/images/icons/sprite.svg#fb"></use>
+                    </svg></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__copy">2019 Адвокат Мария Матвеева. |&nbsp;<a href="policy.html">Политика конфиденциальности</a></div>
+        </div>
+      </footer>
     </div>
     <div class="debug">
       <div>
@@ -65,6 +1045,9 @@
       </div>
     </div>
     <script src="js/vendor.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script src="js/main.min.js"></script>
+    <!-- Для изменений после верстки-->
+    <script src="js/custom.js"></script>
   </body>
 </html>

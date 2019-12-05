@@ -12,6 +12,8 @@ html(lang="ru")
         title Portfolio | #{title}
         link(rel='stylesheet' href='css/vendor.min.css')
         link(rel='stylesheet' href='css/main.css')
+        // Для изменений после верстки
+        link(rel='stylesheet' href='css/custom.css')
 
         link(rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png")
         link(rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png")
@@ -23,9 +25,27 @@ html(lang="ru")
         .wrapper
             //- heeader
             header.header
-                nav.nav
-                    each val in menu
-                        .nav__item= val
+                .container
+                    .row.header__row
+                        //- left
+                        .header__left
+                            a(href='#').header__btn
+                                +icon('menu','header__btn-svg')
+                            .header__logo
+                                +logo
+                        //- right
+                        .header__right
+                            .header__tel
+                                .htel
+                                    a(href='tel:+7(495)766-57-54').htel__tel
+                                        span.htel__wrap
+                                            +icon('tel','htel__tel-svg')
+                                            span.htel__tel-tel +7 (495) 766-57-54
+                                        span.htel__txt бесплатная консультация
+                            .header__search
+                                a(href='search.html').search
+                                    +icon('search','search__svg')
+
 
             //- pages
             .page
@@ -33,6 +53,87 @@ html(lang="ru")
 
             //- footer
             footer.footer
+                //- feed
+                .footer__feed
+                    form.ffeed
+                        .container
+                            .row
+                                //-left
+                                .ffeed__left
+                                    .ffeed__title Укажите свое имя и контактный номер и мы свами свяжемся
+
+                                //- right
+                                .ffeed__right
+                                    //- fields
+                                    .ffeed__fields
+                                        .ffeed__field
+                                            input(type='text' name='fname' placeholder='Имя').ffeed__input
+                                        .ffeed__field
+                                            input(type='tel' name='ftel' placeholder='+7(__) ___-__-__').ffeed__input
+                                        .ffeed__field
+                                            button(type='submit').btn2.ffeed__submit
+                                                span.btn2__text заказать звонок
+
+
+                                    //- policy
+                                    .ffeed__policy Заполняя данную форму Вы соглашаетесь с&nbsp;
+                                        a(href='policy.html') Политикой обработки персональных данных
+
+
+
+
+
+                //- top
+                .footer__top
+                    .container
+                        .row
+                            //- left
+                            .footer__left
+                                //- logo
+                                .footer__logo
+                                    +logo('footer')
+
+                                //- txt
+                                .footer__txt Я готова оказать вам квалифицированную юридическую помощь. С основными направлениями работы вы можете ознакомиться на данной странице сайта или на странице Услуги.
+
+                            //- center
+                            .footer__center
+                                .footer__list
+                                    .flist
+                                        each col in flist
+                                            .flist__col
+                                                each i in col
+                                                    a(href=i.href).flist__item= i.title
+
+                            //- right
+                            .footer__right
+                                .footer__contacts
+                                    .fcontacts
+                                        .fcontacts__title Контакты
+                                        .fcontacts__list
+                                            each i in fcontacts
+                                                a(href=i.href target='_blank').fcontact
+                                                    +icon(i.icon, 'fcontact__svg fcontact__svg_'+i.icon)
+                                                    span.fcontact__title= i.val
+
+                            //- socials
+                            .footer__socials
+                                .fsocials
+                                    a(href='/').fsocial
+                                        +icon('vk','fsocial__svg fsocial__svg_vk')
+                                    a(href='/').fsocial
+                                        +icon('inst','fsocial__svg fsocial__svg_inst')
+                                    a(href='/').fsocial
+                                        +icon('yt','fsocial__svg fsocial__svg_yt')
+                                    a(href='/').fsocial
+                                        +icon('fb','fsocial__svg fsocial__svg_fb')
+
+                //- bottom
+                .footer__bottom
+                    .footer__copy 2019 Адвокат Мария Матвеева. |&nbsp;
+                        a(href='policy.html') Политика конфиденциальности
+
+
 
         .debug
             div
@@ -61,4 +162,7 @@ html(lang="ru")
 
 
         script(src='js/vendor.min.js')
+        script(src='https://api-maps.yandex.ru/2.1/?lang=ru_RU' type='text/javascript')
         script(src='js/main.min.js')
+        // Для изменений после верстки
+        script(src='js/custom.js')
