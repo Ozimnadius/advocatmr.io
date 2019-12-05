@@ -2460,7 +2460,7 @@ input, textarea {
   line-height: 1.395;
 }
 
-#imap {
+.imap #imap {
   height: 635px;
 }
 
