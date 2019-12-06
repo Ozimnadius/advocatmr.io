@@ -29,6 +29,19 @@ function number_format(number, decimals, dec_point, thousands_sep) {
 function imageResize(src) {
     $('img').not('.logo__img').attr('src', src);
 }
+
 // imageResize('https://loremflickr.com/320/440');
 
 const wWidth = $(window).width();
+
+const menu = $('.menu');
+
+$('.menu__close').on('click', function (e) {
+    e.preventDefault();
+    menu.removeClass('active');
+});
+
+$('.menu__open').on('click', function (e) {
+    e.preventDefault();
+    menu.addClass('active');
+});

@@ -29,7 +29,7 @@ html(lang="ru")
                     .row.header__row
                         //- left
                         .header__left
-                            a(href='#').header__btn
+                            a(href='#').header__btn.menu__open
                                 +icon('menu','header__btn-svg')
                             .header__logo
                                 +logo
@@ -113,7 +113,7 @@ html(lang="ru")
                                         .fcontacts__list
                                             each i in fcontacts
                                                 a(href=i.href target='_blank').fcontact
-                                                    +icon(i.icon, 'fcontact__svg fcontact__svg_'+i.icon)
+                                                    +icon(i.icon, 'fcontact__svg fcontact__svg_' + i.icon)
                                                     span.fcontact__title= i.val
 
                             //- socials
@@ -159,6 +159,116 @@ html(lang="ru")
                     div
                     div
 
+
+
+        //- menu
+        nav.menu
+            //- top
+            .menu__top
+                .container.menu__top-container
+                    //- close
+                    button(type='button').menu__close
+                        +icon('close','menu__close-svg')
+
+                    //- logo
+                    .menu__logo
+                        +logo('menu')
+
+                    //- socials
+                    .menu__socials
+                        .socials.socials_menu
+                            a(href='/').social.social_menu
+                                +icon('vk','social__svg social__svg_vk')
+                            a(href='/').social.social_menu
+                                +icon('fb','social__svg social__svg_fb')
+                            a(href='/').social.social_menu
+                                +icon('inst','social__svg social__svg_inst')
+                            a(href='/').social.social_menu
+                                +icon('yt','social__svg social__svg_yt')
+
+                    //- let
+                    .menu__tel
+                        .mtel
+                            a(href='tel:+7(495)766-57-54').mtel__tel
+                                span.mtel__wrap
+                                    +icon('tel','mtel__tel-svg')
+                                    span.mtel__tel-tel +7 (495) 766-57-54
+                                span.mtel__txt бесплатная консультация
+
+                    //- search
+                    .menu__search
+                        a(href='search.html').search.search_b
+                            +icon('search','search__svg search__svg_b')
+
+
+
+            //- bottom
+            .menu__bottom
+                .container.menu__bottom-container
+                    //- left
+                    .menu__left
+                        .menu__nav
+                            .mnav
+                                each row in mnav
+                                    .mnav__row
+                                        each i in row
+                                            a(href=i.href).mnav__item= i.title
+
+
+                    //- right
+                    .menu__right
+                        .menu__list
+                            .mlist
+                                each i in mlist
+                                    a(href='service.html').mlist__item
+                                        span.mlist__item-img
+                                            +image(i.src,'','mlist__item-pic')
+                                        span.mlist__item-title= i.title
+
+
+
+
+
+
+        //- popup
+        .popup
+            .popup__wrapper
+
+
+
+        template#tmpl
+            form.form
+                button(type='button').form__close.jsCloseForm
+                    +image('images/icons/close-form.svg', '','form__close-svg')
+
+                .form__wrap
+                    //- top
+                    .form__top
+                        .form__title Задать вопрос
+
+                    //- bottom
+                    .form__bottom
+                        //- sub
+                        .form__sub Мы с радостью ответим на интересующие вопросы и поможем найти оптимальное решение
+
+                        //- fields
+                        .form__fields
+                            .form__field.tmplField
+                                .form__field-title ФИО*
+                                input(type='text' name='name' placeholder='Ваше Имя').input.form__field-input
+                            .form__field.tmplArea
+                                .form__field-title Напишите свой вопрос
+                                textarea(name='comment' placeholder='Ваше сообщение').input.form__field-input.input_area
+
+                        //- policy
+                        .form__policy
+                            | Заполняя данную форму Вы соглашаетесь с&nbsp;
+                            a(href='policy.html') Политикой обработки персональных данных
+
+                        //- submit
+                        button(type='submit').btn2.form__submit
+                            span.btn2__text отправить
+                        input(type='hidden' name='title' value='').form__hidden
 
 
         script(src='js/vendor.min.js')

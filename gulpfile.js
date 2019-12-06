@@ -32,6 +32,7 @@ const vendorJs = [
     'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js',
     'node_modules/masonry-layout/dist/masonry.pkgd.js',
     'node_modules/swiper/js/swiper.js',
+    'node_modules/jquery-validation/dist/jquery.validate.js',
 ];
 
 

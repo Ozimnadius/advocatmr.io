@@ -21,7 +21,7 @@
       <header class="header">
         <div class="container">
           <div class="row header__row">
-            <div class="header__left"><a class="header__btn" href="#">
+            <div class="header__left"><a class="header__btn menu__open" href="#">
                 <svg class="header__btn-svg">
                   <use xlink:href="/images/icons/sprite.svg#menu"></use>
                 </svg></a>
@@ -230,7 +230,7 @@
                       <div class="istep__txt">Повседневная практика показывает, что реализация намеченных плановых заданий позволяет оценить значение системы обучения кадров, соответствует насущным потребностям. </div>
                     </div>
                   </div>
-                </div><a class="btn2 jsCallback isteps__btn" href="#"><span class="btn2__text">Получить консультацию</span></a>
+                </div><a class="btn2 jsCallback isteps__btn" href="#" data-id="3"><span class="btn2__text">Получить консультацию</span></a>
               </div>
             </div>
           </section>
@@ -240,7 +240,7 @@
                 <div class="row ihelp__row">
                   <div class="ihelp__left">
                     <div class="ihelp__title">Вам нужна помощь адвоката?</div>
-                    <div class="ihelp__txt">Свяжитесь с нами. Мы решаем сложные юридические вопросы. Первая консультация бесплатно.</div><a class="ihelp__btn btn2 jsCallback" href="#"><span class="btn2__text">Получить консультацию</span></a>
+                    <div class="ihelp__txt">Свяжитесь с нами. Мы решаем сложные юридические вопросы. Первая консультация бесплатно.</div><a class="ihelp__btn btn2 jsCallback" href="#" data-id="3"><span class="btn2__text">Получить консультацию</span></a>
                   </div>
                   <div class="ihelp__right">
                     <div class="ihelp__img"><img class="ihelp__img-img" src="images/content/index/help/img.png" alt=""/>
@@ -1044,6 +1044,109 @@
         </div>
       </div>
     </div>
+    <nav class="menu">
+      <div class="menu__top">
+        <div class="container menu__top-container">
+          <button class="menu__close" type="button">
+            <svg class="menu__close-svg">
+              <use xlink:href="/images/icons/sprite.svg#close"></use>
+            </svg>
+          </button>
+          <div class="menu__logo"><a class="logo_menu logo" href="/"><span class="logo__left_menu logo__left">
+                <svg class="logo__1 logo__1_menu">
+                  <use xlink:href="/images/icons/sprite.svg#logo1"></use>
+                </svg></span><span class="logo__right_menu logo__right">
+                <svg class="logo__2 logo__2_menu">
+                  <use xlink:href="/images/icons/sprite.svg#logo2"></use>
+                </svg>
+                <svg class="logo__3 logo__3_menu">
+                  <use xlink:href="/images/icons/sprite.svg#logo3"></use>
+                </svg></span></a>
+          </div>
+          <div class="menu__socials">
+            <div class="socials socials_menu"><a class="social social_menu" href="/">
+                <svg class="social__svg social__svg_vk">
+                  <use xlink:href="/images/icons/sprite.svg#vk"></use>
+                </svg></a><a class="social social_menu" href="/">
+                <svg class="social__svg social__svg_fb">
+                  <use xlink:href="/images/icons/sprite.svg#fb"></use>
+                </svg></a><a class="social social_menu" href="/">
+                <svg class="social__svg social__svg_inst">
+                  <use xlink:href="/images/icons/sprite.svg#inst"></use>
+                </svg></a><a class="social social_menu" href="/">
+                <svg class="social__svg social__svg_yt">
+                  <use xlink:href="/images/icons/sprite.svg#yt"></use>
+                </svg></a></div>
+          </div>
+          <div class="menu__tel">
+            <div class="mtel"><a class="mtel__tel" href="tel:+7(495)766-57-54"><span class="mtel__wrap">
+                  <svg class="mtel__tel-svg">
+                    <use xlink:href="/images/icons/sprite.svg#tel"></use>
+                  </svg><span class="mtel__tel-tel">+7 (495) 766-57-54</span></span><span class="mtel__txt">бесплатная консультация</span></a></div>
+          </div>
+          <div class="menu__search"><a class="search search_b" href="search.html">
+              <svg class="search__svg search__svg_b">
+                <use xlink:href="/images/icons/sprite.svg#search"></use>
+              </svg></a></div>
+        </div>
+      </div>
+      <div class="menu__bottom">
+        <div class="container menu__bottom-container">
+          <div class="menu__left">
+            <div class="menu__nav">
+              <div class="mnav">
+                <div class="mnav__row"><a class="mnav__item" href="/">Главная</a><a class="mnav__item" href="contacts.html">Контакты</a>
+                </div>
+                <div class="mnav__row"><a class="mnav__item" href="advocat.html">Адвокат</a><a class="mnav__item" href="media.html">Я в СМИ</a>
+                </div>
+                <div class="mnav__row"><a class="mnav__item" href="services.html">Услуги</a><a class="mnav__item" href="partners.html">Партнеры</a>
+                </div>
+                <div class="mnav__row"><a class="mnav__item" href="articles.html">Статьи</a><a class="mnav__item" href="prices.html">Цены</a>
+                </div>
+                <div class="mnav__row"><a class="mnav__item" href="news.html">Новости</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu__right">
+            <div class="menu__list">
+              <div class="mlist"><a class="mlist__item" href="service.html"><span class="mlist__item-img"><img class="mlist__item-pic" src="images/content/menu/1.svg" alt=""/></span><span class="mlist__item-title">Экономические преступления</span></a><a class="mlist__item" href="service.html"><span class="mlist__item-img"><img class="mlist__item-pic" src="images/content/menu/2.svg" alt=""/></span><span class="mlist__item-title">Адвокат по исполнительному производству</span></a><a class="mlist__item" href="service.html"><span class="mlist__item-img"><img class="mlist__item-pic" src="images/content/menu/3.svg" alt=""/></span><span class="mlist__item-title">Арбитражные споры</span></a><a class="mlist__item" href="service.html"><span class="mlist__item-img"><img class="mlist__item-pic" src="images/content/menu/4.svg" alt=""/></span><span class="mlist__item-title">Семейный адвокат</span></a><a class="mlist__item" href="service.html"><span class="mlist__item-img"><img class="mlist__item-pic" src="images/content/menu/5.svg" alt=""/></span><span class="mlist__item-title">Адвокат при проверках ОБЭП (УЭБиПК), ОУР</span></a><a class="mlist__item" href="service.html"><span class="mlist__item-img"><img class="mlist__item-pic" src="images/content/menu/6.svg" alt=""/></span><span class="mlist__item-title">Адвокат по ДТП</span></a><a class="mlist__item" href="service.html"><span class="mlist__item-img"><img class="mlist__item-pic" src="images/content/menu/7.svg" alt=""/></span><span class="mlist__item-title">Уголовный адвокат</span></a><a class="mlist__item" href="service.html"><span class="mlist__item-img"><img class="mlist__item-pic" src="images/content/menu/8.svg" alt=""/></span><span class="mlist__item-title">Адвокат в ЕСПЧ</span></a><a class="mlist__item" href="service.html"><span class="mlist__item-img"><img class="mlist__item-pic" src="images/content/menu/9.svg" alt=""/></span><span class="mlist__item-title">Адвокат по гражданским делам</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="popup">
+      <div class="popup__wrapper"></div>
+    </div>
+    <template id="tmpl">
+      <form class="form">
+        <button class="form__close jsCloseForm" type="button"><img class="form__close-svg" src="images/icons/close-form.svg" alt=""/>
+        </button>
+        <div class="form__wrap">
+          <div class="form__top">
+            <div class="form__title">Задать вопрос</div>
+          </div>
+          <div class="form__bottom">
+            <div class="form__sub">Мы с радостью ответим на интересующие вопросы и поможем найти оптимальное решение</div>
+            <div class="form__fields">
+              <div class="form__field tmplField">
+                <div class="form__field-title">ФИО*</div>
+                <input class="input form__field-input" type="text" name="name" placeholder="Ваше Имя">
+              </div>
+              <div class="form__field tmplArea">
+                <div class="form__field-title">Напишите свой вопрос</div>
+                <textarea class="input form__field-input input_area" name="comment" placeholder="Ваше сообщение"></textarea>
+              </div>
+            </div>
+            <div class="form__policy">Заполняя данную форму Вы соглашаетесь с&nbsp;<a href="policy.html">Политикой обработки персональных данных</a></div>
+            <button class="btn2 form__submit" type="submit"><span class="btn2__text">отправить</span></button>
+            <input class="form__hidden" type="hidden" name="title" value="">
+          </div>
+        </div>
+      </form>
+    </template>
     <script src="js/vendor.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script src="js/main.min.js"></script>

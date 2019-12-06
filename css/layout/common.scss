@@ -129,6 +129,12 @@
       height: 72px;
       fill: #e9b365;
     }
+
+    &_menu{
+      width: 72px;
+      height: 72px;
+      fill: #e9b365;
+    }
   }
 
   &__right{
@@ -148,6 +154,12 @@
       fill: #e9b365;
       margin-bottom: 0;
     }
+    &_menu{
+      width: 100px;
+      height: 18px;
+      fill: #000;
+      margin-bottom: 5px;
+    }
   }
 
   &__3{
@@ -159,12 +171,21 @@
       width: 135px;
       height: 21px;
     }
+    &_menu{
+      width: 110px;
+      height: 18px;
+      fill: #000;
+    }
   }
 }
 
 .socials {
   display: flex;
   flex-direction: column;
+
+  &_menu{
+    flex-direction: row;
+  }
 }
 
 .social {
@@ -176,13 +197,34 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 50px;
+  @include tr;
+
+  &_menu{
+    margin-bottom: 0;
+    margin-right: 50px;
+    border: 2px solid #2c2c2c;
+
+    .social__svg{
+      fill: #2c2c2c;
+    }
+
+    &:hover{
+      border: 2px solid #d49f40;
+
+      .social__svg{
+        fill:#d49f40;
+      }
+    }
+  }
 
   &:last-child {
     margin-bottom: 0;
+    margin-right: 0;
   }
 
   &__svg {
     fill: $bg;
+    @include tr;
 
     &_vk {
       width: 27px;
