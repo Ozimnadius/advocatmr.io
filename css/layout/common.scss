@@ -135,6 +135,11 @@
       height: 72px;
       fill: #e9b365;
     }
+
+    &_fixed{
+      width: 58px;
+      height: 58px;
+    }
   }
 
   &__right{
@@ -160,6 +165,10 @@
       fill: #000;
       margin-bottom: 5px;
     }
+    &_fixed{
+      width: 90px;
+      height: 16px;
+    }
   }
 
   &__3{
@@ -176,6 +185,10 @@
       height: 18px;
       fill: #000;
     }
+    &_fixed{
+      width: 100px;
+      height: 16px;
+    }
   }
 }
 
@@ -184,6 +197,10 @@
   flex-direction: column;
 
   &_menu{
+    flex-direction: row;
+  }
+
+  &_fixed {
     flex-direction: row;
   }
 }
@@ -213,6 +230,39 @@
 
       .social__svg{
         fill:#d49f40;
+      }
+    }
+  }
+
+  &_fixed {
+    margin-right: 35px;
+    margin-bottom: 0;
+
+    width: 35px;
+    height: 35px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+
+    .social__svg{
+      fill: rgba(255, 255, 255, 0.3);
+
+      &_vk{
+        width: 25px;
+        height: 14px;
+      }
+
+      &_fb{
+        width: 18px;
+        height: 18px;
+      }
+
+      &_inst{
+        width: 17px;
+        height: 17px;
+      }
+
+      &_yt{
+        width: 23px;
+        height: 23px;
       }
     }
   }
@@ -418,4 +468,92 @@
 
   }
 
+}
+
+.bread{
+  margin-left: -20px;
+
+
+  &__item{
+    padding: 0 20px;
+    border-right: 1px solid rgba(0, 0, 0, 0.25);
+
+    &:last-child{
+      border-right: none;
+    }
+
+    &.active{
+      .bread__item-title{
+        color: rgba(0, 0, 0, 0.75);
+      }
+    }
+
+    &-svg{
+      width: 17px;
+      height: 17px;
+      fill: #d49f40;
+    }
+
+    &-title{
+      line-height: 125.5%;
+      color: rgba(0, 0, 0, 0.25);
+    }
+  }
+}
+
+.title{
+  display: flex;
+  justify-content: center;
+
+  &__wrap{
+    position: relative;
+    padding-bottom: 60px;
+
+    &_imedia{
+      padding-bottom: 45px;
+    }
+
+    &_services{
+      padding-bottom: 35px;
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 148px;
+      height: 10px;
+      margin-left: -74px;
+      background-image: linear-gradient(175.91deg, #d4b172 0%, #f3c168 18%, #deb66f 79%, #d4b172 100%);
+    }
+  }
+
+  &__title{
+    color: #191919;
+    font-family: "Roboto Slab";
+    font-size: 40px;
+    font-weight: 700;
+    position: relative;
+
+    &:before, &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 355px;
+      height: 1px;
+      top: 50%;
+    }
+
+    &:before {
+      right: calc(100% + 35px);
+      background: linear-gradient(to right, rgba(#bebebe, 0) 0%, rgba(#bebebe, 1) 100%)
+    }
+
+    &:after {
+      left: calc(100% + 35px);
+      background: linear-gradient(to right, rgba(#bebebe, 1) 0%, rgba(#bebebe, 0) 100%);
+    }
+  }
 }

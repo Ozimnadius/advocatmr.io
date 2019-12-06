@@ -1,0 +1,118 @@
+.services{
+
+  &__bread{
+    padding-top: 42px;
+    padding-bottom: 67px;
+  }
+
+  &__top{
+    margin-bottom: 55px;
+  }
+
+  &__title{
+    margin-bottom: 45px;
+  }
+
+  &__list{
+    margin-bottom: 50px;
+  }
+
+  &__bottom {
+    padding-bottom: 125px;
+  }
+
+
+}
+
+.serv{
+  @include col;
+  @include size(12);
+  position: relative;
+  margin-bottom: 24px;
+
+  &:hover {
+    .serv {
+      &__img {
+        &:before {
+          background-image: linear-gradient(90deg, rgba(83, 52, 0, 0.8) 0%, rgba(103, 66, 0, 0.8) 21%, rgba(154, 98, 0, 0) 100%);
+        }
+      }
+    }
+
+  }
+
+  &__img {
+    width: 100%;
+    height: 200px;
+    display: block;
+    background-size: cover;
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-image: linear-gradient(90deg, #0b1523 0%, #0b1523 16%, rgba(11, 21, 35, 0.2) 100%);
+    }
+
+  }
+
+  &__pos {
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 240px 10px 52px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__num {
+    color: #febd49;
+    font-size: 80px;
+    font-weight: 900;
+    letter-spacing: 8px;
+    height: 51px;
+    line-height: 1;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    color: $bg;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: lh(18px, 22.59px);
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+
+  &__btn {
+    flex-direction: column;
+    align-items: flex-start;
+
+    &-svg {
+      width: 71px;
+      height: 10px;
+      stroke: #b1976b;
+      margin-bottom: 7px;
+    }
+
+    &-txt {
+      color: $bg;
+      font-size: 14px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+  }
+
+}
+

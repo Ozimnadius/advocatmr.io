@@ -19,32 +19,82 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="container">
-          <div class="row header__row">
-            <div class="header__left"><a class="header__btn menu__open" href="#">
-                <svg class="header__btn-svg">
-                  <use xlink:href="/images/icons/sprite.svg#menu"></use>
-                </svg></a>
-              <div class="header__logo"><a class="logo_main logo" href="/"><span class="logo__left_main logo__left">
-                    <svg class="logo__1 logo__1_main">
+        <div class="header__main">
+          <div class="container">
+            <div class="row header__row">
+              <div class="header__left"><a class="header__btn menu__open" href="#">
+                  <svg class="header__btn-svg">
+                    <use xlink:href="/images/icons/sprite.svg#menu"></use>
+                  </svg></a>
+                <div class="header__logo"><a class="logo_main logo" href="/"><span class="logo__left_main logo__left">
+                      <svg class="logo__1 logo__1_main">
+                        <use xlink:href="/images/icons/sprite.svg#logo1"></use>
+                      </svg></span><span class="logo__right_main logo__right">
+                      <svg class="logo__2 logo__2_main">
+                        <use xlink:href="/images/icons/sprite.svg#logo2"></use>
+                      </svg>
+                      <svg class="logo__3 logo__3_main">
+                        <use xlink:href="/images/icons/sprite.svg#logo3"></use>
+                      </svg></span></a>
+                </div>
+              </div>
+              <div class="header__right">
+                <div class="header__tel">
+                  <div class="htel"><a class="htel__tel" href="tel:+7(495)766-57-54"><span class="htel__wrap">
+                        <svg class="htel__tel-svg">
+                          <use xlink:href="/images/icons/sprite.svg#tel"></use>
+                        </svg><span class="htel__tel-tel">+7 (495) 766-57-54</span></span><span class="htel__txt">бесплатная консультация</span></a></div>
+                </div>
+                <div class="header__search"><a class="search" href="search.html">
+                    <svg class="search__svg">
+                      <use xlink:href="/images/icons/sprite.svg#search"></use>
+                    </svg></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__fixed header__fixed_main">
+          <div class="container">
+            <div class="hfixed">
+              <div class="hfixed__menu"><a class="hfixed__btn menu__open" href="#">
+                  <svg class="hfixed__btn-svg">
+                    <use xlink:href="/images/icons/sprite.svg#menu"></use>
+                  </svg></a></div>
+              <div class="hfixed__logo"><a class="logo_fixed logo" href="/"><span class="logo__left_fixed logo__left">
+                    <svg class="logo__1 logo__1_fixed">
                       <use xlink:href="/images/icons/sprite.svg#logo1"></use>
-                    </svg></span><span class="logo__right_main logo__right">
-                    <svg class="logo__2 logo__2_main">
+                    </svg></span><span class="logo__right_fixed logo__right">
+                    <svg class="logo__2 logo__2_fixed">
                       <use xlink:href="/images/icons/sprite.svg#logo2"></use>
                     </svg>
-                    <svg class="logo__3 logo__3_main">
+                    <svg class="logo__3 logo__3_fixed">
                       <use xlink:href="/images/icons/sprite.svg#logo3"></use>
                     </svg></span></a>
               </div>
-            </div>
-            <div class="header__right">
-              <div class="header__tel">
-                <div class="htel"><a class="htel__tel" href="tel:+7(495)766-57-54"><span class="htel__wrap">
-                      <svg class="htel__tel-svg">
-                        <use xlink:href="/images/icons/sprite.svg#tel"></use>
-                      </svg><span class="htel__tel-tel">+7 (495) 766-57-54</span></span><span class="htel__txt">бесплатная консультация</span></a></div>
+              <div class="hfixed__socials">
+                <div class="socials socials_fixed"><a class="social social_fixed" href="/">
+                    <svg class="social__svg social__svg_vk">
+                      <use xlink:href="/images/icons/sprite.svg#vk"></use>
+                    </svg></a><a class="social social_fixed" href="/">
+                    <svg class="social__svg social__svg_fb">
+                      <use xlink:href="/images/icons/sprite.svg#fb"></use>
+                    </svg></a><a class="social social_fixed" href="/">
+                    <svg class="social__svg social__svg_inst">
+                      <use xlink:href="/images/icons/sprite.svg#inst"></use>
+                    </svg></a><a class="social social_fixed" href="/">
+                    <svg class="social__svg social__svg_yt">
+                      <use xlink:href="/images/icons/sprite.svg#yt"></use>
+                    </svg></a></div>
               </div>
-              <div class="header__search"><a class="search" href="search.html">
+              <div class="hfixed__tel">
+                <div class="header__tel">
+                  <div class="htel htel_f"><a class="htel__tel htel__tel_f" href="tel:+7(495)766-57-54"><span class="htel__wrap htel__wrap_f">
+                        <svg class="htel__tel-svg htel__tel-svg_f">
+                          <use xlink:href="/images/icons/sprite.svg#tel"></use>
+                        </svg><span class="htel__tel-tel htel__tel-tel_f">+7 (495) 766-57-54</span></span><span class="htel__txt htel__txt_f">бесплатная консультация</span></a></div>
+                </div>
+              </div>
+              <div class="hfixed__search"><a class="search" href="search.html">
                   <svg class="search__svg">
                     <use xlink:href="/images/icons/sprite.svg#search"></use>
                   </svg></a></div>
@@ -195,7 +245,11 @@
             <div class="isteps">
               <div class="container isteps__container">
                 <div class="isteps__title">
-                  <div class="isteps__title-title">Этапы работы</div>
+                  <div class="title_isteps title">
+                    <div class="title__wrap_isteps title__wrap">
+                      <div class="title__title_isteps title__title">Этапы работы</div>
+                    </div>
+                  </div>
                 </div>
                 <div class="isteps__list">
                   <div class="row">
@@ -253,8 +307,12 @@
           <section class="index__media">
             <div class="imedia">
               <div class="container imedia__container">
-                <div class="isteps__title imedia__title">
-                  <div class="isteps__title-title">Я в сми</div>
+                <div class="imedia__title">
+                  <div class="title_imedia title">
+                    <div class="title__wrap_imedia title__wrap">
+                      <div class="title__title_imedia title__title">Я в сми</div>
+                    </div>
+                  </div>
                 </div>
                 <div class="row imedia__row">
                   <div class="imedia__left"><a class="imedia__fancy" href="https://www.youtube.com/watch?v=GhPBvgew_a8" data-fancybox><img class="imedia__fancy-img" src="images/content/index/media/img.jpg" alt=""/><span class="imedia__watch"><span class="imedia__watch-wrap"></span></span></a></div>
@@ -307,8 +365,12 @@
           <section class="index__news">
             <div class="inews">
               <div class="container inews__container">
-                <div class="isteps__title inews__title">
-                  <div class="isteps__title-title">Новости</div>
+                <div class="inews__title">
+                  <div class="title_inews title">
+                    <div class="title__wrap_inews title__wrap">
+                      <div class="title__title_inews title__title">Новости</div>
+                    </div>
+                  </div>
                 </div>
                 <div class="inews__nav"><a class="inews__arr inews__prev" href="#">
                     <svg class="inews__arr-svg">
@@ -849,8 +911,12 @@
           <section class="index__articles">
             <div class="iarts">
               <div class="container iarts__container">
-                <div class="isteps__title iarts__title">
-                  <div class="isteps__title-title">Полезно знать</div>
+                <div class="iarts__title">
+                  <div class="title_imedia title">
+                    <div class="title__wrap_imedia title__wrap">
+                      <div class="title__title_imedia title__title">Полезно знать</div>
+                    </div>
+                  </div>
                 </div>
                 <div class="iarts__list">
                   <div class="row">

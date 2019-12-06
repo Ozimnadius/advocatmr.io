@@ -33,6 +33,11 @@ body {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+
+  &_second{
+    background: #f6f5f5;
+    padding-top: 82px;
+  }
 }
 
 .page {
@@ -41,6 +46,12 @@ body {
 
 .container {
   @include wrapper;
+
+  &_bg {
+    padding: 0 50px;
+    background: $bg;
+    max-width: 1280px;
+  }
 }
 
 .row {

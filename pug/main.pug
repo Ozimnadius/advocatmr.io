@@ -22,29 +22,110 @@ html(lang="ru")
         meta(name="msapplication-TileColor" content="#da532c")
         meta(name="theme-color" content="#ffffff")
     body
-        .wrapper
+        div(class=main?'':'wrapper_second').wrapper
             //- heeader
             header.header
-                .container
-                    .row.header__row
-                        //- left
-                        .header__left
-                            a(href='#').header__btn.menu__open
-                                +icon('menu','header__btn-svg')
-                            .header__logo
-                                +logo
-                        //- right
-                        .header__right
-                            .header__tel
-                                .htel
-                                    a(href='tel:+7(495)766-57-54').htel__tel
-                                        span.htel__wrap
-                                            +icon('tel','htel__tel-svg')
-                                            span.htel__tel-tel +7 (495) 766-57-54
-                                        span.htel__txt бесплатная консультация
-                            .header__search
-                                a(href='search.html').search
-                                    +icon('search','search__svg')
+                if main
+                    .header__main
+                        .container
+                            .row.header__row
+                                //- left
+                                .header__left
+                                    a(href='#').header__btn.menu__open
+                                        +icon('menu','header__btn-svg')
+                                    .header__logo
+                                        +logo
+                                //- right
+                                .header__right
+                                    .header__tel
+                                        .htel
+                                            a(href='tel:+7(495)766-57-54').htel__tel
+                                                span.htel__wrap
+                                                    +icon('tel','htel__tel-svg')
+                                                    span.htel__tel-tel +7 (495) 766-57-54
+                                                span.htel__txt бесплатная консультация
+                                    .header__search
+                                        a(href='search.html').search
+                                            +icon('search','search__svg')
+
+                    .header__fixed.header__fixed_main
+                        .container
+                            .hfixed
+                                //- menu-btn
+                                .hfixed__menu
+                                    a(href='#').hfixed__btn.menu__open
+                                        +icon('menu','hfixed__btn-svg')
+
+                                //- logo
+                                .hfixed__logo
+                                    +logo('fixed')
+
+                                //- socials
+                                .hfixed__socials
+                                    .socials.socials_fixed
+                                        a(href='/').social.social_fixed
+                                            +icon('vk','social__svg social__svg_vk')
+                                        a(href='/').social.social_fixed
+                                            +icon('fb','social__svg social__svg_fb')
+                                        a(href='/').social.social_fixed
+                                            +icon('inst','social__svg social__svg_inst')
+                                        a(href='/').social.social_fixed
+                                            +icon('yt','social__svg social__svg_yt')
+                                //- tel
+                                .hfixed__tel
+                                    .header__tel
+                                        .htel.htel_f
+                                            a(href='tel:+7(495)766-57-54').htel__tel.htel__tel_f
+                                                span.htel__wrap.htel__wrap_f
+                                                    +icon('tel','htel__tel-svg htel__tel-svg_f')
+                                                    span.htel__tel-tel.htel__tel-tel_f +7 (495) 766-57-54
+                                                span.htel__txt.htel__txt_f бесплатная консультация
+
+                                //- search
+                                .hfixed__search
+                                    a(href='search.html').search
+                                        +icon('search','search__svg')
+                else
+                    .header__fixed
+                        .container
+                            .hfixed
+                                //- menu-btn
+                                .hfixed__menu
+                                    a(href='#').hfixed__btn.menu__open
+                                        +icon('menu','header__btn-svg')
+
+                                //- logo
+                                .hfixed__logo
+                                    +logo('fixed')
+
+                                //- socials
+                                .hfixed__socials
+                                    .socials.socials_fixed
+                                        a(href='/').social.social_fixed
+                                            +icon('vk','social__svg social__svg_vk')
+                                        a(href='/').social.social_fixed
+                                            +icon('fb','social__svg social__svg_fb')
+                                        a(href='/').social.social_fixed
+                                            +icon('inst','social__svg social__svg_inst')
+                                        a(href='/').social.social_fixed
+                                            +icon('yt','social__svg social__svg_yt')
+
+
+                                //- tel
+                                .hfixed__tel
+                                    .header__tel
+                                        .htel
+                                            a(href='tel:+7(495)766-57-54').htel__tel
+                                                span.htel__wrap
+                                                    +icon('tel','htel__tel-svg')
+                                                    span.htel__tel-tel +7 (495) 766-57-54
+                                                span.htel__txt бесплатная консультация
+
+                                //- search
+                                .hfixed__search
+                                    a(href='search.html').search
+                                        +icon('search','search__svg')
+
 
 
             //- pages

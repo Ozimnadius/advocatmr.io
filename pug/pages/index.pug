@@ -131,7 +131,7 @@ block content
                 .container.isteps__container
                     //- title
                     .isteps__title
-                        .isteps__title-title Этапы работы
+                        +title('Этапы работы', 'isteps')
                     //- list
                     .isteps__list
                         .row
@@ -167,8 +167,8 @@ block content
             .imedia
                 .container.imedia__container
                     //- title
-                    .isteps__title.imedia__title
-                        .isteps__title-title Я в сми
+                    .imedia__title
+                        +title('Я в сми', 'imedia')
                     //- row
                     .row.imedia__row
                         //- left
@@ -242,8 +242,8 @@ block content
             .inews
                 .container.inews__container
                     //- title
-                    .isteps__title.inews__title
-                        .isteps__title-title Новости
+                    .inews__title
+                        +title('Новости', 'inews')
 
                     //- nav
                     .inews__nav
@@ -317,8 +317,8 @@ block content
             .iarts
                 .container.iarts__container
                     //- title
-                    .isteps__title.iarts__title
-                        .isteps__title-title Полезно знать
+                    .iarts__title
+                        +title('Полезно знать', 'imedia')
                     //- list
                     .iarts__list
                         .row
@@ -335,6 +335,7 @@ block content
                     //- link
                     a(href='articles.html').iarts__link.btn2
                         span.btn2__text перейти в раздел
+
         //- map
         section.imap
             //- left

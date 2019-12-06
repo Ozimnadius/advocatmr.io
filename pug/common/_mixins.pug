@@ -25,3 +25,20 @@ mixin logo(dopClass)
         span(class='logo__right_'+cls).logo__right
             +icon('logo2','logo__2 logo__2_'+cls)
             +icon('logo3','logo__3 logo__3_'+cls)
+
+mixin title(title,prefix)
+    div(class='title_'+prefix).title
+        div(class='title__wrap_'+prefix).title__wrap
+            div(class='title__title_'+prefix).title__title= title
+
+mixin serv(img,num,title)
+    a(href='service.html').serv
+        //- img
+        span(style='background-image:url('+img+')').serv__img
+        //- position
+        span.serv__pos
+            span.serv__num= '0' + num
+            span.serv__title= title
+            span.serv__btn.btn
+                +icon('line','serv__btn-svg')
+                span.serv__btn-txt Подробнее
