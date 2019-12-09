@@ -26,10 +26,22 @@ $vh: 1080;
 
 @mixin content() {
   ul {
-    margin-bottom: 20px;
-    padding-left: 40px;
-    li {
-      list-style: disc;
+    margin-bottom: 30px;
+
+    li{
+      line-height: lh(16px,22.72px);
+      padding-left: 23px;
+      position: relative;
+      &:before{
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 5px;
+        width: 8px;
+        height: 8px;
+        background-color: #d49f40;
+      }
     }
   }
 

@@ -1,8 +1,7 @@
 .services{
 
   &__bread{
-    padding-top: 42px;
-    padding-bottom: 67px;
+    margin-bottom: 65px;
   }
 
   &__top{
@@ -22,6 +21,18 @@
   }
 
 
+}
+
+.left{
+  @include col;
+  @include size(6);
+  @include shift-right(0.7);
+}
+
+.right{
+  @include col;
+  @include size(17.3);
+  padding-top: 8px;
 }
 
 .serv{
@@ -116,3 +127,197 @@
 
 }
 
+.service{
+
+  &__bread{
+    margin-bottom: 20px;
+  }
+
+  &__title{
+    margin-bottom: 45px;
+  }
+
+  &__img{
+    margin-bottom: 60px;
+
+    &-img{
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__sub{
+    color: #000000;
+    font-family: "Roboto Slab";
+    font-size: 18px;
+    line-height: lh(18px,25.56px);
+    margin-bottom: 50px;
+  }
+
+  &__warning{
+    margin-top: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    background-color: $bg;
+    padding: 20px 25px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+
+    &-img{
+      min-width: 90px;
+      margin-right: 25px;
+    }
+
+    &-txt{
+      font-family: "Roboto Slab";
+      font-size: 20px;
+      line-height: lh(20px,28.4px);
+    }
+  }
+
+  &__call{
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(102.7deg, #0e1929 0%, #1b5a74 100%);
+    padding: 30px;
+
+    &-txt{
+      color: $bg;
+      font-family: "Roboto Slab";
+      font-size: 20px;
+      line-height: lh(20px,28.4px);
+      margin-right: 35px;
+    }
+
+    &-btn{
+      // Style for "Rectangle"
+      min-width: 264px;
+      width: 264px;
+      height: 55px;
+      font-size: 14px;
+    }
+  }
+}
+
+.aside{
+
+  &__menu{
+    margin-bottom: 40px;
+  }
+
+  &__block{
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(130, 129, 129, 0.25);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 35px 40px 35px;
+
+    &-svg{
+      margin-bottom: 45px;
+    }
+
+    &-title{
+      color: #000000;
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    &-txt{
+      color: #000000;
+      font-size: 14px;
+      line-height: lh(14px,17.57px);
+      margin-bottom: 30px;
+    }
+
+    &-btn{
+      width: 208px;
+      height: 44px;
+      font-size: 14px;
+    }
+  }
+
+}
+
+.amenu{
+  box-shadow: 0 0 20px rgba(130, 129, 129, 0.25);
+  border-radius: 4px;
+  overflow: hidden;
+
+  &__top{
+    background-image: linear-gradient(98.85deg, #0e1929 0%, #1b5a74 100%);
+    padding: 19px 20px;
+  }
+
+  &__title{
+    color: $bg;
+    font-family: "Roboto Slab";
+    font-weight: 700;
+  }
+
+}
+
+.aitem{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+
+  &:after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, #D49F40 0%,rgba(212, 159, 64, 0) 100%);
+  }
+
+  &:hover{
+    background-image: linear-gradient(90deg, #efefef 0%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  &:last-child{
+    &:after{
+      display: none;
+    }
+  }
+
+  &.active{
+    background-image: linear-gradient(180deg, #d49f40 0%, #d96c1d 100%);
+
+    .aitem{
+      &__svg{
+        fill: $bg;
+      }
+
+      &__title{
+        color: $bg;
+      }
+    }
+  }
+
+  &__img{
+    min-width: 28px;
+    width: 28px;
+    height: 28px;
+    margin-right: 17px;
+  }
+
+  &__svg{
+    max-width: 100%;
+    max-height: 100%;
+    fill: #d49f40;
+  }
+
+  &__title{
+
+    color: #000000;
+    line-height: lh(16px,22.72px);
+  }
+}

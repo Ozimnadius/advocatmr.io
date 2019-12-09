@@ -42,3 +42,29 @@ mixin serv(img,num,title)
             span.serv__btn.btn
                 +icon('line','serv__btn-svg')
                 span.serv__btn-txt Подробнее
+
+mixin aside(props)
+    aside.aside
+        //- menu
+        .aside__menu
+            +amenu(props)
+        //- block
+        .aside__block
+            +image('images/icons/asideEmail.svg', '','aside__block-svg')
+            .aside__block-title Нужна консультация?
+            .aside__block-txt Наши менеджеры с радостью ответят на ваши вопросы
+            a(href='#' data-id='1').aside__block-btn.btn2
+                span.btn2__text Задать вопрос
+
+mixin amenu(props)
+    .amenu
+        //- top
+        .amenu__top
+            .amenu__title= props.title
+        .amenu__bottom
+            .amenu__list
+                each i in props.list
+                    a(href='service.html' class=i.cls).aitem
+                        span.aitem__img
+                            +icon(i.icon,'aitem__svg')
+                        span.aitem__title= i.title

@@ -216,6 +216,13 @@
   margin-bottom: 50px;
   @include tr;
 
+  &:hover{
+    border: 2px solid #d49f40;
+    .social__svg{
+      fill: #d49f40;
+    }
+  }
+
   &_menu{
     margin-bottom: 0;
     margin-right: 50px;
@@ -241,6 +248,14 @@
     width: 35px;
     height: 35px;
     border: 2px solid rgba(255, 255, 255, 0.3);
+
+    &:hover{
+      border: 2px solid #d49f40;
+
+      .social__svg{
+        fill: #d49f40;
+      }
+    }
 
     .social__svg{
       fill: rgba(255, 255, 255, 0.3);
@@ -474,6 +489,7 @@
   margin-left: -20px;
 
 
+
   &__item{
     padding: 0 20px;
     border-right: 1px solid rgba(0, 0, 0, 0.25);
@@ -555,5 +571,26 @@
       left: calc(100% + 35px);
       background: linear-gradient(to right, rgba(#bebebe, 1) 0%, rgba(#bebebe, 0) 100%);
     }
+  }
+}
+
+.title2{
+  color: #191919;
+  font-family: "Roboto Slab";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: lh(40px,56.8px);
+  padding-bottom: 29px;
+  position: relative;
+
+  &:after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 148px;
+    height: 10px;
+    background-color: #d49f40;
   }
 }

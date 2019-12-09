@@ -1,6 +1,6 @@
 .header {
 
-  &__main{
+  &__main {
     position: absolute;
     z-index: 99;
     top: 0;
@@ -16,17 +16,17 @@
     right: 0;
     background-image: linear-gradient(126.79deg, #0e1929 0%, #1b5a74 100%);
 
-    &_main{
+    &_main {
       transition: .4s;
       top: -200px;
 
-      &.active{
+      &.active {
         top: 0;
       }
     }
   }
 
-  &__row{
+  &__row {
     align-items: flex-start;
   }
 
@@ -38,12 +38,22 @@
     padding-top: 30px;
   }
 
-  &__btn{
+  &__btn {
     margin-right: 90px;
-    &-svg{
+    display: block;
+
+    &:hover {
+      .header__btn-svg {
+        fill: #d49f40;
+      }
+    }
+
+
+    &-svg {
       width: 40px;
       height: 25px;
       fill: $bg;
+      @include tr;
     }
   }
 
@@ -57,30 +67,41 @@
 
 }
 
-.hfixed{
+.hfixed {
   display: flex;
   align-items: center;
 
-  &__btn{
+  &__menu{
     margin-right: 45px;
+  }
 
-    &-svg{
+  &__btn {
+    display: block;
+
+    &:hover {
+      .hfixed__btn-svg {
+        fill: #d49f40;
+      }
+    }
+
+    &-svg {
       width: 40px;
       height: 25px;
       fill: $bg;
+      @include tr;
     }
   }
 
-  &__logo{
+  &__logo {
     margin-right: auto;
     padding: 10px 0;
   }
 
-  &__socials{
+  &__socials {
     margin-right: 95px;
   }
 
-  &__tel{
+  &__tel {
     margin-right: 45px;
     margin-bottom: -30px;
     margin-top: -1px;
@@ -88,15 +109,22 @@
   }
 }
 
-.search{
+.search {
   display: flex;
 
-  &__svg{
+  &:hover {
+    .search__svg {
+      fill: #d49f40;
+    }
+  }
+
+  &__svg {
     width: 39px;
     height: 39px;
     fill: $bg;
+    @include tr;
 
-    &_b{
+    &_b {
       width: 25px;
       height: 25px;
       fill: #000;
@@ -112,13 +140,13 @@
   padding: 12px;
   padding-top: 0;
 
-  &_f{
+  &_f {
     padding: 10px;
     padding-top: 0;
   }
 
 
-  &__tel{
+  &__tel {
     width: 334px;
     border-radius: 12px;
     border-top-left-radius: 0;
@@ -131,24 +159,24 @@
     flex-direction: column;
     align-items: center;
 
-    &_f{
+    &_f {
       padding-top: 15px;
       padding-bottom: 15px;
     }
 
-    &-svg{
+    &-svg {
       width: 30px;
       height: 31px;
       fill: $bg;
       margin-right: 10px;
 
-      &_f{
+      &_f {
         width: 24px;
         height: 24px;
       }
     }
 
-    &-tel{
+    &-tel {
       color: $bg;
       font-size: 26px;
       font-weight: 700;
@@ -157,23 +185,24 @@
 
   }
 
-  &__wrap{
+  &__wrap {
     display: flex;
     align-items: center;
     margin-bottom: 5px;
-    &_f{
+
+    &_f {
       margin-bottom: 10px;
     }
   }
 
-  &__txt{
+  &__txt {
     color: $bg;
     text-transform: uppercase;
   }
 
 }
 
-.menu{
+.menu {
   position: fixed;
   z-index: 999;
   top: 0;
@@ -188,24 +217,25 @@
   display: flex;
   flex-direction: column;
 
-  &.active{
+  &.active {
     visibility: visible;
     opacity: 1;
   }
 
-  &__top{
+  &__top {
     padding: 30px 0;
     border-bottom: 1px solid #e8e8e8;
 
-    &-container{
+    &-container {
       display: flex;
       align-items: center;
     }
 
   }
 
-  &__close{
+  &__close {
     margin-right: 25px;
+
     &-svg {
       width: 26px;
       height: 18px;
@@ -213,40 +243,40 @@
     }
   }
 
-  &__logo{
+  &__logo {
     margin-right: auto;
   }
 
-  &__socials{
+  &__socials {
     margin-right: 65px;
   }
 
-  &__tel{
+  &__tel {
     margin-right: 60px;
   }
 
-  &__search{
+  &__search {
     margin-right: 25px;
   }
 
-  &__bottom{
+  &__bottom {
     flex-grow: 1;
 
-    &-container{
+    &-container {
       display: flex;
       flex-wrap: wrap;
       height: 100%;
     }
   }
 
-  &__left{
+  &__left {
     height: 100%;
     padding-top: 50px;
     width: 32%;
     border-right: 1px solid #e8e8e8;
   }
 
-  &__right{
+  &__right {
     height: 100%;
     padding-top: 70px;
     padding-left: 50px;
@@ -258,12 +288,12 @@
 
 }
 
-.msocials{
+.msocials {
   display: flex;
   flex-wrap: wrap;
 }
 
-.msocial{
+.msocial {
   width: 34px;
   height: 34px;
   border: 2px solid #2c2c2c;
@@ -274,39 +304,39 @@
   margin-right: 50px;
   @include tr;
 
-  &:hover{
+  &:hover {
     border: 2px solid #d49f40;
 
-    .msocial__svg{
+    .msocial__svg {
       fill: #d49f40;
     }
   }
 
-  &:last-child{
+  &:last-child {
     margin-right: 0;
   }
 
 
-  &__svg{
+  &__svg {
     fill: #2c2c2c;
     @include tr;
 
-    &_vk{
+    &_vk {
       width: 21px;
       height: 12px;
     }
 
-    &_inst{
+    &_inst {
       width: 15px;
       height: 15px;
     }
 
-    &_yt{
+    &_yt {
       width: 19px;
       height: 19px;
     }
 
-    &_fb{
+    &_fb {
       width: 16px;
       height: 16px;
     }
@@ -316,19 +346,19 @@
 
 .mtel {
 
-  &__tel{
+  &__tel {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 
-    &-svg{
+    &-svg {
       width: 30px;
       height: 31px;
       fill: #d49f40;
       margin-right: 10px;
     }
 
-    &-tel{
+    &-tel {
       color: #373737;
       font-size: 26px;
       font-weight: 700;
@@ -337,62 +367,62 @@
 
   }
 
-  &__wrap{
+  &__wrap {
     display: flex;
     align-items: center;
     margin-bottom: 5px;
   }
 
-  &__txt{
+  &__txt {
     color: #373737;
     text-transform: uppercase;
   }
 
 }
 
-.mnav{
+.mnav {
 
-  &__row{
+  &__row {
     border-bottom: 1px solid #e8e8e8;
     display: flex;
     flex-wrap: wrap;
 
-    &:last-of-type{
+    &:last-of-type {
       border: none;
     }
   }
 
-  &__item{
+  &__item {
     width: 50%;
     padding: 25px 0;
     color: #090909;
     font-size: 20px;
     @include tr;
 
-    &:hover{
+    &:hover {
       color: #d49f40;
     }
   }
 }
 
-.mlist{
+.mlist {
   @include row-flex;
   align-items: center;
 
-  &__item{
-   @include col;
+  &__item {
+    @include col;
     @include size(12);
     display: flex;
     align-items: center;
     margin-bottom: 35px;
 
-    &:hover{
-      .mlist__item-title{
+    &:hover {
+      .mlist__item-title {
         color: #d49f40;
       }
     }
 
-    &-img{
+    &-img {
       min-width: 28px;
       width: 28px;
       height: 28px;
@@ -401,9 +431,9 @@
       align-items: center;
     }
 
-    &-title{
+    &-title {
       color: #000000;
-      line-height: lh(16px,22.72px);
+      line-height: lh(16px, 22.72px);
       @include tr;
     }
 

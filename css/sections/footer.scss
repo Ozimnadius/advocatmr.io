@@ -145,6 +145,11 @@
     color: $bg;
     font-size: 20px;
     margin-bottom: 20px;
+    @include tr;
+
+    &:hover{
+      color: #d49f40;
+    }
 
     &:last-child{
       margin-bottom: 0;
@@ -215,14 +220,22 @@
   align-items: center;
   justify-content: center;
   margin-right: 25px;
+  @include tr;
 
   &:last-child{
     margin-right: 0;
   }
 
+  &:hover{
+    border: 2px solid #d49f40;
+    .fsocial__svg{
+      fill:  #d49f40;
+    }
+  }
 
   &__svg{
     fill: rgba(255, 255, 255, 0.8);
+    @include tr;
 
     &_vk{
       width: 21px;
