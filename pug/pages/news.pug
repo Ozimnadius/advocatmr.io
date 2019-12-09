@@ -1,0 +1,104 @@
+extends ../main
+
+block variables
+    - var title = 'Новости'
+    - var main = false
+
+block content
+    main.news
+        .container.container_bg.news__container
+            .row
+                //- left
+                .news__left.left
+                    +aside(amenuService)
+
+                //- right
+                .news__right.right
+                    //- bread
+                    .bread.bread_second.news__bread
+                        a(href='/').bread__item
+                            +icon('home', 'bread__item-svg')
+                        a().bread__item.active
+                            span.bread__item-title Новости
+                    //- title
+                    .news__title
+                        +title('Новости','imedia')
+                    //- nav
+                    .inews__nav.news__nav
+                        a(href='#').inews__arr.inews__prev.news__arr
+                            +icon('arr-prev', 'inews__arr-svg')
+                        .inews__pag.ipag.news__pag
+                            .swiper-container.ipag__container
+                                .swiper-wrapper
+                                    each i in news
+                                        div(data-id=i.title).swiper-slide.ipag__slide= i.title
+                        a(href='#').inews__arr.inews__next.news__arr
+                            +icon('arr-next', 'inews__arr-svg')
+
+                    //- slider
+                    .inews__slider.news__slider
+                        .swiper-container.inews__slider-container
+                            .swiper-wrapper
+                                each slide in news
+                                    div(data-id=slide.title).swiper-slide.inews__slide
+                                        .inews__list.news__list
+                                            each i in slide.list
+                                                .inew.inew_12.news__item
+                                                    .inew__date= i.date
+                                                    .inew__cat= i.cat
+                                                    .inew__title= i.title
+                                                    .inew__txt= i.txt
+                                                    a(href='new.html').inew__link
+                                                        span.inew__link-title Подробнее
+                                                        +icon('arr','inew__link-svg')
+                    //- more
+                    a(href='#').news__more.btn3
+                        +icon('load','btn3__svg')
+                        span.btn3__text Загрузить еще
+                    //- pagination
+                    .news__pagination
+                        .pagination
+                            a(href='news.html').pagination__prev.pagination__arr
+                                +icon('arr-prev','pagination__arr-svg')
+                                span.pagination__arr-txt Предыдущая страница
+                            .pagination__list
+                                a(href='news.html').pagination__item.active 1
+                                a(href='news.html').pagination__item 2
+                                a(href='news.html').pagination__item 3
+                                a(href='news.html').pagination__item ...
+                                a(href='news.html').pagination__item 48
+                            a(href='news.html').pagination__next.pagination__arr
+                                span.pagination__arr-txt Следующая страница
+                                +icon('arr-next','pagination__arr-svg')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

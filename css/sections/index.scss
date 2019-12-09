@@ -990,6 +990,10 @@
   @include size(8);
   margin-bottom: 65px;
 
+  &_12{
+    @include size(12);
+  }
+
   &__date {
     color: #242424;
     font-family: "Roboto Slab";

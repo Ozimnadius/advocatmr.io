@@ -1,0 +1,133 @@
+.news {
+
+  &__container{
+    padding-bottom: 200px;
+  }
+
+  &__right {
+    padding-top: 15px;
+    background: url("/images/content/news/bg.png") center bottom -40px no-repeat;
+  }
+
+  &__bread {
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    margin-bottom: 70px;
+  }
+
+  &__nav {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 90px;
+  }
+
+  &__arr {
+    margin: 0;
+    width: 67px;
+  }
+
+  &__pag {
+    margin: 0;
+    width: calc(100% - 134px);
+    flex-grow: 1;
+  }
+
+  &__slider {
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    margin-left: -45px;
+    margin-right: -45px;
+  }
+
+  &__item {
+    width: calc(50% - 90px);
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+
+  &__more {
+    margin: 0 auto;
+    margin-bottom: 95px;
+  }
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__list {
+
+  }
+
+  &__item {
+    color: #858585;
+    font-size: 24px;
+    font-weight: 500;
+    border-bottom: 3px solid transparent;
+    margin-right: 25px;
+    @include tr;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      color: #de9b27;
+    }
+
+    &.active {
+      border-bottom: 3px solid #de9b27;
+      font-size: 26px;
+      color: #de9b27;
+    }
+
+  }
+
+  &__arr {
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      .pagination__arr {
+        &-txt {
+          color: #c99456;
+        }
+        &-svg {
+          fill: #c99456;
+
+        }
+      }
+    }
+
+    &-svg {
+      width: 67px;
+      height: 8px;
+      fill: #000000;
+      @include tr;
+    }
+
+    &-txt {
+      color: #242629;
+      font-size: 18px;
+      @include tr;
+    }
+  }
+
+  &__prev {
+    svg {
+      margin-right: 20px;
+    }
+  }
+
+  &__next {
+    svg {
+      margin-left: 20px;
+    }
+  }
+
+}

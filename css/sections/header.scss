@@ -431,6 +431,12 @@
       align-items: center;
     }
 
+    &-pic{
+      max-width: 100%;
+      max-height: 100%;
+      fill: #D49F40;
+    }
+
     &-title {
       color: #000000;
       line-height: lh(16px, 22.72px);
@@ -439,7 +445,6 @@
 
 
   }
-
 
 }
 
