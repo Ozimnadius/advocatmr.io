@@ -19,22 +19,22 @@ mixin logo(dopClass)
     else
         - var cls = 'main'
 
-    a(href='/' class='logo_'+cls).logo
-        span(class='logo__left_'+cls).logo__left
-            +icon('logo1','logo__1 logo__1_'+cls)
-        span(class='logo__right_'+cls).logo__right
-            +icon('logo2','logo__2 logo__2_'+cls)
-            +icon('logo3','logo__3 logo__3_'+cls)
+    a(href='/' class='logo_' + cls).logo
+        span(class='logo__left_' + cls).logo__left
+            +icon('logo1','logo__1 logo__1_' + cls)
+        span(class='logo__right_' + cls).logo__right
+            +icon('logo2','logo__2 logo__2_' + cls)
+            +icon('logo3','logo__3 logo__3_' + cls)
 
 mixin title(title,prefix)
-    div(class='title_'+prefix).title
-        div(class='title__wrap_'+prefix).title__wrap
-            div(class='title__title_'+prefix).title__title= title
+    div(class='title_' + prefix).title
+        div(class='title__wrap_' + prefix).title__wrap
+            div(class='title__title_' + prefix).title__title= title
 
 mixin serv(img,num,title)
     a(href='service.html').serv
         //- img
-        span(style='background-image:url('+img+')').serv__img
+        span(style='background-image:url(' + img + ')').serv__img
         //- position
         span.serv__pos
             span.serv__num= '0' + num
@@ -68,3 +68,26 @@ mixin amenu(props)
                         span.aitem__img
                             +icon(i.icon,'aitem__svg')
                         span.aitem__title= i.title
+
+
+mixin imap
+    .imap
+        //- left
+        .imap__left
+            #imap
+
+        //- right
+        .imap__right
+            .imap__title Как добраться
+            .imap__txt Я готова оказать вам квалифицированную юридическую помощь. С основными направлениями работы вы можете ознакомиться на данной странице сайта или на странице Услуги. Я готова оказать вам квалифицированную юридическую помощь. С основными направлениями работы вы можете ознакомиться на данной странице сайта или на странице Услуги.
+
+mixin socials(dopClass)
+    if dopClass
+        - var cls = dopClass
+    else
+        - var cls = 'main'
+    div(class='socials_'+cls).socials
+        each i in socials
+            a(href=i.href class='social_'+cls).social
+                +icon(i.icon,'social__svg social__svg_'+i.icon+' social__svg_'+cls)
+

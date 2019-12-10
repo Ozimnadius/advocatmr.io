@@ -1,0 +1,129 @@
+.contacts{
+
+  &__container {
+    padding-bottom: 90px;
+    background-image: url("/images/content/contacts/bg.png");
+    background-position: right 80px bottom -150px;
+    background-repeat: no-repeat;
+    background-color: $bg;
+  }
+
+  &__bread {
+    margin-bottom: 30px;
+  }
+
+  &__left {
+    @include col;
+    @include size(12);
+  }
+
+  &__right{
+    @include col;
+    @include size(12);
+    padding-left: 60px;
+  }
+
+  &__title {
+    margin-bottom: 45px;
+  }
+
+  &__list {
+    margin-bottom: 20px;
+  }
+
+  &__txt {
+    color: #000000;
+    font-weight: 300;
+    line-height: 142%;
+    margin-bottom: 20px;
+  }
+
+  &__socials {
+    &-title {
+      color: #000000;
+      font-family: "Roboto Slab";
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+  }
+
+}
+
+.cform{
+
+  &__title {
+    color: #000000;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 142%;
+    margin-bottom: 45px;
+  }
+
+  &__fields {
+    @include row-flex;
+    margin-bottom: 15px;
+  }
+
+  &__field {
+    @include col;
+    margin-bottom: 30px;
+
+    &_12{
+      @include size(12);
+    }
+
+    &_24{
+      @include size(24);
+    }
+  }
+
+  &__input {
+    width: 100%;
+    background-color: #eeeeee;
+    font-weight: 300;
+    padding: 23px 25px;
+
+    &::placeholder {
+      color: #6a6a6a;
+    }
+
+    &_area {
+      height: 195px;
+    }
+  }
+
+  &__submit {
+    width: 182px;
+    height: 44px;
+    font-size: 14px;
+  }
+
+}
+
+.contact {
+  display: flex;
+  margin-bottom: 19px;
+
+  &:last-child{
+    margin-bottom: 0;
+  }
+
+  &__svg {
+    min-width: 24px;
+    width: 24px;
+    height: 24px;
+    fill: #d49f40;
+    margin-right: 20px;
+    margin-top: 4px;
+  }
+
+  &__txt {
+    color: #000000;
+    font-size: 20px;
+    line-height: 142%;
+    max-width: 337px;
+  }
+
+
+}

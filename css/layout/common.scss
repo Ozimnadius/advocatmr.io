@@ -203,6 +203,10 @@
   &_fixed {
     flex-direction: row;
   }
+
+  &_contacts {
+    flex-direction: row;
+  }
 }
 
 .social {
@@ -282,6 +286,38 @@
     }
   }
 
+  &_contacts {
+    margin-right: 20px;
+    margin-bottom: 0;
+    width: 35px;
+    height: 35px;
+    border: 2px solid #d49f40;
+
+    .social__svg{
+
+      &_vk{
+        width: 25px;
+        height: 14px;
+      }
+
+      &_fb{
+        width: 18px;
+        height: 18px;
+      }
+
+      &_inst{
+        width: 17px;
+        height: 17px;
+      }
+
+      &_yt{
+        width: 23px;
+        height: 23px;
+      }
+    }
+
+  }
+
   &:last-child {
     margin-bottom: 0;
     margin-right: 0;
@@ -290,6 +326,13 @@
   &__svg {
     fill: $bg;
     @include tr;
+
+    &_contacts{
+      fill: #d49f40;
+
+
+
+    }
 
     &_vk {
       width: 27px;
@@ -310,6 +353,7 @@
       width: 25px;
       height: 25px;
     }
+
   }
 }
 

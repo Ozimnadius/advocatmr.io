@@ -1,0 +1,93 @@
+extends ../main
+
+block variables
+    - var title = 'Контакты'
+    - var main = false
+
+block content
+    main.contacts
+        .container.container_bg.contacts__container
+            //- bread
+            .bread.contacts__bread
+                a(href='/').bread__item
+                    +icon('home', 'bread__item-svg')
+                a().bread__item.active
+                    span.bread__item-title Контакты
+            //- top
+            section.contacts__top
+                //- title
+                .contacts__title.title2 Контакты
+
+                //- row
+                .row.contacts__row
+                    //- left
+                    .contacts__left
+                        //- form
+                        form.contacts__form.cform
+                            .cform__title Квалифицированная юридическая помощь. Свяжитесь с нами сейчас…
+                            .cform__fields
+                                .cform__field.cform__field_12
+                                    input(type='text' name='name' placeholder='Ваше имя *').cform__input
+                                .cform__field.cform__field_12
+                                    input(type='email' name='email' placeholder='Ваша электронная почта *').cform__input
+                                .cform__field.cform__field_24
+                                    textarea(name='comment' placeholder='Ваш вопрос *').cform__input.cform__input_area
+                            button(type='submit').btn2.cform__submit
+                                span.btn2__text отправить
+
+                    //- right
+                    .contacts__right
+                        //- list
+                        .contacts__list
+                            each i in contacts
+                                a(href=i.href).contact
+                                    +icon(i.icon,'contact__svg')
+                                    span.contact__txt= i.val
+
+
+
+
+                        //- txt
+                        .contacts__txt Обязательно приходите к нам на чашку ароматного кофе. Совместно обсудим ваши задачи для бизнеса и предложим решение для его развития! Если нужно, проконсультируем по Skype, телефону или почте – просто напишите нам сообщение и укажите предпочтительный способ для связи.
+                        //- socials
+                        .contacts__socials
+                            .contacts__socials-title Мы в соц.сетях:
+                            +socials('contacts')
+
+
+
+
+
+        //- bottom
+        section.contacts__bottom
+            +imap
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

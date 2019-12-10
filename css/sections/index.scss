@@ -1177,14 +1177,16 @@
 
 .imap{
   display: flex;
+  border-top: 1px solid #C3C5C9;
 
   &__left,&__right{
     width: 50%;
   }
 
   &__right{
-    background-color: #f9f9f9;
+    border-left: 1px solid #C3C5C9;
     padding: 80px 65px;
+    background: #f9f9f9 url("/images/content/contacts/route.svg") left 60px bottom 70px no-repeat;
   }
 
   &__title{
