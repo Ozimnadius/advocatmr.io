@@ -1,0 +1,91 @@
+extends ../main
+
+block variables
+    - var title = 'Статьи'
+    - var main = false
+
+block content
+    main.articles
+        .container.container_bg.articles__container
+            .row
+                //- left
+                .articles__left.left
+                    +aside(amenuService)
+
+                //- right
+                .articles__right.right
+                    //- bread
+                    .bread.bread_second.articles__bread
+                        a(href='/').bread__item
+                            +icon('home', 'bread__item-svg')
+                        a().bread__item.active
+                            span.bread__item-title Статьи
+                    //- title
+                    .articles__title
+                        +title('Статьи','imedia')
+                    //- list
+                    .articles__list
+                        .row
+                            each i,x in articles
+                                .articles__item
+                                    .articles__item-img
+                                        +image('images/content/articles/'+(x+1)+'.jpg','', 'articles__item-pic')
+                                    .articles__item-title= i.title
+                                    .articles__item-txt= i.txt
+                                    a(href='article.html').articles__link
+                                        span.articles__link-txt Подробнее
+                                        +icon('close','articles__link-svg')
+
+
+
+                    //- more
+                    a(href='#').articles__more.btn3
+                        +icon('load','btn3__svg')
+                        span.btn3__text Загрузить еще
+                    //- pagination
+                    .articles__pagination
+                        .pagination
+                            a(href='articles.html').pagination__prev.pagination__arr
+                                +icon('arr-prev','pagination__arr-svg')
+                                span.pagination__arr-txt Предыдущая страница
+                            .pagination__list
+                                a(href='articles.html').pagination__item.active 1
+                                a(href='articles.html').pagination__item 2
+                                a(href='articles.html').pagination__item 3
+                                a(href='articles.html').pagination__item ...
+                                a(href='articles.html').pagination__item 48
+                            a(href='articles.html').pagination__next.pagination__arr
+                                span.pagination__arr-txt Следующая страница
+                                +icon('arr-next','pagination__arr-svg')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
