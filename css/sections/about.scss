@@ -1,0 +1,301 @@
+.about{
+
+}
+
+.abanner{
+  padding-top: 40px;
+  background: url("/images/content/about/bg2.jpg") center 0 no-repeat;
+  background-size: cover;
+
+  &__bread{
+    margin-bottom: 28px;
+  }
+
+  &__left {
+    @include col;
+    @include size(12);
+    @include shift-right(2);
+  }
+
+  &__title {
+    margin-bottom: 65px;
+  }
+
+  &__content {
+    h4{
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
+    p{
+      margin-bottom: 45px;
+    }
+  }
+
+  &__right {
+    @include col;
+    @include size(10);
+    margin-top: -88px;
+    padding-left: 27px;
+  }
+
+  &__img{
+    position: relative;
+    &-img{
+      position: relative;
+      z-index: 20;
+      display: block;
+    }
+  }
+
+  &__quad {
+    width: 438px;
+    height: 466.05px;
+    border: 30px solid #eebe6a;
+    position: absolute;
+    z-index: 10;
+    top: 65px;
+    left: -20px;
+
+    &:before{
+      content: '';
+      display: block;
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      position: absolute;
+      top: 20px;
+      bottom: 30px;
+      left: 20px;
+      right: 20px;
+    }
+
+    &:after{
+      content: '';
+      display: block;
+      position: absolute;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      top: 50px;
+      left: 50px;
+      right: 50px;
+      bottom: 25px;
+    }
+  }
+
+
+}
+
+.awork{
+  position: relative;
+  background-color: $bg;
+  padding-top: 88px;
+  padding-bottom: 40px;
+
+  &:before{
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 10;
+    width: 50%;
+    top: 0;
+    bottom: 0;
+    background: url("/images/content/about/bg.jpg") right top no-repeat;
+    background-size: auto 100%;
+  }
+
+  &__right{
+    @include col;
+    @include size(12);
+    @include shift-left(12);
+    padding-left: 30px;
+    padding-right: 25px;
+  }
+
+  &__title {
+    color: #000000;
+    font-family: "Roboto Slab";
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+
+  &__list {
+    margin-bottom: 40px;
+  }
+
+  &__li {
+    padding-left: 35px;
+    color: #353535;
+    line-height: 142%;
+    position: relative;
+    margin-bottom: 17px;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+
+    &:before{
+      content: '';
+      display: block;
+      width: 26px;
+      height: 2px;
+      background: #e2ac4c;
+      position: absolute;
+      left: 0;
+      top: 9px;
+    }
+  }
+
+  &__quote {
+    margin-bottom: 40px;
+  }
+
+  &__socials {
+    &-txt {
+      color: #000000;
+      line-height: 142%;
+      margin-bottom: 40px;
+    }
+  }
+
+}
+
+.aquote{
+  border: 1px solid #dbdbdb;
+  padding: 10px;
+
+  &__wrap {
+    border: 1px solid #dbdbdb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px 20px 30px 20px;
+    background: url("/images/content/about/quote.png") 0 0 no-repeat;
+    background-size: cover;
+  }
+
+  &__img{
+    margin-bottom: 30px;
+
+    &-svg{
+      width: 60px;
+      height: 55px;
+      fill: #e2ac4c;
+    }
+  }
+
+  &__title{
+    color: #000000;
+    font-family: "Roboto Slab";
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 142%;
+    text-align: center;
+    max-width: 343px;
+    margin-bottom: 20px;
+  }
+
+  &__auth {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+}
+
+.acerts {
+  padding-top: 85px;
+  padding-bottom: 55px;
+
+  &__title{
+    margin-bottom: 40px;
+  }
+
+  &__slider{
+    position: relative;
+    padding: 0 100px;
+
+    .swiper-button-disabled {
+      opacity: .5;
+    }
+  }
+
+  &__container{
+    padding: 30px;
+  }
+
+  &__prev{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -25px;
+  }
+
+  &__next{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -25px;
+  }
+
+  &__arr{
+    @include tr;
+    &-svg{
+      width: 31px;
+      height: 50px;
+      fill: #e9bb6b;
+    }
+  }
+}
+
+.acert {
+  display: block;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+
+  &:before{
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    @include tr;
+  }
+
+  &:hover{
+    &:before{
+      opacity: 1;
+    }
+
+    .acert__loop{
+      opacity: 1;
+    }
+  }
+
+  &__img{
+    display: block;
+    width: 100%;
+  }
+
+  &__loop{
+    width: 82px;
+    height: 82px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+    background-color: $bg;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 20;
+    top: 50%;
+    left: 50%;
+    margin-top: -41px;
+    margin-left: -41px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    @include tr;
+
+  }
+}

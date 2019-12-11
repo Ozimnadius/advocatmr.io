@@ -164,43 +164,7 @@ block content
                                 +image('images/content/index/help/img.png','','ihelp__img-img')
         //- media
         section.index__media
-            .imedia
-                .container.imedia__container
-                    //- title
-                    .imedia__title
-                        +title('Я в сми', 'imedia')
-                    //- row
-                    .row.imedia__row
-                        //- left
-                        .imedia__left
-                            a(href='https://www.youtube.com/watch?v=GhPBvgew_a8' data-fancybox).imedia__fancy
-                                +image('images/content/index/media/img.jpg','','imedia__fancy-img')
-                                span.imedia__watch
-                                    span.imedia__watch-wrap
-
-
-                        //- right
-                        .imedia__right
-                            .imedia__sub Адвокат Мария Матвеева выступила в необычной для себя роли прокурора в телепрограмме телеканала НТВ “Суд присяжных”
-                            .imedia__txt Женщина поссорилась с соседкой по коммунальной квартире и, почувствовав себя плохо, вызвала скорую. Поскольку соседка не унималась, женщине пришлось ждать медиков во дворе, где она встретила своего сына. Молодой человек отправил мать в больницу, а сам поднялся к ней домой поговорить со скандалисткой. Беседой на повышенных тонах парень не ограничился. Он ловко схватил немолодую даму и ударил ее головой об угол стола. Увидев, что та не подает признаков жизни, юноша с места преступления скрылся…
-                            a(href='media.html').imedia__link.btn
-                                span.btn__text Перейти в раздел
-                                +icon('line','btn__svg')
-
-                        //- list
-                        .imedia__list
-                            .row
-                                each i,x in imedia
-                                    a(href='media.html').imedia__item.imitem
-                                        span.imitem__img
-                                            +image('images/content/index/media/' + (x + 1) + '.jpg','','imitem__img-img')
-                                        span.imitem__title= i.title
-                                        span.imitem__txt= i.txt
-
-
-                        //- link
-                    a(href='media.html').imedia__all.btn2
-                        span.btn2__text перейти в раздел
+            +imedia
         //- feed
         section.index__feed
             .ifeed
@@ -280,38 +244,7 @@ block content
                         span.btn2__text перейти в раздел
         //- partners
         section.index__partners
-            .slider
-                .container.slider__container
-                    .slider__title Партнеры
-                    .slider__slider
-                        //- btns
-                        button(type='button').slider__btn.slider__prev
-                            +icon('prev','slider__btn-svg')
-                        button(type='button').slider__btn.slider__next
-                            +icon('next','slider__btn-svg')
-
-                        //- swiper
-                        .swiper-container.slider__container
-                            .swiper-wrapper
-                                each i in ipartners
-                                    a(href=i.href).swiper-slide.slide
-                                        //- img
-                                        span.slide__img
-                                            span.slide__img-wrap
-                                                +image(i.src,'','slide__img-img')
-                                        //- desc
-                                        span.slide__desc
-                                            //- title
-                                            span.slide__title= i.title
-                                            //- exp
-                                            span.slide__exp= i.exp
-                                            //- txt
-                                            span.slide__txt= i.txt
-                                        //- bottom
-                                        span.slide__bottom
-                                            span.slide__link.btn
-                                                span.btn__text.slide__link-txt Подробнее
-                                                +icon('line','btn__svg slide__link-svg')
+            +slider(ipartners,'Партнеры')
         //- articles
         section.index__articles
             .iarts

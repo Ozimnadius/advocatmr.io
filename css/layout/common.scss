@@ -485,6 +485,19 @@
     text-align: center;
   }
 
+  &__sub{
+    color: $bg;
+    font-family: "Roboto Slab";
+    font-weight: 700;
+    line-height: 125.5%;
+    height: 60px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 280px;
+    overflow: hidden;
+
+  }
+
   &__exp{
     color: $bg;
     font-size: 14px;

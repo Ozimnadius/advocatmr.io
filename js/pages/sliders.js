@@ -11,5 +11,14 @@ $(function () {
         }
     });
 
+    let acertsSlider = new Swiper('.acerts__container', {
+        slidesPerView: 2,
+        spaceBetween: 110,
+        watchOverflow: true,
+        navigation: {
+            nextEl: '.acerts__next',
+            prevEl: '.acerts__prev',
+        }
+    });
 
 });

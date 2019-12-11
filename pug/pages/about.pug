@@ -1,0 +1,131 @@
+extends ../main
+
+block variables
+    - var title = 'Адвокат'
+    - var main = false
+
+block content
+    main.about
+        //- banner
+        section.about__banner
+            .abanner
+                .container.abanner__container
+                    //- bread
+                    .bread.abanner__bread
+                        a(href='/').bread__item
+                            +icon('home', 'bread__item-svg')
+                        a().bread__item.active
+                            span.bread__item-title Адвокат
+                    //- title
+                    .abanner__title.title2 Адвокат Матвеева Мария Алексеевна
+                    //- row
+                    .row.abanner__row
+                        //- left
+                        .abanner__left
+                            .abanner__content
+                                .content
+                                    h4 Образование:
+                                    p Высшее, квалификация Юрист, специальность Юриспруденция, Государственное образовательное учреждение высшего профессионального образования «Московский университет Министерства внутренних дел Российской Федерации», диплом с отличием – ВСА 0454845
+                                    p За время учебы был присвоен нагрудный знак «Отличник милиции» Повышение квалификации в Московском государственном университете имени М.В. Ломоносова, удостоверение – ПК МГУ №009842
+                                    p Повышение квалификации в Европейский центр правового сотрудничества в сотрудничестве с Генеральным Директором прав человека и верховенства права Совета Европы (Страсбург, ЕСПЧ)
+
+
+                        //- right
+                        .abanner__right
+                            .abanner__img
+                                +image('images/content/about/img.png','','abanner__img-img')
+                                .abanner__quad
+        //- work
+        section.about__work
+            .awork
+                .container
+                    .row
+                        .awork__right
+                            //- title
+                            .awork__title Основные места работы и службы:
+                            //- list
+                            ul.awork__list
+                                each i in aworkList1
+                                    li.awork__li!=i
+                            //- quote
+                            .awork__quote
+                                .aquote
+                                    .aquote__wrap
+                                        .aquote__img
+                                            +icon('quote','aquote__img-svg')
+                                        .aquote__title Тут будет другой текст - цитата, ждём.
+                                        .aquote__auth А. Автор
+                            //- title
+                            .awork__title Общественная деятельность:
+                            //- list
+                            ul.awork__list
+                                each i in aworkList2
+                                    li.awork__li!=i
+                            //- socials
+                            .awork__socials
+                                .awork__socials-txt Следите за новостями, задайте бесплатный вопрос адвокату Марии Матвеевой в соц. сетях:
+                                +socials('contacts')
+        //- certificates
+        section.about__certs
+            .acerts
+                .container
+                    //- title
+                    .acerts__title
+                        +title('Сертификаты','imedia')
+                    //- slider
+                    .acerts__slider
+                        button(type='button').acerts__arr.acerts__prev
+                            +icon('prev','acerts__arr-svg')
+                        .swiper-container.acerts__container
+
+                            .swiper-wrapper
+                                each i in [1,2,1,2]
+                                    .swiper-slide
+                                        a(href='images/content/about/c' + i + '.jpg' data-fancybox="images" data-caption="My caption").acert
+                                            +image('images/content/about/c' + i + '.jpg', '','acert__img')
+                                            span.acert__loop
+                                                +image('images/icons/loop-plus.jpg','','acert__loop-img')
+                        button(type='button').acerts__arr.acerts__next
+                            +icon('next','acerts__arr-svg')
+        //- news
+        section.about__news
+            +slider(anews,'Новости')
+        //- media
+        section.about__media
+            +imedia
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
