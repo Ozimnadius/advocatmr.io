@@ -1,0 +1,64 @@
+extends ../main
+
+block variables
+    - var title = '404'
+    - var main = false
+
+block content
+    main.notfound
+        .container.container_bg
+            //- bread
+            .bread.notfound__bread
+                a(href='/').bread__item
+                    +icon('home', 'bread__item-svg')
+                a().bread__item.active
+                    span.bread__item-title 404
+            //- top
+            section.notfound__top
+                //- title
+                .notfound__title.title2 404
+
+                //- wrap
+                .notfound__wrap
+                    //- sub
+                    .notfound__sub Страница не найдена.
+                    //- img
+                    .notfound__img
+                        +image('images/content/404/img.png','','notfound__img-img')
+                    //- link
+                    a(href='/').notfound__link.btn2
+                        span.btn2__text Перейти на главную
+                    //- txt
+                    .notfound__txt
+                        | К сожалению, запрашиваемая вами страница не найдена. Попробуйте воспользоваться&nbsp;
+                        a(href='search.html') поиском
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

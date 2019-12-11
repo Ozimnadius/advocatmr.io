@@ -5583,6 +5583,60 @@ input, textarea {
   margin-bottom: 80px;
 }
 
+.notfound__bread {
+  margin-bottom: 20px;
+}
+
+.notfound__title {
+  margin-bottom: 25px;
+}
+
+.notfound__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.notfound__sub {
+  color: #000000;
+  font-family: "Roboto Slab";
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+.notfound__img {
+  margin-bottom: 15px;
+}
+
+.notfound__link {
+  width: 228px;
+  height: 40px;
+  font-size: 14px;
+  margin-bottom: 60px;
+}
+
+.notfound__txt {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 300;
+  max-width: 560px;
+  text-align: center;
+  line-height: 142%;
+}
+
+.notfound__txt a {
+  color: #e3b86d;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
 .footer__top {
   background: url("/images/bg/footer-bg.jpg") center 0 no-repeat;
   padding-top: 75px;
