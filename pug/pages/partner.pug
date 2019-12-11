@@ -1,0 +1,93 @@
+extends ../main
+
+block variables
+    - var title = 'Наталья Сергеевна'
+    - var main = false
+
+block content
+    main.partner
+        .container.container_bg.partner__container
+            .row
+                //- left
+                .partner__left.left
+                    +aside(amenuService)
+
+                //- right
+                .partner__right.right
+                    //- bread
+                    .bread.bread_second.partner__bread
+                        a(href='/').bread__item
+                            +icon('home', 'bread__item-svg')
+                        a(href='partners.html').bread__item Партнеры
+                            span.bread__item-title
+                        a().bread__item.active
+                            span.bread__item-title Наталья Сергеевна
+                    //- title
+                    .partner__title.title2 Наталья Сергеевна
+
+                    //- row
+                    .partner__row
+                        //- img
+                        .partner__img
+                            +image('images/content/partners/img.jpg','','partner__img-img')
+                        //- desc
+                        .partner__desc
+                            //- list
+                            .partner__list
+                                .plist
+                                    each row in partnerList
+                                        .plist__row
+                                            each i in row
+                                                .plist__item
+                                                    .plist__item-name= i.name
+                                                    .plist__item-val!=i.val
+
+                            //- btn
+                            a(href='#').btn3.partner__btn
+                                span.btn3__text Написать сообщение
+
+                    //- content
+                    .partner__content
+                        .content
+                            p Консультирует по всем вопросам и сопровождает сделки. Отличается глубоким знанием психологии и профессиональным чутьем, что позволяет проводить успешно даже самые безнадежные переговоры.
+                            p Каждый сотрудник нашей компании – человек, которого мы искали по городам и весям со списком жестких требований наперевес. Его отличает острый ум, творческий подход к решению задач, открытость к коммуникациям и стремление к новым знаниям.
+
+                    //- call
+                    .service__call.partners__call
+                        .service__call-txt Нужен профессиональный адвокат? Напишите нам. Первая консультация бесплатно.
+                        a(href='#').service__call-btn.btn2
+                            span.btn2__text Получить консультацию
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
