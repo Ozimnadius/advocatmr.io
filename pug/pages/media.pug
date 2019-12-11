@@ -1,0 +1,136 @@
+extends ../main
+
+block variables
+    - var title = 'Как можно снизить размер алиментов'
+    - var main = false
+
+block content
+    main.new
+        .container.container_bg.new__container
+            .row
+                //- left
+                .new__left.left
+                    +aside(amenuService)
+
+                //- right
+                .new__right.right
+                    //- bread
+                    .bread.bread_second.new__bread
+                        a(href='/').bread__item
+                            +icon('home', 'bread__item-svg')
+                        a(href='articles.html').bread__item
+                            span.bread__item-title Статьи
+                        a().bread__item.active
+                            span.bread__item-title Как можно снизить размер алиментов
+                    //- title
+                    .new__title.title2 Адвокат Мария Матвеева выступила в необычной для себя роли прокурора в телепрограмме телеканала НТВ “Суд присяжных”
+
+
+                    //- list
+                    .new__list
+                        .new__item 03.09.2019
+                        .new__item Автор: Евгений Баженов
+
+                    .media__content
+                        .media__content-left
+                            a(href='https://www.youtube.com/watch?v=GhPBvgew_a8' data-fancybox).media__fancy
+                                +image('images/content/index/media/img.jpg','','media__fancy-img')
+                                span.media__watch
+                                    span.media__watch-wrap
+
+                        .media__content-right
+                            .content
+                                p Наш адвокат Мария Матвеева выступила в непривычной для адвоката роли прокурора в телепрограмме “Суд присяжных” на НТВ.
+                                p В роли прокурора – Адвокат нашей компании Мария Матвеева.
+                                p Молодая супруга изменила своему мужу и оказалась на грани развода. Поскольку в этом случае она лишалась солидного наследства, женщина решила спровоцировать супруга и убить его. Мужчина получил смертельный удар ножом в шею, а новоиспеченная вдова заявила следователям, что тот на нее напал, и ей пришлось обороняться. Но поверят ли в ее версию присяжные?..
+
+                    //- call
+                    .service__call.new__call
+                        .service__call-txt Нужен профессиональный адвокат? Напишите нам. Первая консультация бесплатно.
+                        a(href='#').service__call-btn.btn2
+                            span.btn2__text Получить консультацию
+                    //- nav
+                    .new__nav
+                        .nnav
+                            //- top
+                            .nnav__top
+                                a(href='medias.html').nnav__back
+                                    +icon('arr','nnav__back-svg')
+                                    span.nnav__back-txt НАЗАД К СПИСКУ
+
+                                button(type='button').nnav__share
+                                    span.nnav__share-txt ПОДЕЛИТЬСЯ:
+                                    +image('images/icons/share.svg','','nnav__share-svg')
+
+                            //- bottom
+                            .nnav__bottom
+                                a(href='new.html').nnav__item
+                                    +icon('prev','nnav__item-svg')
+                                    span.nnav__item-block
+                                        span.nnav__item-title Предыдущая новость
+                                        span.nnav__item-txt Верховный суд разъяснил, какие права есть у заключенных какие права есть у заключенных...
+                                a(href='new.html').nnav__item
+                                    span.nnav__item-block.nnav__item-block_next
+                                        span.nnav__item-title Следующая новость
+                                        span.nnav__item-txt Верховный суд разъяснил, какие права есть у заключенных какие права есть у заключенных...
+                                    +icon('next','nnav__item-svg')
+                    //- services
+                    .new__services
+                        .nservs
+                            .nservs__title.ntitle Услуги по теме
+                            .nservs__list
+                                each i,x in ['Экономические преступления','Адвокат при проверках ОБЭП (УЭБиПК), ОУР']
+                                    a(href='service.html').nserv
+                                        +image('images/content/new/s'+(x+1)+'.jpg','','nserv__img')
+                                        span.nserv__title= i
+                                        span.nserv__link
+                                            span.nserv__link-txt Подробнее
+                                            +icon('line','nserv__link-svg')
+                    //- articles
+                    .new__article
+                        .natrs
+                            .narts__title.ntitle Статьи по теме
+                            .narts__list
+                                each i,x in ['Как можно снизить размер алиментов','Как заключить мировое соглашение']
+                                    a(href='article.html').nart
+                                        span.nart__img
+                                            +image('images/content/new/a'+(x+1)+'.jpg','','nart__img-img')
+                                        span.nart__desc
+                                            span.nart__title= i
+                                            span.nart__txt К основаниям, по которым может быть уменьшен размер выплачиваемых алиментов...
+                                            span.btn.nart__link
+                                                span.btn__text Подробнее
+                                                +icon('line','btn__svg')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
