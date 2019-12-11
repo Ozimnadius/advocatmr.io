@@ -1,0 +1,134 @@
+.partners{
+
+  &__left{
+    .aside {
+      &__menu {
+        margin-bottom: 0;
+      }
+
+      &__block{
+        display: none;
+      }
+    }
+  }
+
+  &__bread{
+    margin-bottom: 15px;
+  }
+
+  &__title{
+    margin-bottom: 70px;
+  }
+
+  &__list{
+    margin-bottom: 80px;
+  }
+
+}
+
+.pslide{
+  display: flex;
+  flex-direction: column;
+  @include col;
+  @include size(8);
+
+  &:hover{
+    .slide{
+      &__txt{
+        opacity: 1;
+      }
+
+      &__link{
+        &-txt{
+          color: #adadad;
+        }
+        &-svg{
+          stroke: #adadad;
+        }
+      }
+    }
+  }
+
+  &__img{
+    margin: 0 auto;
+    width: 133px;
+    height: 133px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    padding: 8px;
+    margin-bottom: 20px;
+    display: block;
+
+    &-wrap{
+      border-radius: 50%;
+      overflow: hidden;
+      display: block;
+    }
+
+    &-img{
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__desc{
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  &__title{
+    color: #000000;
+    font-family: "Roboto Slab";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: lh(20px,25.1px);
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  &__exp{
+    color: #000000;
+    font-size: 14px;
+    line-height: lh(14px,18.41px);
+    margin-bottom: 45px;
+    text-align: center;
+  }
+
+  &__txt{
+    background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: $bg;
+    font-weight: 300;
+    line-height: lh(16px,21.04px);
+    opacity: .5;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    border-left: 1px solid rgba(0, 0, 0, 0.25);
+    height: 153px;
+    @include tr;
+  }
+
+  &__bottom{
+    display: flex;
+    align-items: center;
+    margin-top: -10px;
+    &:before{
+      content: '';
+      height: 1px;
+      background: rgba(0, 0, 0, 0.25);
+      flex-grow: 1;
+      margin-right: 15px;
+    }
+  }
+
+  &__link {
+    &-txt{
+      margin-right: 10px;
+    }
+
+  }
+}

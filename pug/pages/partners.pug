@@ -1,0 +1,88 @@
+extends ../main
+
+block variables
+    - var title = 'Партнеры'
+    - var main = false
+
+block content
+    main.partners
+        .container.container_bg.partners__container
+            .row
+                //- left
+                .partners__left.left
+                    +aside(amenuService)
+
+                //- right
+                .partners__right.right
+                    //- bread
+                    .bread.bread_second.partners__bread
+                        a(href='/').bread__item
+                            +icon('home', 'bread__item-svg')
+                        a().bread__item.active
+                            span.bread__item-title Партнеры
+                    //- title
+                    .partners__title
+                        +title('Партнеры','imedia')
+
+                    //- list
+                    .partners__list
+                        .row
+                            each i in partners
+                                a(href=i.href).pslide
+                                    //- img
+                                    span.pslide__img
+                                        span.pslide__img-wrap
+                                            +image(i.src,'','pslide__img-img')
+                                    //- desc
+                                    span.pslide__desc
+                                        //- title
+                                        span.pslide__title= i.title
+                                        //- exp
+                                        span.pslide__exp= i.exp
+                                        //- txt
+                                        span.pslide__txt= i.txt
+                                    //- bottom
+                                    span.pslide__bottom
+                                        span.pslide__link.btn
+                                            span.btn__text.pslide__link-txt Подробнее
+                                            +icon('line','btn__svg pslide__link-svg')
+
+                    //- call
+                    .service__call.partners__call
+                        .service__call-txt Нужен профессиональный адвокат? Напишите нам. Первая консультация бесплатно.
+                        a(href='#').service__call-btn.btn2
+                            span.btn2__text Получить консультацию
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
