@@ -1,0 +1,93 @@
+extends ../main
+
+block variables
+    - var title = 'Поиск'
+    - var main = false
+
+block content
+    main.search
+        .container.container_bg.search__container
+            .row
+                //- left
+                .search__left.left
+                    +aside(amenuService)
+
+                //- right
+                form.search__right.right
+                    //- bread
+                    .bread.bread_second.search__bread
+                        a(href='/').bread__item
+                            +icon('home', 'bread__item-svg')
+                        a().bread__item.active
+                            span.bread__item-title Поиск
+                    //- title
+                    .search__title.title2 Поиск
+
+                    //- field
+                    .search__field
+                        input(type='search' name='search').search__input
+                        button(type='submit').search__submit
+                            +icon('search','search__submit-svg')
+
+                    //- list
+                    .search__list
+                        each block in search
+                            .search__block
+                                .search__block-title= block.title
+                                .search__block-list
+                                    each i in block.list
+                                        a(href=i.href).search__item
+                                            span.search__item-title= i.title
+                                            span.search__item-txt= i.txt
+
+                    //- more
+                    a(href='#').search__more.btn3
+                        +icon('load','btn3__svg')
+                        span.btn3__text Загрузить еще
+                    //- pagination
+                    .search__pagination
+                        .pagination
+                            a(href='search.html').pagination__prev.pagination__arr
+                                +icon('arr-prev','pagination__arr-svg')
+                                span.pagination__arr-txt Предыдущая страница
+                            .pagination__list
+                                a(href='search.html').pagination__item.active 1
+                                a(href='search.html').pagination__item 2
+                                a(href='search.html').pagination__item 3
+                                a(href='search.html').pagination__item ...
+                                a(href='search.html').pagination__item 48
+                            a(href='search.html').pagination__next.pagination__arr
+                                span.pagination__arr-txt Следующая страница
+                                +icon('arr-next','pagination__arr-svg')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
