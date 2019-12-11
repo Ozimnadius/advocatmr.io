@@ -157,14 +157,16 @@ mixin imedia
                 .imedia__list
                     .row
                         each i,x in imedia
-                            a(href='media.html').imedia__item.imitem
-                                span.imitem__img
-                                    +image('images/content/index/media/' + (x + 1) + '.jpg','','imitem__img-img')
-                                span.imitem__title= i.title
-                                span.imitem__txt= i.txt
+                            +imitem(i,x,'imedia__item')
 
 
                 //- link
             a(href='media.html').imedia__all.btn2
                 span.btn2__text перейти в раздел
 
+mixin imitem(i,x,cls)
+    a(href='media.html' class=cls).imitem
+        span.imitem__img
+            +image(i.src,'','imitem__img-img')
+        span.imitem__title= i.title
+        span.imitem__txt= i.txt

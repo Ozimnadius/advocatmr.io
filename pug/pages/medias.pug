@@ -1,0 +1,82 @@
+extends ../main
+
+block variables
+    - var title = 'Я в СМИ'
+    - var main = false
+
+block content
+    main.medias
+        .container.container_bg.medias__container
+            .row
+                //- left
+                .medias__left.left
+                    +aside(amenuService)
+
+                //- right
+                .medias__right.right
+                    //- bread
+                    .bread.bread_second.medias__bread
+                        a(href='/').bread__item
+                            +icon('home', 'bread__item-svg')
+                        a().bread__item.active
+                            span.bread__item-title Я в СМИ
+                    //- title
+                    .medias__title
+                        +title('Я в СМИ','services')
+                    //- list
+                    .medias__list
+                        .row
+                            each i,x in medias
+                                +imitem(i,x,'medias__item imitem_op1')
+
+                    //- more
+                    a(href='#').medias__more.btn3
+                        +icon('load','btn3__svg')
+                        span.btn3__text Загрузить еще
+                    //- pagination
+                    .medias__pagination
+                        .pagination
+                            a(href='medias.html').pagination__prev.pagination__arr
+                                +icon('arr-prev','pagination__arr-svg')
+                                span.pagination__arr-txt Предыдущая страница
+                            .pagination__list
+                                a(href='medias.html').pagination__item.active 1
+                                a(href='medias.html').pagination__item 2
+                                a(href='medias.html').pagination__item 3
+                                a(href='medias.html').pagination__item ...
+                                a(href='medias.html').pagination__item 48
+                            a(href='medias.html').pagination__next.pagination__arr
+                                span.pagination__arr-txt Следующая страница
+                                +icon('arr-next','pagination__arr-svg')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

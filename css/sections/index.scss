@@ -752,6 +752,10 @@
   opacity: .5;
   @include tr;
 
+  &_op1{
+    opacity: 1;
+  }
+
   &:hover {
     opacity: 1;
     transform: translateY(-20px);

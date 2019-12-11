@@ -1,0 +1,29 @@
+.medias{
+
+  &__right {
+    padding-top: 18px;
+  }
+
+  &__bread {
+    margin-bottom: 15px;
+  }
+
+  &__title {
+    margin-bottom: 55px;
+  }
+
+  &__list{
+    margin-bottom: 40px;
+  }
+
+  &__item{
+    @include col;
+    @include size(8);
+    margin-bottom: 40px;
+  }
+
+  &__more{
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+}
