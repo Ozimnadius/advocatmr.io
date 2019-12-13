@@ -58,6 +58,12 @@
   color: #000000;
   font-weight: 500;
   text-transform: uppercase;
+  @include sm-block{
+    width: 242px;
+    height: 49px;
+    font-size: 16px;
+
+  }
 
   &:hover{
     border: 2px solid #8e6a2c;
@@ -117,12 +123,27 @@
     &_footer{
       margin-right: 6px;
     }
+
+    &_fixed{
+      @include sm-block{
+        margin-right: 7px;
+      }
+    }
   }
 
   &__1{
     width: 116px;
     height: 116px;
     fill: $bg;
+
+    @include lg-block{
+      width: 58px;
+      height: 58px;
+    }
+    @include sm-block{
+      width: 48px;
+      height: 48px;
+    }
 
     &_footer{
       width: 72px;
@@ -139,6 +160,10 @@
     &_fixed{
       width: 58px;
       height: 58px;
+      @include sm-block{
+        width: 45px;
+        height: 45px;
+      }
     }
   }
 
@@ -152,6 +177,15 @@
     height: 26px;
     fill: $bg;
     margin-bottom: 5px;
+
+    @include lg-block{
+      width: 90px;
+      height: 16px;
+    }
+    @include sm-block{
+      width: 78px;
+      height: 14px;
+    }
 
     &_footer{
       width: 115px;
@@ -168,6 +202,10 @@
     &_fixed{
       width: 90px;
       height: 16px;
+      @include sm-block{
+        width: 67px;
+        height: 12px;
+      }
     }
   }
 
@@ -175,6 +213,15 @@
     width: 150px;
     height: 26px;
     fill: $bg;
+
+    @include lg-block{
+      width: 100px;
+      height: 16px;
+    }
+    @include sm-block{
+      width: 89px;
+      height: 14px;
+    }
 
     &_footer{
       width: 135px;
@@ -188,6 +235,10 @@
     &_fixed{
       width: 100px;
       height: 16px;
+      @include sm-block{
+        width: 76px;
+        height: 12px;
+      }
     }
   }
 }
@@ -219,6 +270,10 @@
   justify-content: center;
   margin-bottom: 50px;
   @include tr;
+
+  @include lg-block{
+    margin-bottom: 30px;
+  }
 
   &:hover{
     border: 2px solid #d49f40;
@@ -362,11 +417,19 @@
   background-size: cover;
   padding-top: 115px;
   padding-bottom: 140px;
+  @include lg-block{
+    padding-top: 90px;
+    padding-bottom: 75px;
+  }
+  @include sm-block{
+    padding-top: 50px;
+    padding-bottom: 35px;
+  }
 
   &__container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    //display: flex;
+    //flex-direction: column;
+    //align-items: center;
   }
 
   &__title{
@@ -377,6 +440,15 @@
     position: relative;
     padding-bottom: 50px;
     margin-bottom: 70px;
+    text-align: center;
+    @include lg-block{
+      margin-bottom: 40px;
+    }
+    @include sm-block{
+      font-size: 20px;
+      padding-bottom: 25px;
+      margin-bottom: 25px;
+    }
 
     &:after{
       content: '';
@@ -389,12 +461,24 @@
       width: 148px;
       height: 10px;
       background-color: #e9bb6b;
+      @include sm-block{
+        width: 90px;
+        height: 6px;
+        margin-left: -45px;
+      }
     }
   }
 
   &__slider{
     width: 100%;
     position: relative;
+    @include lg-block{
+      padding-left: 170px;
+      padding-right: 200px;
+    }
+    @include sm-block{
+      padding: 0;
+    }
   }
 
   &__btn{
@@ -414,6 +498,14 @@
     top: 205px;
     left: 0;
     z-index: 100;
+    @include lg-block{
+      top: 130px;
+      left: 30px;
+    }
+    @include sm-block{
+      top: 70px;
+      left: 0;
+    }
   }
 
   &__next{
@@ -421,6 +513,14 @@
     top: 205px;
     right: 0;
     z-index: 100;
+    @include lg-block{
+      top: 130px;
+      right: 30px;
+    }
+    @include sm-block{
+      top: 70px;
+      right: 0;
+    }
   }
 
 }
@@ -472,7 +572,6 @@
   &__desc{
     display: flex;
     flex-direction: column;
-
   }
 
   &__title{
@@ -518,24 +617,40 @@
     padding-left: 30px;
     border-left: 1px solid rgba(255, 255, 255, 0.25);
     @include tr;
+    @include sm-block{
+      padding: 0;
+      border: none;
+      margin-bottom: 20px;
+    }
   }
 
   &__bottom{
     display: flex;
     align-items: center;
     margin-top: -10px;
+    @include sm-block{
+      margin-top: 0;
+      justify-content: flex-end;
+    }
+
     &:before{
       content: '';
       height: 1px;
       background: rgba(255, 255, 255, 0.25);
       flex-grow: 1;
       margin-right: 15px;
+      @include sm-block{
+        display: none;
+      }
     }
   }
 
   &__link {
     &-txt{
       margin-right: 10px;
+      @include sm-block{
+        font-size: 18px;
+      }
     }
 
   }
@@ -600,6 +715,16 @@
       height: 10px;
       margin-left: -74px;
       background-image: linear-gradient(175.91deg, #d4b172 0%, #f3c168 18%, #deb66f 79%, #d4b172 100%);
+      @include sm-block{
+        width: 90px;
+        height: 6px;
+        margin-left: -45px;
+
+      }
+    }
+
+    @include sm-block{
+      padding-bottom: 30px;
     }
   }
 
@@ -621,12 +746,24 @@
 
     &:before {
       right: calc(100% + 35px);
-      background: linear-gradient(to right, rgba(#bebebe, 0) 0%, rgba(#bebebe, 1) 100%)
+      background: linear-gradient(to right, rgba(#bebebe, 0) 0%, rgba(#bebebe, 1) 100%);
+
+      @include sm-block{
+        right: calc(100% + 15px);
+      }
     }
 
     &:after {
       left: calc(100% + 35px);
       background: linear-gradient(to right, rgba(#bebebe, 1) 0%, rgba(#bebebe, 0) 100%);
+      @include sm-block{
+        left: calc(100% + 15px);
+      }
+    }
+
+    @include sm-block{
+      font-size: 20px;
+      font-weight: 700;
     }
   }
 }
@@ -640,6 +777,11 @@
   padding-bottom: 29px;
   position: relative;
 
+  @include sm-block{
+    font-size: 20px;
+    padding-bottom: 25px;
+  }
+
   &:after{
     content: '';
     display: block;
@@ -649,5 +791,11 @@
     width: 148px;
     height: 10px;
     background-color: #d49f40;
+
+    @include sm-block{
+      width: 90px;
+      height: 6px;
+      margin-left: -45px;
+    }
   }
 }

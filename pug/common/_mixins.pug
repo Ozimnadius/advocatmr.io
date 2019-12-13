@@ -153,16 +153,18 @@ mixin imedia
                         span.btn__text Перейти в раздел
                         +icon('line','btn__svg')
 
-                //- list
-                .imedia__list
-                    .row
+        //- slider
+        .imedia__slider
+            .container
+                .swiper-container.imedia__slider-container
+                    .swiper-wrapper
                         each i,x in imedia
-                            +imitem(i,x,'imedia__item')
-
+                            .swiper-slide.imedia__item
+                                +imitem(i,x)
 
                 //- link
-            a(href='media.html').imedia__all.btn2
-                span.btn2__text перейти в раздел
+                a(href='medias.html').imedia__all.btn2
+                    span.btn2__text перейти в раздел
 
 mixin imitem(i,x,cls)
     a(href='media.html' class=cls).imitem

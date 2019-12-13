@@ -6,6 +6,9 @@
     top: 0;
     left: 0;
     right: 0;
+    @include sm-block{
+      padding-top: 12px;
+    }
   }
 
   &__fixed {
@@ -28,6 +31,10 @@
 
   &__row {
     align-items: flex-start;
+    @include sm-block{
+        align-items: center;
+    }
+
   }
 
   &__left {
@@ -36,11 +43,19 @@
     display: flex;
     align-items: center;
     padding-top: 30px;
+    @include size-lg(9.5);
+    @include size-sm(18);
+    @include sm-block{
+      padding-top: 0;
+    }
   }
 
   &__btn {
     margin-right: 90px;
     display: block;
+    @include lg-block{
+      margin-right: 35px;
+    }
 
     &:hover {
       .header__btn-svg {
@@ -54,6 +69,7 @@
       height: 25px;
       fill: $bg;
       @include tr;
+
     }
   }
 
@@ -63,6 +79,17 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include size-lg(14.5);
+    @include size-sm(6);
+    @include lg-block{
+        justify-content: flex-end;
+    }
+  }
+
+  &__tel{
+    @include sm-block{
+      display: none;
+    }
   }
 
 }
@@ -70,9 +97,18 @@
 .hfixed {
   display: flex;
   align-items: center;
+  @include sm-block{
+      justify-content: space-between;
+  }
 
   &__menu{
     margin-right: 45px;
+    @include lg-block{
+      margin-right: 35px;
+    }
+    @include sm-block{
+      margin-right: 0;
+    }
   }
 
   &__btn {
@@ -89,16 +125,27 @@
       height: 25px;
       fill: $bg;
       @include tr;
+      @include sm-block{
+        width: 26px;
+        height: 16px;
+      }
     }
   }
 
   &__logo {
     margin-right: auto;
     padding: 10px 0;
+    @include sm-block{
+      margin: 0;
+      padding: 6px 0;
+    }
   }
 
   &__socials {
     margin-right: 95px;
+    @include lg-block{
+      display: none;
+    }
   }
 
   &__tel {
@@ -106,6 +153,16 @@
     margin-bottom: -30px;
     margin-top: -1px;
     align-self: flex-start;
+    @include sm-block{
+      display: none;
+    }
+  }
+
+  &__search{
+    .search__svg{
+      width: 25px;
+      height: 25px;
+    }
   }
 }
 

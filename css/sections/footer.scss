@@ -2,19 +2,38 @@
 
   &__top {
     background: url("/images/bg/footer-bg.jpg") center 0 no-repeat;
-    //background-size: cover;
+    background-size: cover;
     padding-top: 75px;
     padding-bottom: 45px;
+    @include lg-block{
+      padding-top: 50px;
+      padding-bottom: 70px;
+    }
+    @include sm-block{
+      padding-top: 35px;
+    }
   }
 
   &__left{
     @include col;
     @include size(8);
     padding-right: 20px;
+    @include size-lg(20);
+    @include lg-block{
+      padding-right: 0;
+      margin-bottom: 50px;
+    }
+    @include size-sm(24);
+    @include sm-block{
+      margin-bottom: 35px;
+    }
   }
 
   &__logo{
     margin-bottom: 22px;
+    @include sm-block{
+      margin-bottom: 30px;
+    }
   }
 
   &__txt{
@@ -27,6 +46,14 @@
     @include col;
     @include size(8);
     padding-top: 20px;
+    @include size-lg(12);
+    @include lg-block{
+      padding-top: 0;
+    }
+    @include size-sm(24);
+    @include sm-block{
+      margin-bottom: 75px;
+    }
   }
 
   &__right{
@@ -34,6 +61,15 @@
     @include size(8);
     padding-top: 20px;
     padding-left: 50px;
+    @include size-lg(12);
+    @include lg-block{
+      padding-top: 10px;
+      padding-left: 20px;
+    }
+    @include size-sm(24);
+    @include sm-block{
+      padding: 0;
+    }
   }
 
   &__socials{
@@ -42,12 +78,21 @@
     display: flex;
     justify-content: center;
     margin-top: 90px;
+    @include lg-block{
+      margin-top: 65px;
+    }
   }
 
   &__bottom{
     background-color: #050e1c;
     text-align: center;
     padding: 20px;
+    @include lg-block{
+      padding: 25px;
+    }
+    @include sm-block{
+      padding: 20px;
+    }
   }
 
   &__copy{
@@ -66,10 +111,23 @@
   background-image: linear-gradient(112.56deg, #0e1929 0%, #1a4254 100%);
   padding-top: 50px;
   padding-bottom: 25px;
+  @include lg-block{
+    padding-bottom: 50px;
+  }
+  @include sm-block{
+    padding: 40px 0;
+  }
 
   &__left{
     @include col;
     @include size(10);
+    @include size-lg(22);
+    @include shift-lg(1);
+    @include lg-block{
+      margin-bottom: 30px;
+    }
+    @include size-sm(24);
+    @include shift-sm(0);
   }
 
   &__title{
@@ -82,6 +140,10 @@
   &__right{
     @include col;
     @include size(14);
+    @include size-lg(22);
+    @include shift-lg(1);
+    @include size-sm(24);
+    @include shift-sm(0);
   }
 
   &__fields{
@@ -90,12 +152,23 @@
     margin-left: -7.5px;
     margin-right: -7.5px;
     margin-bottom: 10px;
+    @include sm-block{
+      margin-bottom: 30px;
+    }
   }
 
   &__field{
     width: calc(100%/3 - 15px);
     margin-left: 7.5px;
     margin-right: 7.5px;
+    @include sm-block{
+      width: calc(100%/1 - 15px);
+      margin-bottom: 20px;
+
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
   }
 
   &__input{
@@ -113,11 +186,15 @@
     width: 100%;
     height: 40px;
     font-size: 14px;
+    @include sm-block{
+      width: 200px;
+    }
   }
 
   &__policy{
     color: $bg;
     font-size: 10px;
+    line-height: lh(10,16);
 
     a{
       text-decoration: underline;
@@ -136,6 +213,11 @@
 
     &:first-child{
       border-left: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    @include sm-block{
+      padding-left: 35px;
+      padding-right: 10px;
+      padding-bottom: 10px;
     }
 
   }

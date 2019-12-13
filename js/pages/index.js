@@ -1,9 +1,11 @@
 //index.js
 $(function () {
 
-    $('.inews__list').masonry({
-        itemSelector: '.inew',
-    });
+    if (wWidth >= 768) {
+        $('.inews__list').masonry({
+            itemSelector: '.inew',
+        });
+    }
 
     let ipagSlider = new Swiper('.ipag__container', {
         slidesPerView: 'auto',

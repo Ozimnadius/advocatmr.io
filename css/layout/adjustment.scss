@@ -11,7 +11,9 @@ html {
   height: 100%;
   font-size: $font-size;
   box-sizing: border-box;
-;
+  @include sm-block{
+    font-size: 14px;
+  }
 }
 
 *, *:before, *:after {

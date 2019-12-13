@@ -9,16 +9,35 @@
     background: url("/images/content/index/bg/bg.jpg") center 0 no-repeat;
     background-size: cover;
     height: 2140px;
+
+    @include lg-block {
+      height: 2604px;
+    }
+    @include sm-block{
+      height: auto;
+    }
   }
 
   &__about {
     position: relative;
     top: -150px;
+    @include lg-block {
+      top: -115px;
+    }
+    @include sm-block {
+      top: 0;
+    }
   }
 
   &__services {
     position: relative;
     top: -90px;
+    @include lg-block {
+      top: -62px;
+    }
+    @include sm-block{
+      top: 0;
+    }
   }
 
   &__why {
@@ -38,6 +57,28 @@
       width: 850px;
       height: 366px;
       background-image: linear-gradient(155.52deg, #d4b172 0%, #f3c168 18%, #deb66f 79%, #d4b172 100%);
+      @include lg-block {
+        // Style for "Rectangle"
+        width: 374px;
+        height: 356px;
+        top: -20px;
+        right: -20px;
+      }
+      @include sm-block{
+        // Style for "Rectangle"
+        width: 155px;
+        height: 151px;
+        top: -10px;
+        right: -10px;
+      }
+    }
+
+    @include lg-block {
+      max-width: 728px;
+    }
+    @include sm-block{
+      max-width: 300px;
+      top: -141px;
     }
   }
 
@@ -48,20 +89,54 @@
 
 .ibanner {
   background: url("/images/content/index/banner/bg.jpg") center 0 no-repeat;
+  background-size: cover;
 
   &__container {
     height: 1001px;
     padding-top: 270px;
     position: relative;
+
+    @include lg-block {
+      height: 643px;
+      padding-top: 200px;
+    }
+    @include sm-block {
+      max-width: 355px;
+      display: flex;
+      justify-content: center;
+      height: 100vh;
+      align-items: center;
+      padding-top: 0;
+    }
   }
 
   &__row {
     display: flex;
+    @include sm-block {
+      position: relative;
+
+    }
   }
 
   &__left {
     width: 582px;
     padding-right: 30px;
+    @include lg-block {
+      min-width: 370px;
+      width: 370px;
+      padding-right: 20px;
+    }
+    @include sm-block {
+      width: auto;
+      min-width: initial;
+      padding-right: 0;
+      position: absolute;
+      z-index: 20;
+      top: 44px;
+      bottom: 0;
+      left: 0;
+      right: 40px;
+    }
   }
 
   &__desc {
@@ -75,6 +150,12 @@
     font-weight: 400;
     line-height: 0.66;
     margin-left: -20px;
+    @include lg-block {
+      font-size: 350px;
+    }
+    @include sm-block {
+      margin-left: -25px;
+    }
   }
 
   &__position {
@@ -82,6 +163,13 @@
     top: 90px;
     left: 0;
     right: 0;
+    @include lg-block {
+      top: 25px;
+    }
+    @include sm-block {
+      left: 20px;
+      top: 40px;
+    }
   }
 
   &__title {
@@ -91,6 +179,14 @@
     font-weight: 400;
     line-height: lh(50px, 62.75px);
     margin-bottom: 20px;
+    @include lg-block {
+      font-size: 30px;
+      margin-bottom: 25px;
+    }
+    @include sm-block {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
   }
 
   &__sub {
@@ -100,19 +196,48 @@
     line-height: lh(25px, 31.38px);
     margin-bottom: 48px;
     width: 415px;
+    @include lg-block {
+      font-size: 20px;
+      width: auto;
+    }
+    @include sm-block {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
   }
 
   &__center {
     margin-right: auto;
+    @include lg-block {
+      padding-top: 10px;
+    }
+    @include sm-block {
+      padding-top: 0;
+      margin-right: 0;
+      width: 100%;
+    }
   }
 
   &__img {
     width: 509px;
+    @include lg-block {
+      width: 294px;
+    }
+    @include sm-block {
+      width: auto;
+      margin-right: -20px;
+    }
   }
 
   &__right {
     display: flex;
     align-items: center;
+    @include lg-block {
+      align-items: flex-start;
+    }
+    @include sm-block {
+      display: none;
+    }
   }
 
   &__girl {
@@ -120,6 +245,19 @@
     bottom: 0;
     right: 150px;
     width: 511px;
+    @include lg-block {
+      width: 284px;
+      bottom: 27px;
+      right: 120px;
+      z-index: 10;
+
+    }
+    @include sm-block {
+      width: 53vh;
+      bottom: 0;
+      left: 50%;
+      margin-left: -26.5vh;
+    }
 
     &-img {
       display: block;
@@ -134,6 +272,17 @@
   border: 1px solid rgba(255, 255, 255, 0.25);
   position: relative;
 
+  @include lg-block {
+    margin-left: -10px;
+    margin-right: -10px;
+    padding: 13px 10px;
+  }
+  @include sm-block{
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+  }
+
   &:before {
     content: '';
     display: block;
@@ -143,6 +292,9 @@
     position: absolute;
     left: -13px;
     bottom: -13px;
+    @include sm-block{
+      display: none;
+    }
   }
 
   &__wrapper {
@@ -151,15 +303,25 @@
     padding: 50px 100px 50px 70px;
     position: relative;
     z-index: 20;
+    @include lg-block {
+      padding: 55px 20px 45px 30px;
+    }
+    @include sm-block{
+      padding: 17px 12px 22px 12px;
+    }
   }
 
   &__row {
+    @include lg-block {
+      align-items: center;
+    }
 
   }
 
   &__left, &__right {
     @include col;
     @include size(12);
+    @include size-sm(24);
   }
 
   &__left {
@@ -169,6 +331,9 @@
 
   &__img1 {
     box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.15);
+    @include lg-block {
+      width: 216px;
+    }
 
     &-img {
       display: block;
@@ -182,6 +347,12 @@
     right: 20px;
     transform: translateY(-50%);
     box-shadow: -4px 0 8px rgba(0, 0, 0, 0.25);
+    @include lg-block {
+      width: 155px;
+    }
+    @include sm-block{
+      right: 0;
+    }
 
     &-img {
       display: block;
@@ -190,6 +361,9 @@
 
   &__right {
     padding-top: 25px;
+    @include lg-block {
+      padding-top: 0;
+    }
   }
 
   &__desc {
@@ -202,6 +376,13 @@
     line-height: 0.66;
     margin-left: -25px;
     font-size: 400px;
+    @include lg-block {
+      margin-left: 25px;
+    }
+    @include sm-block{
+      margin-left: -10px;
+      margin-top: -70px;
+    }
   }
 
   &__position {
@@ -211,6 +392,13 @@
     left: 0;
     font-family: "Roboto Slab";
     color: #000000;
+    @include lg-block {
+      top: -15px;
+    }
+    @include sm-block{
+      position: static;
+      margin-top: -170px;
+    }
   }
 
   &__title {
@@ -218,6 +406,10 @@
     line-height: lh(26px, 32.63px);
     position: relative;
     margin-bottom: 60px;
+    @include lg-block {
+      font-size: 20px;
+      margin-bottom: 53px;
+    }
 
     &:after {
       content: '';
@@ -235,6 +427,10 @@
     font-size: 18px;
     line-height: lh(18px, 22.59px);
     margin-bottom: 30px;
+    @include lg-block {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
   }
 
   &__txt {
@@ -244,11 +440,21 @@
     font-weight: 300;
     line-height: lh(16px, 22.32px);
     margin-bottom: 30px;
+    @include lg-block {
+      font-size: 13px;
+    }
+    @include sm-block{
+      margin-bottom: 40px;
+    }
   }
 
 }
 
 .iservices {
+  @include sm-block{
+    padding-top: 30px;
+    padding-bottom: 220px;
+  }
 
   &__title {
     position: relative;
@@ -256,6 +462,12 @@
     display: flex;
     justify-content: center;
     margin-bottom: 83px;
+    @include lg-block {
+      margin-bottom: 60px;
+    }
+    @include sm-block{
+      margin-bottom: 0;
+    }
 
     &-letter {
       color: rgba(#707070, .1);
@@ -266,6 +478,10 @@
       padding: 10px;
       padding-top: 0;
       border-bottom: 9px solid #efb855;
+      @include sm-block{
+        border-bottom: none;
+        padding: 0;
+      }
     }
 
     &-position {
@@ -273,12 +489,21 @@
       top: 40px;
       left: 50%;
       transform: translateX(-50%);
+      @include sm-block{
+        left: 0;
+        right: 0;
+        transform: none;
+      }
     }
 
     &-sub {
       color: #878787;
       font-weight: 300;
       margin-bottom: 15px;
+      @include sm-block{
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
     }
 
     &-title {
@@ -287,6 +512,9 @@
       font-size: 40px;
       font-weight: 700;
       position: relative;
+      @include sm-block{
+        font-size: 20px;
+      }
 
 
       &:before, &:after {
@@ -296,6 +524,9 @@
         width: 355px;
         height: 1px;
         top: 50%;
+        @include sm-block{
+          display: none;
+        }
       }
 
       &:before {
@@ -316,6 +547,16 @@
     padding: 30px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     margin-bottom: 105px;
+    @include lg-block {
+      margin-left: 0;
+      margin-right: 0;
+      border: none;
+      padding: 0 75px;
+    }
+    @include sm-block{
+      padding: 0;
+      margin-bottom: 50px;
+    }
   }
 
   &__row {
@@ -353,6 +594,16 @@
     border-bottom: none;
   }
 
+  @include lg-block {
+    border: none;
+    padding: 0;
+    margin-bottom: 25px;
+    width: 100%;
+  }
+  @include sm-block{
+    margin-bottom: 20px;
+  }
+
   &:hover {
     .iservice {
       &__img {
@@ -370,6 +621,10 @@
     display: block;
     background-size: cover;
     position: relative;
+
+    @include sm-block{
+      height: 104px;
+    }
 
     &:before {
       content: '';
@@ -396,6 +651,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @include sm-block{
+      padding: 5px 10px 5px 15px;
+    }
   }
 
   &__num {
@@ -407,6 +665,11 @@
     line-height: 1;
     overflow: hidden;
     margin-bottom: 10px;
+    @include sm-block{
+      font-size: 50px;
+      height: 30px;
+      margin-bottom: 6px;
+    }
   }
 
   &__title {
@@ -416,6 +679,10 @@
     line-height: lh(18px, 22.59px);
     text-transform: uppercase;
     margin-bottom: 5px;
+    @include sm-block{
+      font-size: 14px;
+      margin-bottom: 0;
+    }
   }
 
   &__btn {
@@ -424,11 +691,22 @@
 
     &-svg {
       margin-bottom: 7px;
+      @include sm-block{
+        width: 40px;
+        height: 6px;
+        margin-bottom: 3px;
+      }
     }
 
     &-txt {
       margin-right: 0;
       color: $bg;
+      @include lg-block {
+        font-size: 14px;
+      }
+      @include sm-block{
+        font-size: 12px;
+      }
     }
   }
 
@@ -440,6 +718,12 @@
   padding: 45px;
   position: relative;
   z-index: 20;
+  @include lg-block {
+    padding: 58px 55px;
+  }
+  @include sm-block{
+    padding: 27px 22px;
+  }
 
   &__wrap {
     border: 1px solid rgba(255, 255, 255, 0.6);
@@ -448,6 +732,14 @@
   &__container {
     padding-top: 85px;
     padding-bottom: 45px;
+    @include lg-block {
+      padding-top: 65px;
+      padding-bottom: 15px;
+    }
+    @include sm-block{
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
   }
 
   &__title {
@@ -469,6 +761,22 @@
       width: 387px;
       height: 7px;
       background-image: linear-gradient(178.9deg, #d4b172 0%, #f3c168 18%, #deb66f 79%, #d4b172 100%);
+      @include sm-block{
+        width: 140px;
+        height: 3px;
+        margin-left: -70px;
+
+      }
+    }
+
+    @include lg-block {
+      padding-bottom: 60px;
+      margin-bottom: 59px;
+    }
+    @include sm-block{
+      font-size: 18px;
+      padding-bottom: 25px;
+      margin-bottom: 23px;
     }
   }
 
@@ -482,6 +790,13 @@
     max-width: 758px;
     margin: 0 auto;
     margin-bottom: 40px;
+    @include lg-block {
+      margin-bottom: 59px;
+    }
+    @include sm-block{
+      font-size: 14px;
+      margin-bottom: 35px;
+    }
   }
 
   &__item {
@@ -489,11 +804,19 @@
     @include size(6);
     text-align: center;
     color: #ddb46d;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+
+    @include size-lg(12);
+    @include lg-block {
+      margin-bottom: 60px;
+    }
+    @include size-sm(12);
+    @include sm-block{
+      margin-bottom: 25px;
+    }
 
     &:nth-child(even) {
       color: $bg;
@@ -503,6 +826,13 @@
       font-size: 80px;
       font-weight: 900;
       margin-bottom: 20px;
+      @include lg-block {
+        margin-bottom: 3px;
+      }
+      @include sm-block{
+        font-size: 40px;
+        margin-bottom: 3px;
+      }
     }
 
     &-txt {
@@ -515,6 +845,10 @@
       display: flex;
       align-items: center;
       text-align: center;
+      @include sm-block{
+        font-size: 13px;
+        height: auto;
+      }
     }
   }
 }
@@ -526,11 +860,28 @@
   padding-top: 560px;
   margin-top: -660px;
   padding-bottom: 190px;
-
-  &__title{
-    margin-bottom: 65px;
+  @include lg-block {
+    padding-top: 485px;
+    padding-bottom: 110px;
+    background-position: bottom -60px right -155px;
+  }
+  @include sm-block{
+    padding-top: 0;
+    margin-top: -80px;
+    padding-bottom: 85px;
+    background-size: 575px auto;
+    background-position: center bottom 550px;
   }
 
+  &__title {
+    margin-bottom: 65px;
+    @include lg-block {
+      margin-bottom: 58px;
+    }
+    @include sm-block{
+      margin-bottom: 25px;
+    }
+  }
 
   &__container {
     display: flex;
@@ -540,6 +891,12 @@
 
   &__list {
     margin-bottom: 75px;
+    @include lg-block {
+      margin-bottom: 100px;
+    }
+    @include sm-block{
+      margin-bottom: 50px;
+    }
   }
 
 }
@@ -557,6 +914,12 @@
     }
   }
 
+  @include size-lg(12);
+  @include size-sm(24);
+  @include sm-block{
+    margin-bottom: 15px;
+  }
+
   &__num {
     height: 75px;
     overflow: hidden;
@@ -565,6 +928,9 @@
     color: #F3C168;
     position: relative;
     margin-bottom: 25px;
+    @include sm-block{
+      margin-bottom: 18px;
+    }
 
     &:before {
       content: '';
@@ -576,6 +942,9 @@
       height: 24px;
       border-radius: 50%;
       border: 4px solid #d1d1d1;
+      @include sm-block{
+        left: 115px;
+      }
     }
 
     &:after {
@@ -587,6 +956,10 @@
       right: 30px;
       height: 1px;
       background: #d1d1d1;
+      @include sm-block{
+        left: 139px;
+        right: 0;
+      }
     }
   }
 
@@ -598,12 +971,22 @@
     margin-bottom: 17px;
     height: 56px;
     overflow: hidden;
+    @include lg-block {
+      margin-bottom: 25px;
+    }
+    @include sm-block{
+      font-size: 20px;
+      margin-bottom: 6px;
+    }
   }
 
   &__txt {
     color: #000000;
     font-weight: 300;
     line-height: lh(16px, 21.04px);
+    @include sm-block{
+      font-size: 14px;
+    }
   }
 
 
@@ -613,6 +996,15 @@
   background: url("/images/content/index/help/bg.jpg") center 0 no-repeat;
   background-size: cover;
   padding: 80px 0;
+  @include lg-block {
+    background: url("/images/content/index/help/bg-t.jpg") 0 0 no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+  }
+  @include sm-block{
+    padding-top: 35px;
+    padding-bottom: 50px;
+  }
 
   &__row {
     align-items: center;
@@ -621,6 +1013,33 @@
   &__left, &__right {
     @include col;
     @include size(12);
+    @include size-lg(24);
+    @include lg-block {
+      padding: 0 55px;
+    }
+    @include size-sm(24);
+    @include sm-block{
+      padding: 0 20px;
+    }
+  }
+
+  &__left {
+    @include lg-block {
+      margin-bottom: 80px;
+    }
+    @include sm-block{
+      margin-bottom: 40px;
+    }
+  }
+
+  &__right {
+    @include lg-block {
+      display: flex;
+      justify-content: center;
+    }
+    @include sm-block{
+      padding: 0 40px;
+    }
   }
 
   &__title {
@@ -629,6 +1048,10 @@
     font-size: 50px;
     line-height: lh(50px, 56.75px);
     margin-bottom: 30px;
+    @include sm-block{
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
   }
 
   &__txt {
@@ -637,6 +1060,16 @@
     font-weight: 300;
     line-height: lh(25px, 36.63px);
     margin-bottom: 40px;
+    @include sm-block{
+      font-size: 14px;
+      margin-bottom: 35px;
+    }
+  }
+
+  &__btn{
+    @include sm-block{
+      margin: 0 auto;
+    }
   }
 
 }
@@ -644,9 +1077,19 @@
 .imedia {
   padding-top: 110px;
   padding-bottom: 130px;
+  @include lg-block {
+    padding-top: 70px;
+  }
+  @include sm-block{
+    padding-top: 50px;
+    padding-bottom: 90px;
+  }
 
   &__title {
     margin-bottom: 65px;
+    @include sm-block{
+      margin-bottom: 30px;
+    }
   }
 
   &__container {
@@ -657,21 +1100,38 @@
 
   &__row {
     margin-bottom: 75px;
+    @include lg-block {
+      margin-bottom: 0;
+    }
   }
 
   &__left, &__right {
     @include col;
     @include size(12);
+    @include size-lg(24);
+    @include size-sm(24);
   }
 
   &__left {
-
+    @include lg-block {
+      margin-bottom: 50px;
+    }
+    @include sm-block{
+      margin-bottom: 25px;
+    }
   }
 
   &__fancy {
     display: block;
     width: 100%;
     position: relative;
+    @include lg-block {
+      height: 359px;
+      overflow: hidden;
+    }
+    @include sm-block{
+      height: 149px;
+    }
 
     &-img {
       display: block;
@@ -692,6 +1152,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @include sm-block{
+      width: 57px;
+      height: 57px;
+      margin-top: -23.5px;
+      margin-left: -23.5px;
+    }
 
     &-wrap {
       width: 100px;
@@ -701,6 +1167,10 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      @include sm-block{
+        width: 42px;
+        height: 42px;
+      }
 
       &:before {
         content: '';
@@ -710,6 +1180,9 @@
         border-style: solid;
         border-width: 16.5px 0 16.5px 28px;
         border-color: transparent transparent transparent #ffffff;
+        @include sm-block{
+          border-width: 9px 0 9px 18px;
+        }
       }
     }
   }
@@ -719,6 +1192,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @include lg-block {
+      padding-left: 0;
+    }
   }
 
   &__sub {
@@ -727,12 +1203,38 @@
     font-size: 20px;
     line-height: lh(20px, 28.4px);
     margin-bottom: 20px;
+    @include sm-block{
+      font-size: 20px;
+    }
   }
 
   &__txt {
     color: rgba(0, 0, 0, 0.8);
     line-height: lh(16px, 22.72px);
     margin-bottom: 30px;
+  }
+
+  &__slider {
+    width: 100%;
+
+    .container {
+      @include lg-block {
+        max-width: 100%;
+        padding: 0;
+        padding-left: 20px;
+      }
+    }
+
+    &-container {
+      padding-top: 40px;
+      margin-bottom: 80px;
+      @include lg-block {
+        margin-bottom: 120px;
+      }
+      @include sm-block{
+        margin-bottom: 0;
+      }
+    }
   }
 
   &__list {
@@ -742,8 +1244,16 @@
   }
 
   &__item {
-    @include col;
-    @include size(6);
+    @include lg-block {
+      width: 280px;
+    }
+    @include sm-block{
+      width: 220px;
+    }
+  }
+
+  &__all {
+    margin: 0 auto;
   }
 
 }
@@ -753,19 +1263,29 @@
   flex-direction: column;
   opacity: .5;
   @include tr;
+  @include lg-block {
+    opacity: 1;
+  }
 
-  &_op1{
+  &_op1 {
     opacity: 1;
   }
 
   &:hover {
     opacity: 1;
     transform: translateY(-20px);
+    @include lg-block {
+      transform: none;
+    }
   }
 
   &__img {
     height: 157px;
     margin-bottom: 18px;
+    @include sm-block{
+      height: 123px;
+      margin-bottom: 10px;
+    }
 
     &-img {
       width: 100%;
@@ -787,6 +1307,9 @@
     font-size: 14px;
     font-weight: 300;
     line-height: lh(14px, 19.88px);
+    @include sm-block{
+      display: none;
+    }
   }
 
 }
@@ -795,9 +1318,23 @@
   background: url("/images/content/index/feed/bg.jpg") 0 0 no-repeat;
   background-size: cover;
 
+  @include lg-block {
+    background: url("/images/content/index/feed/bg-t.jpg") 0 0 no-repeat;
+    background-size: cover;
+  }
+
   &__container {
-    padding: 120px 0;
+    padding-top: 120px;
+    padding-bottom: 120px;
     position: relative;
+    @include lg-block {
+      padding-top: 80px;
+      padding-bottom: 200px;
+    }
+    @include sm-block{
+      padding-top: 40px;
+      padding-bottom: 120px;
+    }
   }
 
   &__row {
@@ -809,6 +1346,19 @@
     @include size(11);
     @include shift-right(3);
     padding-top: 10px;
+    @include shift-lg-left(2.3);
+    @include size-lg(18.7);
+    @include shift-lg-right(3);
+    @include lg-block {
+      margin-bottom: 65px;
+    }
+    @include size-sm(24);
+    @include shift-sm(0);
+    @include sm-block{
+      padding-left: 30px;
+      padding-right: 20px;
+      margin-bottom: 40px;
+    }
   }
 
   &__title {
@@ -817,6 +1367,10 @@
     font-size: 35px;
     line-height: lh(35px, 39.72px);
     margin-bottom: 65px;
+    @include sm-block{
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
   }
 
   &__quote {
@@ -826,13 +1380,19 @@
     color: $bg;
     font-size: 25px;
     line-height: lh(25px, 28.38px);
-
     border-left: 8px solid #f7bf71;
+    @include sm-block{
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
 
     b {
       color: #f7bf71;
       font-weight: 700;
       font-size: 40px;
+      @include sm-block{
+        font-size: 20px;
+      }
     }
   }
 
@@ -844,6 +1404,10 @@
       font-weight: 300;
       line-height: lh(25px, 28.38px);
       margin-bottom: 35px;
+      @include sm-block{
+        font-size: 14px;
+        margin-bottom: 15px;
+      }
 
       &:last-child {
         margin-bottom: 0;
@@ -855,11 +1419,24 @@
     @include col;
     @include size(10);
     padding-right: 80px;
+    @include shift-lg-left(5);
+    @include shift-lg-right(5);
+    @include size-lg(14);
+    @include lg-block {
+      padding-right: 0;
+    }
+    @include size-sm(24);
+    @include shift-sm(0);
   }
 
   &__form {
     padding: 75px 45px 60px 75px;
     position: relative;
+
+    @include sm-block{
+      border: 10px solid #f7bf71;
+      padding: 35px 10px 40px 10px;
+    }
 
     &:before {
       content: '';
@@ -871,6 +1448,10 @@
       left: 0;
       right: 0;
       border: 25px solid #f7bf71;
+      pointer-events: none;
+      @include sm-block{
+        display: none;
+      }
     }
 
     &:after {
@@ -882,11 +1463,18 @@
       left: 40px;
       right: -30px;
       border: 15px solid rgba(255, 255, 255, 0.1);
+      pointer-events: none;
+      @include sm-block{
+        display: none;
+      }
     }
   }
 
   &__fields {
     margin-bottom: 25px;
+    @include sm-block{
+      margin-bottom: 50px;
+    }
   }
 
   &__input {
@@ -897,6 +1485,11 @@
     padding-bottom: 20px;
     border-bottom: 1px solid $bg;
     margin-bottom: 27px;
+    @include sm-block{
+      font-size: 14px;
+      padding-bottom: 25px;
+      margin-bottom: 30px;
+    }
 
     &:last-child {
       margin-bottom: 0;
@@ -909,6 +1502,9 @@
     line-height: lh(12px, 17.04px);
     text-align: center;
     margin-bottom: 25px;
+    @include sm-block{
+      display: none;
+    }
 
     a {
       text-decoration: underline;
@@ -930,6 +1526,15 @@
     z-index: 20;
     bottom: 0;
     right: 340px;
+    pointer-events: none;
+    @include lg-block {
+      right: 387px;
+    }
+    @include sm-block{
+      right: initial;
+      left: -35px;
+      width: 180px;
+    }
 
     &-img {
       display: block;
@@ -941,9 +1546,17 @@
 .inews {
   padding: 110px 0;
   background: url("/images/content/index/news/bg.png") center bottom no-repeat;
+  @include sm-block{
+    padding-top: 45px;
+    padding-bottom: 75px;
+    background: none;
+  }
 
-  &__title{
+  &__title {
     margin-bottom: 65px;
+    @include sm-block{
+      margin-bottom: 15px;
+    }
   }
 
   &__container {
@@ -961,11 +1574,20 @@
     align-items: center;
     margin-bottom: 105px;
     width: 100%;
+    @include lg-block {
+      margin-bottom: 90px;
+    }
+    @include sm-block{
+      margin-bottom: 30px;
+    }
   }
 
   &__arr {
     @include col;
     @include size(2);
+    @include size-lg(3);
+    @include size-sm(12);
+
 
     &-svg {
       width: 67px;
@@ -981,6 +1603,13 @@
   &__pag {
     @include col;
     @include size(20);
+    @include size-lg(18);
+    @include size-sm(24);
+    @include sm-block{
+      order: -1;
+      margin-bottom: 20px;
+      padding: 0;
+    }
     padding: 0 10px;
   }
 
@@ -995,8 +1624,25 @@
   @include col;
   @include size(8);
   margin-bottom: 65px;
+  @include size-lg(12);
+  @include lg-block {
+    margin-bottom: 60px;
 
-  &_12{
+    &:nth-child(3), &:nth-child(6) {
+      display: none;
+    }
+  }
+  @include size-sm(24);
+  @include sm-block{
+    &:nth-child(3) {
+      display: block;
+    }
+    &:nth-child(5), &:nth-child(6) {
+      display: none;
+    }
+  }
+
+  &_12 {
     @include size(12);
   }
 
@@ -1051,6 +1697,9 @@
     font-size: 18px;
     line-height: lh(18px, 22.59px);
     margin-bottom: 25px;
+    @include sm-block{
+      font-size: 14px;
+    }
   }
 
   &__link {
@@ -1085,6 +1734,10 @@
     cursor: pointer;
     user-select: none;
     position: relative;
+    @include sm-block{
+      font-size: 14px;
+      padding: 10px 15px;
+    }
 
     &.swiper-slide-active {
       color: #D39833;
@@ -1112,6 +1765,14 @@
 .iarts {
   padding-top: 160px;
   padding-bottom: 140px;
+  @include lg-block {
+    padding-top: 82px;
+    padding-bottom: 90px;
+  }
+  @include sm-block{
+    padding-top: 55px;
+    padding-bottom: 50px;
+  }
 
   &__container {
     display: flex;
@@ -1119,12 +1780,24 @@
     align-items: center;
   }
 
-  &__title{
+  &__title {
     margin-bottom: 100px;
+    @include lg-block {
+      margin-bottom: 95px;
+    }
+    @include sm-block{
+      margin-bottom: 30px;
+    }
   }
 
-  &__list{
+  &__list {
     margin-bottom: 40px;
+    @include lg-block {
+      margin-bottom: 55px;
+    }
+    @include sm-block{
+      margin-bottom: 50px;
+    }
   }
 
 }
@@ -1133,47 +1806,68 @@
   @include col;
   @include size(8);
   margin-bottom: 40px;
+  @include size-lg(12);
+  @include lg-block {
+    margin-bottom: 50px;
+  }
+  @include size-sm(24);
+  @include sm-block{
+    margin-bottom: 30px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
 
-  &__img{
+  &__img {
     height: 229px;
     margin-bottom: 27px;
+    @include lg-block {
+      height: 212px;
+    }
+    @include sm-block{
+      height: 180px;
+      margin-bottom: 15px;
+    }
 
-    &-img{
+    &-img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
   }
 
-  &__title{
+  &__title {
     color: #000000;
     font-family: "Roboto Slab";
     font-size: 18px;
-    line-height: lh(18px,22.59px);
+    line-height: lh(18px, 22.59px);
     margin-bottom: 10px;
 
   }
 
-  &__txt{
+  &__txt {
     color: #000000;
     font-size: 14px;
     font-weight: 300;
-    line-height: lh(13px,17.85px);
+    line-height: lh(13px, 17.85px);
     margin-bottom: 20px;
+    @include sm-block{
+      margin-bottom: 15px;
+    }
   }
 
   &__link {
     display: flex;
     align-items: center;
 
-    &-txt{
+    &-txt {
       color: #a97f3b;
       font-family: "Roboto Slab";
       font-size: 16px;
       margin-right: 10px;
     }
 
-    &-svg{
+    &-svg {
       width: 21px;
       height: 8px;
       fill: #a58a5d;
@@ -1181,29 +1875,53 @@
   }
 }
 
-.imap{
+.imap {
   display: flex;
+  flex-wrap: wrap;
   border-top: 1px solid #C3C5C9;
-
-  &__left,&__right{
-    width: 50%;
+  @include lg-block {
+    border: none;
   }
 
-  &__right{
+  &__left, &__right {
+    width: 50%;
+    @include lg-block {
+      width: 100%;
+    }
+  }
+
+  &__right {
     border-left: 1px solid #C3C5C9;
     padding: 80px 65px;
     background: #f9f9f9 url("/images/content/contacts/route.svg") left 60px bottom 70px no-repeat;
+    @include lg-block {
+      border: none;
+      order: -1;
+      padding-top: 85px;
+      padding-bottom: 60px;
+    }
+    @include sm-block{
+      padding: 40px 10px;
+      background-image: none;
+    }
   }
 
-  &__title{
+  &__title {
     color: #000000;
     font-family: "Roboto Slab";
     font-size: 40px;
     margin-bottom: 60px;
     padding-bottom: 45px;
     position: relative;
+    @include sm-block{
+      max-width: 300px;
+      margin: 0 auto;
+      font-size: 20px;
+      padding-bottom: 25px;
+      margin-bottom: 35px;
+    }
 
-    &:after{
+    &:after {
       content: '';
       display: block;
       position: absolute;
@@ -1213,19 +1931,31 @@
       width: 148px;
       height: 10px;
       background-color: #e9bb6b;
+      @include sm-block{
+        width: 131px;
+        height: 6px;
+      }
     }
   }
 
-  &__txt{
+  &__txt {
     max-width: 470px;
     font-size: 20px;
     font-weight: 300;
-    line-height: lh(20px,27.9px);
+    line-height: lh(20px, 27.9px);
+    @include sm-block{
+      max-width: 300px;
+      margin: 0 auto;
+      font-size: 14px;
+    }
   }
 
 
-  #imap{
-    height: 635px
+  #imap {
+    height: 635px;
+    @include sm-block{
+      height: 371px;
+    }
   }
 }
 

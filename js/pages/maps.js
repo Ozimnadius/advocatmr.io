@@ -22,7 +22,7 @@ $(function () {
             });
 
 
-            myMap.behaviors.disable(['scrollZoom']);
+            myMap.behaviors.disable(['scrollZoom', 'drag']);
             // myMap.controls.remove('geolocationControl')
             //     .remove('searchControl')
             //     .remove('trafficControl')
