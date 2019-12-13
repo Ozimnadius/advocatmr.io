@@ -129,6 +129,12 @@
         margin-right: 7px;
       }
     }
+
+    &_menu{
+      @include sm-block{
+        margin-right: 7px;
+      }
+    }
   }
 
   &__1{
@@ -155,6 +161,10 @@
       width: 72px;
       height: 72px;
       fill: #e9b365;
+      @include sm-block{
+        width: 45px;
+        height: 45px;
+      }
     }
 
     &_fixed{
@@ -198,6 +208,11 @@
       height: 18px;
       fill: #000;
       margin-bottom: 5px;
+      @include sm-block{
+        width: 65px;
+        height: 12px;
+        margin-bottom: 2px;
+      }
     }
     &_fixed{
       width: 90px;
@@ -231,6 +246,10 @@
       width: 110px;
       height: 18px;
       fill: #000;
+      @include sm-block{
+        width: 77px;
+        height: 12px;
+      }
     }
     &_fixed{
       width: 100px;
@@ -286,9 +305,20 @@
     margin-bottom: 0;
     margin-right: 50px;
     border: 2px solid #2c2c2c;
+    @include lg-block{
+      border-color: #939393;
+    }
+    @include sm-block{
+      margin-right: 30px;
+      width: 40px;
+      height: 40px;
+    }
 
     .social__svg{
       fill: #2c2c2c;
+      @include lg-block{
+        fill: #939393;
+      }
     }
 
     &:hover{
@@ -798,4 +828,9 @@
       margin-left: -45px;
     }
   }
+}
+
+.ovhidden{
+  height: 100%;
+  overflow: hidden !important;
 }

@@ -263,17 +263,36 @@ html(lang="ru")
             .menu__bottom
                 .container.menu__bottom-container
                     //- left
-                    .menu__left
+                    .menu__left.active
+                        //- nav
                         .menu__nav
                             .mnav
                                 each row in mnav
                                     .mnav__row
                                         each i in row
-                                            a(href=i.href).mnav__item= i.title
+                                            a(href=i.href class=i.cls).mnav__item= i.title
 
 
+                        //- let
+                        .menu__tel-m
+                            .mtel
+                                a(href='tel:+7(495)766-57-54').mtel__tel
+                                    span.mtel__wrap
+                                        +icon('tel','mtel__tel-svg')
+                                        span.mtel__tel-tel +7 (495) 766-57-54
+                                    span.mtel__txt бесплатная консультация
+
+                        //- socials
+                        .menu__socials-m
+                            +socials('menu')
                     //- right
                     .menu__right
+                        //- block
+                        .menu__block
+                            a(href='#').menu__back Услуги
+                            a(href='services.html').menu__link В РАЗДЕЛ
+
+                        //- list
                         .menu__list
                             .mlist
                                 each i in mlist
@@ -285,6 +304,20 @@ html(lang="ru")
 
 
 
+
+
+                        //- let
+                        .menu__tel-m
+                            .mtel
+                                a(href='tel:+7(495)766-57-54').mtel__tel
+                                    span.mtel__wrap
+                                        +icon('tel','mtel__tel-svg')
+                                        span.mtel__tel-tel +7 (495) 766-57-54
+                                    span.mtel__txt бесплатная консультация
+
+                        //- socials
+                        .menu__socials-t
+                            +socials('menu')
 
 
         //- popup

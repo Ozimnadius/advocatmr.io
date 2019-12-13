@@ -33,6 +33,7 @@ const vendorJs = [
     'node_modules/masonry-layout/dist/masonry.pkgd.js',
     'node_modules/swiper/js/swiper.js',
     'node_modules/jquery-validation/dist/jquery.validate.js',
+    // 'node_modules/scroll-lock/dist/scroll-lock.js',
 ];
 
 

@@ -155,6 +155,7 @@
     }
     @include sm-block {
       margin-left: -25px;
+      line-height: 0.7;
     }
   }
 
@@ -168,7 +169,11 @@
     }
     @include sm-block {
       left: 20px;
-      top: 40px;
+      top: 20px;
+      bottom: -20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
   }
 
