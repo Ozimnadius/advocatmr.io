@@ -6,28 +6,61 @@
   padding-top: 40px;
   background: url("/images/content/about/bg2.jpg") center 0 no-repeat;
   background-size: cover;
+  @include lg-block{
+    padding-top: 60px;
+  }
+  @include sm-block{
+    padding-top: 15px;
+  }
 
   &__bread{
     margin-bottom: 28px;
+    @include sm-block{
+      margin-bottom: 15px;
+    }
   }
 
   &__left {
     @include col;
     @include size(12);
     @include shift-right(2);
+    @include size-lg(24);
+    @include shift-lg-right(0);
+    @include lg-block{
+      margin-bottom: 70px;
+    }
+    @include size-sm(24);
+    @include sm-block{
+      margin-bottom: 20px;
+    }
   }
 
   &__title {
     margin-bottom: 65px;
+    @include lg-block{
+      margin-bottom: 40px;
+    }
+    @include sm-block{
+      margin-bottom: 20px;
+    }
   }
 
   &__content {
     h4{
       font-weight: 700;
       margin-bottom: 40px;
+      @include lg-block{
+        margin-bottom: 32px;
+      }
+      @include sm-block{
+        margin-bottom: 20px;
+      }
     }
     p{
       margin-bottom: 45px;
+      @include lg-block{
+        margin-bottom: 20px;
+      }
     }
   }
 
@@ -36,10 +69,20 @@
     @include size(10);
     margin-top: -88px;
     padding-left: 27px;
+    @include size-lg(24);
+    @include lg-block{
+      margin-top: 0;
+      padding-left: 0;
+      display: flex;
+      justify-content: center;
+    }
   }
 
   &__img{
     position: relative;
+    @include sm-block{
+      width: 223px;
+    }
     &-img{
       position: relative;
       z-index: 20;
@@ -56,6 +99,13 @@
     top: 65px;
     left: -20px;
 
+    @include sm-block{
+      width: 265.47px;
+      height: 282.47px;
+      top: 35px;
+      left: -10px;
+    }
+
     &:before{
       content: '';
       display: block;
@@ -65,6 +115,12 @@
       bottom: 30px;
       left: 20px;
       right: 20px;
+      @include sm-block{
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
     }
 
     &:after{
@@ -76,6 +132,12 @@
       left: 50px;
       right: 50px;
       bottom: 25px;
+      @include sm-block{
+        top: 20px;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+      }
     }
   }
 
@@ -88,6 +150,15 @@
   padding-top: 88px;
   padding-bottom: 40px;
 
+  @include lg-block{
+    padding-top: 45px;
+    padding-bottom: 100px;
+  }
+  @include sm-block{
+    padding-top: 35px;
+    padding-bottom: 40px;
+  }
+
   &:before{
     content: '';
     display: block;
@@ -98,6 +169,9 @@
     bottom: 0;
     background: url("/images/content/about/bg.jpg") right top no-repeat;
     background-size: auto 100%;
+    @include lg-block{
+      display: none;
+    }
   }
 
   &__right{
@@ -106,6 +180,12 @@
     @include shift-left(12);
     padding-left: 30px;
     padding-right: 25px;
+    @include size-lg(24);
+    @include shift-lg-left(0);
+    @include lg-block{
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 
   &__title {
@@ -114,10 +194,17 @@
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 40px;
+    line-height: 142%;
+    @include sm-block{
+      font-size: 20px;
+    }
   }
 
   &__list {
     margin-bottom: 40px;
+    @include sm-block{
+      margin-bottom: 30px;
+    }
   }
 
   &__li {
@@ -145,6 +232,9 @@
 
   &__quote {
     margin-bottom: 40px;
+    @include sm-block{
+      margin-bottom: 30px;
+    }
   }
 
   &__socials {
@@ -152,6 +242,9 @@
       color: #000000;
       line-height: 142%;
       margin-bottom: 40px;
+      @include sm-block{
+        margin-bottom: 20px;
+      }
     }
   }
 
@@ -160,6 +253,13 @@
 .aquote{
   border: 1px solid #dbdbdb;
   padding: 10px;
+  @include lg-block{
+    max-width: 535px;
+    margin: 0 auto;
+  }
+  @include sm-block{
+    padding: 5px;
+  }
 
   &__wrap {
     border: 1px solid #dbdbdb;
@@ -169,15 +269,25 @@
     padding: 35px 20px 30px 20px;
     background: url("/images/content/about/quote.png") 0 0 no-repeat;
     background-size: cover;
+    @include sm-block{
+      padding: 20px;
+    }
   }
 
   &__img{
     margin-bottom: 30px;
+    @include sm-block{
+      margin-bottom: 10px;
+    }
 
     &-svg{
       width: 60px;
       height: 55px;
       fill: #e2ac4c;
+      @include sm-block{
+        width: 34px;
+        height: 32px;
+      }
     }
   }
 
@@ -190,12 +300,19 @@
     text-align: center;
     max-width: 343px;
     margin-bottom: 20px;
+    @include sm-block{
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
   }
 
   &__auth {
     color: #000000;
     font-size: 20px;
     font-weight: 300;
+    @include sm-block{
+      font-size: 12px;
+    }
   }
 
 }
@@ -203,14 +320,32 @@
 .acerts {
   padding-top: 85px;
   padding-bottom: 55px;
+  background-color: #f6f6f6;
+  @include lg-block{
+    padding-top: 75px;
+    padding-bottom: 85px;
+  }
+  @include sm-block{
+    padding-top: 45px;
+  }
 
   &__title{
     margin-bottom: 40px;
+    @include sm-block{
+      margin-bottom: 30px;
+    }
   }
 
   &__slider{
     position: relative;
     padding: 0 100px;
+
+    @include lg-block{
+      padding: 0 25px;
+    }
+    @include sm-block{
+      padding: 0;
+    }
 
     .swiper-button-disabled {
       opacity: .5;
@@ -219,24 +354,38 @@
 
   &__container{
     padding: 30px;
+    @include lg-block{
+      padding: 30px 14px;
+    }
+    @include sm-block{
+      padding: 0;
+    }
   }
 
   &__prev{
     position: absolute;
-    left: 0;
+    z-index: 100;
+    left: -20px;
     top: 50%;
     margin-top: -25px;
   }
 
   &__next{
     position: absolute;
-    right: 0;
+    z-index: 100;
+    right: -20px;
     top: 50%;
     margin-top: -25px;
   }
 
   &__arr{
     @include tr;
+    @include lg-block{
+      //display: none;
+    }
+    @include sm-block{
+      display: none;
+    }
     &-svg{
       width: 31px;
       height: 50px;
@@ -249,6 +398,9 @@
   display: block;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
   position: relative;
+  @include lg-block{
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  }
 
   &:before{
     content: '';

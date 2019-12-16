@@ -120,6 +120,9 @@ $vh: 1080;
     font-size: 24px;
     font-weight: 400;
     line-height: lh(24px,34.08px);
+    @include sm-block{
+      font-size: 20px;
+    }
   }
   h5 {
     font-size: 0.875rem;
