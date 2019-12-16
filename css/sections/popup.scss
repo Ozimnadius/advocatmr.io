@@ -31,6 +31,12 @@
   background-color: $bg;
   position: relative;
   overflow-y: auto;
+  @include sm-block{
+    max-width: 480px;
+  }
+  @include xs-block{
+    width: 100%;
+  }
 
   &::-webkit-scrollbar{
     width: 5px;
@@ -70,11 +76,16 @@
     color: $bg;
     font-size: 26px;
     font-weight: 500;
+    text-align: center;
     line-height: lh(26px,30.81px);
   }
 
   &__bottom{
     padding: 50px 40px 65px 40px;
+    @include sm-block{
+      padding: 30px 15px;
+      padding-bottom: 50px;
+    }
   }
 
   &__sub{

@@ -2,10 +2,6 @@
 const popup = $('.popup'),
     popupWrapper = popup.find('.popup__wrapper');
 
-$('body').on('click', '.jsCloseForm', function () {
-    popup.removeClass('active');
-});
-
 $.validator.methods.tel = function (value, element) {
     let re = new RegExp(/\d/g),
         str = value.match(re);
@@ -194,9 +190,16 @@ function Form(settings) {
 
 }
 
+$('body').on('click', '.jsCloseForm', function () {
+    popup.removeClass('active');
+    // wrapper.removeClass('ovhidden');
+});
+
 $('.jsCallback').on('click', function (e) {
     e.preventDefault();
     let id = $(this).data('id') || '1';
+
+    // wrapper.addClass('ovhidden');
 
     let newForm = new Form(formsData[id]).init();
 });
