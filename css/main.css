@@ -110,8 +110,13 @@ body {
 
 @media screen and (max-width: 1240px) {
   .wrapper_second {
-    padding-top: 61px;
     background: #ffffff;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .wrapper_second {
+    padding-top: 61px;
   }
 }
 
@@ -332,11 +337,23 @@ body {
   line-height: 1.42;
 }
 
+@media screen and (max-width: 767.9px) {
+  .content h2 {
+    font-size: 18px;
+  }
+}
+
 .content h3 {
   font-family: "Roboto Slab";
   font-size: 26px;
   font-weight: 400;
   line-height: 1.42;
+}
+
+@media screen and (max-width: 767.9px) {
+  .content h3 {
+    font-size: 16px;
+  }
 }
 
 .content h4 {
@@ -1222,13 +1239,7 @@ input, textarea {
 }
 
 .bread {
-  margin-left: -20px;
-}
-
-@media screen and (max-width: 767.9px) {
-  .bread {
-    margin-left: -15px;
-  }
+  margin-left: 0;
 }
 
 .bread__item {
@@ -1240,6 +1251,10 @@ input, textarea {
   .bread__item {
     padding: 0 15px;
   }
+}
+
+.bread__item:first-child {
+  padding-left: 0;
 }
 
 .bread__item:last-child {
@@ -1401,7 +1416,6 @@ input, textarea {
   .title2:after {
     width: 90px;
     height: 6px;
-    margin-left: -45px;
   }
 }
 
@@ -5737,6 +5751,12 @@ input, textarea {
   }
 }
 
+@media screen and (max-width: 1240px) {
+  .left {
+    display: none;
+  }
+}
+
 .right {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -5758,6 +5778,18 @@ input, textarea {
   .right {
     margin-left: 5px;
     margin-right: 5px;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .right {
+    width: calc(100% - 20px);
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .right {
+    padding-top: 0;
   }
 }
 
@@ -5923,12 +5955,36 @@ input, textarea {
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 1240px) {
+  .service__bread {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .service__bread {
+    margin-top: 0;
+  }
+}
+
 .service__title {
   margin-bottom: 45px;
 }
 
+@media screen and (max-width: 767.9px) {
+  .service__title {
+    margin-bottom: 25px;
+  }
+}
+
 .service__img {
   margin-bottom: 60px;
+}
+
+@media screen and (max-width: 1240px) {
+  .service__img {
+    margin-bottom: 20px;
+  }
 }
 
 .service__img-img {
@@ -5942,6 +5998,19 @@ input, textarea {
   font-size: 18px;
   line-height: 1.42;
   margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1240px) {
+  .service__sub {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .service__sub {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
 }
 
 .service__warning {
@@ -5960,15 +6029,39 @@ input, textarea {
   margin-bottom: 50px;
 }
 
+@media screen and (max-width: 767.9px) {
+  .service__warning {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 35px;
+  }
+}
+
 .service__warning-img {
   min-width: 90px;
   margin-right: 25px;
+}
+
+@media screen and (max-width: 767.9px) {
+  .service__warning-img {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
 }
 
 .service__warning-txt {
   font-family: "Roboto Slab";
   font-size: 20px;
   line-height: 1.42;
+}
+
+@media screen and (max-width: 767.9px) {
+  .service__warning-txt {
+    font-size: 18px;
+  }
 }
 
 .service__call {
@@ -5986,6 +6079,16 @@ input, textarea {
   padding: 30px;
 }
 
+@media screen and (max-width: 767.9px) {
+  .service__call {
+    padding: 40px 25px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
 .service__call-txt {
   color: #ffffff;
   font-family: "Roboto Slab";
@@ -5994,11 +6097,26 @@ input, textarea {
   margin-right: 35px;
 }
 
+@media screen and (max-width: 767.9px) {
+  .service__call-txt {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+
 .service__call-btn {
   min-width: 264px;
   width: 264px;
   height: 55px;
   font-size: 14px;
+}
+
+@media screen and (max-width: 767.9px) {
+  .service__call-btn {
+    min-width: 219px;
+    width: 219px;
+    height: 51px;
+  }
 }
 
 .aside__menu {

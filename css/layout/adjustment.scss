@@ -39,9 +39,12 @@ body {
   &_second {
     background: #f6f5f5;
     padding-top: 82px;
-    @include lg-block {
-      padding-top: 61px;
+    @include lg-block{
       background: $bg;
+    }
+    @include sm-block {
+      padding-top: 61px;
+
     }
   }
 }
