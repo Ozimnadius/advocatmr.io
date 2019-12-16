@@ -11,7 +11,7 @@ html {
   height: 100%;
   font-size: $font-size;
   box-sizing: border-box;
-  @include sm-block{
+  @include sm-block {
     font-size: 14px;
   }
 }
@@ -36,9 +36,13 @@ body {
   flex-direction: column;
   overflow: hidden;
 
-  &_second{
+  &_second {
     background: #f6f5f5;
     padding-top: 82px;
+    @include lg-block {
+      padding-top: 61px;
+      background: $bg;
+    }
   }
 }
 
@@ -53,8 +57,16 @@ body {
     padding: 0 50px;
     padding-top: 50px;
     padding-bottom: 100px;
-    background:#fbfafa;
+    background: #fbfafa;
     max-width: 1280px;
+    @include lg-block {
+      @include wrapper;
+      background: $bg;
+      padding-top: 20px;
+    }
+    @include sm-block{
+      padding-bottom: 50px;
+    }
   }
 }
 
@@ -89,13 +101,13 @@ button {
   font: inherit;
 }
 
-ul,ol {
+ul, ol {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-input,textarea{
+input, textarea {
   border: none;
   background: none;
   outline: none;

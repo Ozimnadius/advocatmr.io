@@ -70,6 +70,9 @@ $vh: 1080;
     font-weight: 400;
     line-height: lh(16px,22.72px);
     margin-bottom: 20px;
+    @include sm-block{
+      font-size: 14px;
+    }
   }
   a{
     color: #d49f40;

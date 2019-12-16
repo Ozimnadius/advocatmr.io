@@ -108,6 +108,13 @@ body {
   padding-top: 82px;
 }
 
+@media screen and (max-width: 1240px) {
+  .wrapper_second {
+    padding-top: 61px;
+    background: #ffffff;
+  }
+}
+
 .page {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
@@ -159,6 +166,55 @@ body {
   padding-bottom: 100px;
   background: #fbfafa;
   max-width: 1280px;
+}
+
+@media screen and (max-width: 1240px) {
+  .container_bg {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #ffffff;
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 1240px) and (max-width: 1240px) {
+  .container_bg {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 768px;
+  }
+}
+
+@media screen and (max-width: 1240px) and (max-width: 991.9px) {
+  .container_bg {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 768px;
+  }
+}
+
+@media screen and (max-width: 1240px) and (max-width: 767.9px) {
+  .container_bg {
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 320px;
+  }
+}
+
+@media screen and (max-width: 1240px) and (max-width: 575.9px) {
+  .container_bg {
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 320px;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .container_bg {
+    padding-bottom: 50px;
+  }
 }
 
 .row {
@@ -237,6 +293,12 @@ body {
   font-weight: 400;
   line-height: 1.42;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767.9px) {
+  .content p {
+    font-size: 14px;
+  }
 }
 
 .content a {
@@ -1163,9 +1225,21 @@ input, textarea {
   margin-left: -20px;
 }
 
+@media screen and (max-width: 767.9px) {
+  .bread {
+    margin-left: -15px;
+  }
+}
+
 .bread__item {
   padding: 0 20px;
   border-right: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 767.9px) {
+  .bread__item {
+    padding: 0 15px;
+  }
 }
 
 .bread__item:last-child {
@@ -1185,6 +1259,12 @@ input, textarea {
 .bread__item-title {
   line-height: 125.5%;
   color: rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 767.9px) {
+  .bread__item-title {
+    font-size: 12px;
+  }
 }
 
 .title {
@@ -5584,20 +5664,53 @@ input, textarea {
   margin-bottom: 65px;
 }
 
+@media screen and (max-width: 1240px) {
+  .services__bread {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .services__bread {
+    margin-bottom: 22px;
+  }
+}
+
 .services__top {
   margin-bottom: 55px;
+}
+
+@media screen and (max-width: 1240px) {
+  .services__top {
+    margin-bottom: 70px;
+  }
 }
 
 .services__title {
   margin-bottom: 45px;
 }
 
+@media screen and (max-width: 767.9px) {
+  .services__title {
+    margin-bottom: 28px;
+  }
+}
+
 .services__list {
   margin-bottom: 50px;
 }
 
-.services__bottom {
-  padding-bottom: 125px;
+@media screen and (max-width: 1240px) {
+  .services__list {
+    padding: 0 80px;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .services__list {
+    padding: 0;
+    margin-bottom: 20px;
+  }
 }
 
 .left {
@@ -5673,6 +5786,12 @@ input, textarea {
   }
 }
 
+@media screen and (max-width: 1240px) {
+  .serv {
+    width: calc(100% - 20px);
+  }
+}
+
 .serv:hover .serv__img:before {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(83, 52, 0, 0.8)), color-stop(21%, rgba(103, 66, 0, 0.8)), to(rgba(154, 98, 0, 0)));
   background-image: -webkit-linear-gradient(left, rgba(83, 52, 0, 0.8) 0%, rgba(103, 66, 0, 0.8) 21%, rgba(154, 98, 0, 0) 100%);
@@ -5686,6 +5805,12 @@ input, textarea {
   display: block;
   background-size: cover;
   position: relative;
+}
+
+@media screen and (max-width: 767.9px) {
+  .serv__img {
+    height: 120px;
+  }
 }
 
 .serv__img:before {
@@ -5723,6 +5848,12 @@ input, textarea {
   justify-content: center;
 }
 
+@media screen and (max-width: 767.9px) {
+  .serv__pos {
+    padding: 5px 10px 5px 15px;
+  }
+}
+
 .serv__num {
   color: #febd49;
   font-size: 80px;
@@ -5734,6 +5865,14 @@ input, textarea {
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 767.9px) {
+  .serv__num {
+    font-size: 50px;
+    height: 30px;
+    margin-bottom: 6px;
+  }
+}
+
 .serv__title {
   color: #ffffff;
   font-size: 18px;
@@ -5741,6 +5880,13 @@ input, textarea {
   line-height: 1.255;
   text-transform: uppercase;
   margin-bottom: 5px;
+}
+
+@media screen and (max-width: 767.9px) {
+  .serv__title {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
 }
 
 .serv__btn {
@@ -5765,6 +5911,12 @@ input, textarea {
   font-size: 14px;
   font-weight: 500;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 767.9px) {
+  .serv__btn-txt {
+    font-size: 12px;
+  }
 }
 
 .service__bread {

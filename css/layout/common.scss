@@ -689,12 +689,18 @@
 
 .bread{
   margin-left: -20px;
+  @include sm-block{
+    margin-left: -15px;
+  }
 
 
 
   &__item{
     padding: 0 20px;
     border-right: 1px solid rgba(0, 0, 0, 0.25);
+    @include sm-block{
+      padding: 0 15px;
+    }
 
     &:last-child{
       border-right: none;
@@ -715,6 +721,9 @@
     &-title{
       line-height: 125.5%;
       color: rgba(0, 0, 0, 0.25);
+      @include sm-block{
+        font-size: 12px;
+      }
     }
   }
 }
