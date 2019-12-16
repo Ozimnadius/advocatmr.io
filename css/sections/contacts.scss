@@ -6,29 +6,60 @@
     background-position: right 80px bottom -150px;
     background-repeat: no-repeat;
     background-color: $bg;
+    @include lg-block{
+      padding-bottom: 60px;
+      background-size: 512px auto;
+      background-position: right 180px bottom -50px;
+    }
+    @include sm-block{
+      background-position: center bottom -50px;
+    }
   }
 
   &__bread {
     margin-bottom: 30px;
+    @include lg-block{
+      margin-top: 40px;
+    }
+    @include sm-block{
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
   }
 
   &__left {
     @include col;
     @include size(12);
+    @include lg-block{
+      display: none;
+    }
   }
 
   &__right{
     @include col;
     @include size(12);
     padding-left: 60px;
+    @include size-lg(24);
+    @include lg-block{
+      padding-left: 0;
+    }
   }
 
   &__title {
     margin-bottom: 45px;
+    @include sm-block{
+      margin-bottom: 35px;
+    }
   }
 
   &__list {
     margin-bottom: 20px;
+    @include lg-block{
+      margin-bottom: 50px;
+    }
+    @include sm-block{
+      margin-bottom: 40px;
+    }
   }
 
   &__txt {
@@ -36,6 +67,12 @@
     font-weight: 300;
     line-height: 142%;
     margin-bottom: 20px;
+    @include lg-block{
+      margin-bottom: 40px;
+    }
+    @include sm-block{
+      margin-bottom: 50px;
+    }
   }
 
   &__socials {
@@ -48,9 +85,54 @@
     }
   }
 
+  &__tablet{
+    display: none;
+    padding-top: 80px;
+    padding-bottom: 110px;
+
+    @include lg-block{
+      display: block;
+    }
+    @include sm-block{
+      padding-top: 45px;
+      padding-bottom: 60px;
+    }
+  }
+
+  .imap{
+
+    &__right{
+      @include lg-block{
+        display: none;
+      }
+    }
+
+    &__txt{
+      @include lg-block{
+        max-width: 100%;
+        margin-bottom: 90px;
+      }
+      @include sm-block{
+        margin-bottom: 45px;
+      }
+    }
+
+    #imap{
+      @include lg-block{
+        height: 502px;
+      }
+      @include sm-block{
+        height: 209px;
+      }
+    }
+  }
+
 }
 
 .cform{
+  @include lg-block{
+    max-width: 580px;
+  }
 
   &__title {
     color: #000000;
@@ -58,6 +140,10 @@
     font-weight: 300;
     line-height: 142%;
     margin-bottom: 45px;
+    @include sm-block{
+      font-size: 14px;
+      margin-bottom: 35px;
+    }
   }
 
   &__fields {
@@ -68,13 +154,18 @@
   &__field {
     @include col;
     margin-bottom: 30px;
+    @include sm-block{
+      margin-bottom: 15px;
+    }
 
     &_12{
       @include size(12);
+      @include size-sm(24);
     }
 
     &_24{
       @include size(24);
+      @include size-sm(24);
     }
   }
 
@@ -83,6 +174,11 @@
     background-color: #eeeeee;
     font-weight: 300;
     padding: 23px 25px;
+
+    @include sm-block{
+      font-size: 16px;
+      padding: 17px 25px;
+    }
 
     &::placeholder {
       color: #6a6a6a;
@@ -104,6 +200,9 @@
 .contact {
   display: flex;
   margin-bottom: 19px;
+  @include sm-block{
+    margin-bottom: 27px;
+  }
 
   &:last-child{
     margin-bottom: 0;
@@ -116,6 +215,9 @@
     fill: #d49f40;
     margin-right: 20px;
     margin-top: 4px;
+    @include sm-block{
+      margin-top: -4px;
+    }
   }
 
   &__txt {
@@ -123,6 +225,9 @@
     font-size: 20px;
     line-height: 142%;
     max-width: 337px;
+    @include sm-block{
+      font-size: 14px;
+    }
   }
 
 

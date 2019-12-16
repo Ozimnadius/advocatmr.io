@@ -61,6 +61,27 @@ block content
         //- bottom
         section.contacts__bottom
             +imap
+            .contacts__tablet
+                .container
+                    .imap__title Как добраться
+                    .imap__txt Я готова оказать вам квалифицированную юридическую помощь. С основными направлениями работы вы можете ознакомиться на данной странице сайта или на странице Услуги. Я готова оказать вам квалифицированную юридическую помощь. С основными направлениями работы вы можете ознакомиться на данной странице сайта или на странице Услуги.
+                    //- form
+                    form.contacts__form.cform
+                        .cform__title Квалифицированная юридическая помощь. Свяжитесь с нами сейчас…
+                        .cform__fields
+                            .cform__field.cform__field_12
+                                input(type='text' name='name' placeholder='Ваше имя *').cform__input
+                            .cform__field.cform__field_12
+                                input(type='email' name='email' placeholder='Ваша электронная почта *').cform__input
+                            .cform__field.cform__field_24
+                                textarea(name='comment' placeholder='Ваш вопрос *').cform__input.cform__input_area
+                        button(type='submit').btn2.cform__submit
+                            span.btn2__text отправить
+
+
+
+
+
 
 
 

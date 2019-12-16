@@ -7597,8 +7597,35 @@ input, textarea {
   background-color: #ffffff;
 }
 
+@media screen and (max-width: 1240px) {
+  .contacts__container {
+    padding-bottom: 60px;
+    background-size: 512px auto;
+    background-position: right 180px bottom -50px;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .contacts__container {
+    background-position: center bottom -50px;
+  }
+}
+
 .contacts__bread {
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1240px) {
+  .contacts__bread {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .contacts__bread {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
 }
 
 .contacts__left {
@@ -7621,6 +7648,12 @@ input, textarea {
   .contacts__left {
     margin-left: 5px;
     margin-right: 5px;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .contacts__left {
+    display: none;
   }
 }
 
@@ -7648,12 +7681,42 @@ input, textarea {
   }
 }
 
+@media screen and (max-width: 1240px) {
+  .contacts__right {
+    width: calc(100% - 20px);
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .contacts__right {
+    padding-left: 0;
+  }
+}
+
 .contacts__title {
   margin-bottom: 45px;
 }
 
+@media screen and (max-width: 767.9px) {
+  .contacts__title {
+    margin-bottom: 35px;
+  }
+}
+
 .contacts__list {
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1240px) {
+  .contacts__list {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .contacts__list {
+    margin-bottom: 40px;
+  }
 }
 
 .contacts__txt {
@@ -7661,6 +7724,18 @@ input, textarea {
   font-weight: 300;
   line-height: 142%;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1240px) {
+  .contacts__txt {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .contacts__txt {
+    margin-bottom: 50px;
+  }
 }
 
 .contacts__socials-title {
@@ -7671,12 +7746,75 @@ input, textarea {
   margin-bottom: 15px;
 }
 
+.contacts__tablet {
+  display: none;
+  padding-top: 80px;
+  padding-bottom: 110px;
+}
+
+@media screen and (max-width: 1240px) {
+  .contacts__tablet {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .contacts__tablet {
+    padding-top: 45px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .contacts .imap__right {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .contacts .imap__txt {
+    max-width: 100%;
+    margin-bottom: 90px;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .contacts .imap__txt {
+    margin-bottom: 45px;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .contacts .imap #imap {
+    height: 502px;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .contacts .imap #imap {
+    height: 209px;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .cform {
+    max-width: 580px;
+  }
+}
+
 .cform__title {
   color: #000000;
   font-size: 25px;
   font-weight: 300;
   line-height: 142%;
   margin-bottom: 45px;
+}
+
+@media screen and (max-width: 767.9px) {
+  .cform__title {
+    font-size: 14px;
+    margin-bottom: 35px;
+  }
 }
 
 .cform__fields {
@@ -7727,12 +7865,30 @@ input, textarea {
   }
 }
 
+@media screen and (max-width: 767.9px) {
+  .cform__field {
+    margin-bottom: 15px;
+  }
+}
+
 .cform__field_12 {
   width: calc(50% - 20px);
 }
 
+@media screen and (max-width: 767.9px) {
+  .cform__field_12 {
+    width: calc(100% - 10px);
+  }
+}
+
 .cform__field_24 {
   width: calc(100% - 20px);
+}
+
+@media screen and (max-width: 767.9px) {
+  .cform__field_24 {
+    width: calc(100% - 10px);
+  }
 }
 
 .cform__input {
@@ -7740,6 +7896,13 @@ input, textarea {
   background-color: #eeeeee;
   font-weight: 300;
   padding: 23px 25px;
+}
+
+@media screen and (max-width: 767.9px) {
+  .cform__input {
+    font-size: 16px;
+    padding: 17px 25px;
+  }
 }
 
 .cform__input::-webkit-input-placeholder {
@@ -7775,6 +7938,12 @@ input, textarea {
   margin-bottom: 19px;
 }
 
+@media screen and (max-width: 767.9px) {
+  .contact {
+    margin-bottom: 27px;
+  }
+}
+
 .contact:last-child {
   margin-bottom: 0;
 }
@@ -7788,11 +7957,23 @@ input, textarea {
   margin-top: 4px;
 }
 
+@media screen and (max-width: 767.9px) {
+  .contact__svg {
+    margin-top: -4px;
+  }
+}
+
 .contact__txt {
   color: #000000;
   font-size: 20px;
   line-height: 142%;
   max-width: 337px;
+}
+
+@media screen and (max-width: 767.9px) {
+  .contact__txt {
+    font-size: 14px;
+  }
 }
 
 .abanner {
