@@ -34,6 +34,10 @@
     text-transform: uppercase;
     margin-right: 25px;
     @include tr;
+    @include sm-block{
+      font-size: 12px;
+      margin-right: 8px;
+    }
   }
 
   &__svg{
@@ -41,6 +45,11 @@
     height: 10px;
     stroke: #fec86a;
     @include tr;
+
+    @include sm-block{
+      width: 51px;
+      height: 8px;
+    }
   }
 
 }

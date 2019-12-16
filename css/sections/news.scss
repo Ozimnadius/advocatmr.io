@@ -239,6 +239,14 @@
 
   &__container {
     padding-bottom: 145px;
+    @include lg-block{
+      padding-top: 40px;
+      padding-bottom: 85px;
+    }
+    @include sm-block{
+      padding-top: 0;
+      padding-bottom: 45px;
+    }
   }
 
   &__right {
@@ -247,6 +255,9 @@
 
   &__bread {
     margin-bottom: 33px;
+    @include sm-block{
+      margin-bottom: 20px;
+    }
   }
 
   &__title {
@@ -255,9 +266,15 @@
 
   &__list {
     display: flex;
+    flex-wrap: wrap;
     margin-left: -25px;
     margin-right: -25px;
     margin-bottom: 20px;
+    @include sm-block{
+      margin-left: -12px;
+      margin-right: -12px;
+      margin-bottom: 8px;
+    }
   }
 
   &__item {
@@ -266,6 +283,11 @@
     padding: 0 25px;
     line-height: lh(14, 23);
     border-right: 1px solid #8a8989;
+    @include sm-block{
+      font-size: 12px;
+      padding: 0 12px;
+      margin-bottom: 10px;
+    }
 
     &:last-child {
       border-right: none;
@@ -275,15 +297,31 @@
   &__row {
     @include row-flex;
     margin-bottom: 45px;
+    @include lg-block{
+      margin-bottom: 30px;
+    }
+    @include sm-block{
+      margin-bottom: 25px;
+    }
 
     &-left {
       @include col;
       @include size(5/9*24);
+      @include size-lg(24);
+      @include lg-block{
+        margin-bottom: 30px;
+      }
+      @include size-sm(24);
+      @include sm-block{
+        margin-bottom: 42px;
+      }
     }
 
     &-right {
       @include col;
       @include size(4/9*24);
+      @include size-lg(24);
+      @include size-sm(24);
     }
   }
 
@@ -299,12 +337,21 @@
 
   &__content {
     margin-bottom: 75px;
+    @include lg-block{
+      margin-bottom: 60px;
+    }
+    @include sm-block{
+      margin-bottom: 40px;
+    }
   }
 
   &__source {
     font-family: "Roboto Slab";
     font-weight: 300;
     margin-top: 50px;
+    @include sm-block{
+      margin-top: 45px;
+    }
   }
 
   &__call {
@@ -313,10 +360,19 @@
 
   &__nav {
     margin-bottom: 80px;
+    @include sm-block{
+      margin-bottom: 50px;
+    }
   }
 
   &__services {
     margin-bottom: 80px;
+    @include lg-block{
+      margin-bottom: 65px;
+    }
+    @include sm-block{
+      margin-bottom: 55px;
+    }
   }
 
 }
@@ -324,6 +380,12 @@
 .nnav {
   border-top: 1px solid #dcdcdc;
   padding-top: 53px;
+  @include lg-block{
+    padding-top: 25px;
+  }
+  @include sm-block{
+    padding-top: 20px;
+  }
 
   &__top {
     display: flex;
@@ -342,11 +404,17 @@
       fill: #000000;
       transform: rotate(180deg);
       margin-right: 15px;
+      @include sm-block{
+        margin-right: 10px;
+      }
     }
 
     &-txt {
       color: #000000;
       font-size: 14px;
+      @include sm-block{
+        font-size: 12px;
+      }
     }
   }
 
@@ -358,6 +426,10 @@
       color: #000000;
       font-size: 14px;
       margin-right: 25px;
+      @include sm-block{
+        font-size: 12px;
+        margin-right: 15px;
+      }
     }
   }
 
@@ -380,6 +452,17 @@
     border: 1px solid transparent;
     @include tr;
 
+    @include sm-block{
+      width: 100%;
+      padding: 20px 15px;
+      height: auto;
+      margin-bottom: 25px;
+
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+
     &:hover {
       border: 1px solid #cbcbcb;
       box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
@@ -390,14 +473,25 @@
       width: 30px;
       height: 50px;
       fill: #e8bb6c;
+
+      @include sm-block{
+        width: 21px;
+        height: 33px;
+      }
     }
 
     &-block {
       margin-left: 25px;
+      @include sm-block{
+        margin-left: 20px;
+      }
 
       &_next {
         margin-left: 0;
         margin-right: 25px;
+        @include sm-block{
+          margin-right: 20px;
+        }
       }
     }
 
@@ -407,6 +501,9 @@
       font-size: 20px;
       margin-bottom: 15px;
       display: block;
+      @include sm-block{
+        font-size: 16px;
+      }
     }
 
     &-txt {
@@ -416,6 +513,9 @@
       line-height: 125.5%;
       height: 60px;
       overflow: hidden;
+      @include sm-block{
+        height: auto;
+      }
     }
   }
 }
@@ -424,6 +524,9 @@
 
   &__title {
     margin-bottom: 40px;
+    @include sm-block{
+      margin-bottom: 25px;
+    }
   }
 
 }
@@ -433,6 +536,10 @@
   margin-bottom: 25px;
   display: block;
   position: relative;
+  @include sm-block{
+    height: 128px;
+    margin-bottom: 30px;
+  }
 
   &:before {
     content: '';
@@ -474,6 +581,14 @@
     display: flex;
     align-items: center;
     padding: 25px 130px 25px 100px;
+    @include lg-block{
+      padding: 20px 55px;
+    }
+    @include sm-block{
+      padding: 15px 25px;
+      font-size: 18px;
+      text-align: center;
+    }
 
     color: $bg;
     font-size: 32px;
@@ -486,18 +601,30 @@
     z-index: 20;
     bottom: 20px;
     right: 25px;
+    @include sm-block{
+      bottom: 10px;
+      right: 10px;
+    }
 
     &-txt {
       color: $bg;
       font-weight: 500;
       text-transform: uppercase;
       margin-right: 15px;
+      @include sm-block{
+        font-size: 12px;
+        margin-right: 8px;
+      }
     }
 
     &-svg {
       width: 106px;
       height: 14px;
       stroke: #b1976b;
+      @include sm-block{
+        width: 51px;
+        height: 8px;
+      }
     }
   }
 
@@ -507,6 +634,9 @@
 
   &__title {
     margin-bottom: 45px;
+    @include sm-block{
+      margin-bottom: 25px;
+    }
   }
 
 }
@@ -517,6 +647,10 @@
   border: 1px solid transparent;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
   @include tr;
+
+  @include sm-block{
+    margin-bottom: 15px;
+  }
 
   &:hover {
     border: 1px solid #cbcbcb;
@@ -530,6 +664,9 @@
     min-width: 302px;
     width: 302px;
     min-height: 188px;
+    @include sm-block{
+      display: none;
+    }
 
     &-img {
       display: block;
@@ -545,6 +682,13 @@
     flex-direction: column;
     justify-content: flex-end;
     padding: 40px 25px 20px 35px;
+    @include lg-block{
+      padding: 35px 20px 20px 35px;
+    }
+    @include sm-block{
+      padding: 20px;
+      padding-bottom: 15px;
+    }
   }
 
   &__title {
@@ -553,6 +697,13 @@
     font-size: 20px;
     line-height: lh(20px, 25.1px);
     margin-bottom: 20px;
+    @include lg-block{
+      margin-bottom: 7px;
+    }
+    @include sm-block{
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
   }
 
   &__txt {
@@ -561,6 +712,9 @@
     line-height: 127.5%;
     margin-bottom: 20px;
     max-width: 366px;
+    @include sm-block{
+      margin-bottom: 5px;
+    }
   }
 
   &__link {
@@ -570,12 +724,20 @@
 
       &__text {
         font-size: 16px;
+        @include sm-block{
+          font-size: 12px;
+          margin-right: 8px;
+        }
       }
 
       &__svg {
         width: 106px;
         height: 14px;
         margin-bottom: 10px;
+        @include sm-block{
+          width: 51px;
+          height: 8px;
+        }
       }
     }
   }
@@ -586,4 +748,7 @@
   color: #000000;
   font-family: "Roboto Slab";
   font-size: 30px;
+  @include sm-block{
+    font-size: 20px;
+  }
 }
