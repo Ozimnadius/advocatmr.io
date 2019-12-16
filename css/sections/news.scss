@@ -1,26 +1,65 @@
 .news {
+  @include lg-block {
+    background: url("/images/content/news/bg.png") center top -50px no-repeat;
+  }
+  @include sm-block {
+    background: none;
+  }
 
   &__container {
     padding-bottom: 200px;
+    @include lg-block {
+      padding-bottom: 140px;
+    }
+    @include sm-block{
+      padding-bottom: 75px;
+    }
   }
 
   &__right {
     padding-top: 15px;
     background: url("/images/content/news/bg.png") center bottom -40px no-repeat;
+    @include lg-block {
+      background: none;
+    }
+    @include sm-block {
+      padding-top: 0;
+    }
   }
 
   &__bread {
     margin-bottom: 20px;
+    @include lg-block {
+      margin-top: 35px;
+      margin-bottom: 30px;
+    }
+    @include sm-block {
+      margin-top: 0;
+      margin-bottom: 25px;
+    }
   }
 
   &__title {
     margin-bottom: 70px;
+    @include lg-block {
+      margin-bottom: 50px;
+    }
+    @include sm-block {
+      margin-bottom: 23px;
+    }
   }
 
   &__nav {
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 90px;
+    @include lg-block {
+      margin-bottom: 70px;
+    }
+    @include sm-block {
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
   }
 
   &__arr {
@@ -32,26 +71,58 @@
     margin: 0;
     width: calc(100% - 134px);
     flex-grow: 1;
+    @include sm-block {
+      width: 100%;
+      margin-bottom: 20px;
+    }
   }
 
   &__slider {
     margin-bottom: 30px;
+    @include sm-block{
+      margin-bottom: 65px;
+    }
   }
 
   &__list {
     margin-left: -45px;
     margin-right: -45px;
+    @include lg-block {
+      @include row-flex;
+    }
   }
 
   &__item {
     width: calc(50% - 90px);
     margin-left: 45px;
     margin-right: 45px;
+    @include lg-block {
+      @include col;
+    }
+    @include size-lg(12);
+    @include size-sm(24);
+
+    &:nth-child(3) {
+      @include lg-block {
+        display: block;
+      }
+    }
+
+    &:last-child{
+      @include sm-block{
+        margin-bottom: 0;
+      }
+    }
   }
 
   &__more {
     margin: 0 auto;
     margin-bottom: 95px;
+    @include sm-block{
+      width: 270px;
+      height: 53px;
+      margin-bottom: 60px;
+    }
   }
 }
 
@@ -92,6 +163,16 @@
     display: flex;
     align-items: center;
 
+    @include sm-block{
+
+      &:before{
+        content: '';
+        width: 13px;
+        height: 22px;
+        display: block;
+      }
+    }
+
     &:hover {
       .pagination__arr {
         &-txt {
@@ -110,22 +191,43 @@
       height: 8px;
       fill: #000000;
       @include tr;
+      @include sm-block{
+        display: none;
+      }
     }
 
     &-txt {
       color: #242629;
       font-size: 18px;
       @include tr;
+      @include lg-block {
+        font-size: 14px;
+      }
+      @include sm-block{
+        display: none;
+      }
     }
   }
 
   &__prev {
+
+    &:before{
+      background: url("/images/icons/prev.svg") 0 0 no-repeat;
+      background-size: cover;
+    }
+
     svg {
       margin-right: 20px;
     }
   }
 
   &__next {
+
+    &:before{
+      background: url("/images/icons/next.svg") 0 0 no-repeat;
+      background-size: cover;
+    }
+
     svg {
       margin-left: 20px;
     }
@@ -135,7 +237,7 @@
 
 .new {
 
-  &__container{
+  &__container {
     padding-bottom: 145px;
   }
 
@@ -213,7 +315,7 @@
     margin-bottom: 80px;
   }
 
-  &__services{
+  &__services {
     margin-bottom: 80px;
   }
 
@@ -332,7 +434,7 @@
   display: block;
   position: relative;
 
-  &:before{
+  &:before {
     content: '';
     display: block;
     position: absolute;
@@ -348,8 +450,8 @@
     margin-bottom: 0;
   }
 
-  &:hover{
-    &:before{
+  &:hover {
+    &:before {
       background-image: linear-gradient(90deg, rgba(83, 52, 0, 0.8) 0%, rgba(103, 66, 0, 0.8) 21%, rgba(154, 98, 0, 0) 100%);
     }
   }
@@ -385,14 +487,14 @@
     bottom: 20px;
     right: 25px;
 
-    &-txt{
+    &-txt {
       color: $bg;
       font-weight: 500;
       text-transform: uppercase;
       margin-right: 15px;
     }
 
-    &-svg{
+    &-svg {
       width: 106px;
       height: 14px;
       stroke: #b1976b;
@@ -403,7 +505,7 @@
 
 .narts {
 
-  &__title{
+  &__title {
     margin-bottom: 45px;
   }
 
@@ -416,20 +518,20 @@
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
   @include tr;
 
-  &:hover{
+  &:hover {
     border: 1px solid #cbcbcb;
   }
 
-  &:last-child{
+  &:last-child {
     margin-bottom: 0;
   }
 
-  &__img{
+  &__img {
     min-width: 302px;
     width: 302px;
     min-height: 188px;
 
-    &-img{
+    &-img {
       display: block;
       width: 100%;
       height: 100%;
@@ -437,7 +539,7 @@
     }
   }
 
-  &__desc{
+  &__desc {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -445,15 +547,15 @@
     padding: 40px 25px 20px 35px;
   }
 
-  &__title{
+  &__title {
     color: #000000;
     font-family: "Roboto Slab";
     font-size: 20px;
-    line-height: lh(20px,25.1px);
+    line-height: lh(20px, 25.1px);
     margin-bottom: 20px;
   }
 
-  &__txt{
+  &__txt {
     color: #000000;
     font-weight: 300;
     line-height: 127.5%;
@@ -461,16 +563,16 @@
     max-width: 366px;
   }
 
-  &__link{
+  &__link {
     align-self: flex-end;
 
-    .btn{
+    .btn {
 
-      &__text{
+      &__text {
         font-size: 16px;
       }
 
-      &__svg{
+      &__svg {
         width: 106px;
         height: 14px;
         margin-bottom: 10px;

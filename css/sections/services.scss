@@ -58,6 +58,7 @@
   @include lg-block {
     padding-top: 0;
   }
+  @include size-sm(24);
 }
 
 .serv {

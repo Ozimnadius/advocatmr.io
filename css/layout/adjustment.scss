@@ -64,7 +64,7 @@ body {
     max-width: 1280px;
     @include lg-block {
       @include wrapper;
-      background: $bg;
+      background: transparent;
       padding-top: 20px;
     }
     @include sm-block{

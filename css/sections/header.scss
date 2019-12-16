@@ -163,8 +163,11 @@
 
   &__search {
     .search__svg {
-      width: 25px;
-      height: 25px;
+      @include sm-block{
+        width: 25px;
+        height: 25px;
+      }
+
     }
   }
 }
