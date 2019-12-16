@@ -2,28 +2,70 @@
 
   &__right {
     padding-top: 14px;
+    @include lg-block{
+      padding-top: 0;
+    }
   }
 
   &__bread {
     margin-bottom: 15px;
+    @include lg-block{
+      margin-top: 40px;
+      margin-bottom: 35px;
+    }
+    @include sm-block{
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
   }
 
   &__title {
     margin-bottom: 25px;
+    @include lg-block{
+      margin-bottom: 50px;
+    }
+    @include sm-block{
+      margin-bottom: 40px;
+    }
   }
 
   &__list {
     margin-bottom: 35px;
+    @include lg-block{
+      margin-bottom: 60px;
+    }
   }
 
   &__item {
     @include col;
     @include size(8);
     margin-bottom: 40px;
+    @include size-lg(12);
+    @include lg-block{
+      margin-bottom: 60px;
+    }
+    @include size-sm(24);
+    @include sm-block{
+      margin-bottom: 40px;
+    }
+
+    &:last-child{
+      @include sm-block{
+        margin-bottom: 0;
+      }
+    }
 
     &-img {
       height: 165px;
       margin-bottom: 15px;
+      @include lg-block{
+        height: 212px;
+        margin-bottom: 27px;
+      }
+      @include sm-block{
+        height: 180px;
+        margin-bottom: 15px;
+      }
     }
 
     &-pic {
@@ -47,6 +89,9 @@
       font-weight: 300;
       line-height: 127.5%;
       margin-bottom: 8px;
+      @include lg-block{
+        margin-bottom: 20px;
+      }
     }
 
   }
@@ -85,5 +130,11 @@
   &__more {
     margin: 0 auto;
     margin-bottom: 60px;
+    @include lg-block{
+      margin-bottom: 100px;
+    }
+    @include sm-block{
+      margin-bottom: 40px;
+    }
   }
 }

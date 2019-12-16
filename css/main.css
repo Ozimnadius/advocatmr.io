@@ -7381,16 +7381,54 @@ input, textarea {
   padding-top: 14px;
 }
 
+@media screen and (max-width: 1240px) {
+  .articles__right {
+    padding-top: 0;
+  }
+}
+
 .articles__bread {
   margin-bottom: 15px;
+}
+
+@media screen and (max-width: 1240px) {
+  .articles__bread {
+    margin-top: 40px;
+    margin-bottom: 35px;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .articles__bread {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
 }
 
 .articles__title {
   margin-bottom: 25px;
 }
 
+@media screen and (max-width: 1240px) {
+  .articles__title {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .articles__title {
+    margin-bottom: 40px;
+  }
+}
+
 .articles__list {
   margin-bottom: 35px;
+}
+
+@media screen and (max-width: 1240px) {
+  .articles__list {
+    margin-bottom: 60px;
+  }
 }
 
 .articles__item {
@@ -7417,9 +7455,53 @@ input, textarea {
   }
 }
 
+@media screen and (max-width: 1240px) {
+  .articles__item {
+    width: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .articles__item {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .articles__item {
+    width: calc(100% - 10px);
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .articles__item {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .articles__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .articles__item-img {
   height: 165px;
   margin-bottom: 15px;
+}
+
+@media screen and (max-width: 1240px) {
+  .articles__item-img {
+    height: 212px;
+    margin-bottom: 27px;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .articles__item-img {
+    height: 180px;
+    margin-bottom: 15px;
+  }
 }
 
 .articles__item-pic {
@@ -7444,6 +7526,12 @@ input, textarea {
   font-weight: 300;
   line-height: 127.5%;
   margin-bottom: 8px;
+}
+
+@media screen and (max-width: 1240px) {
+  .articles__item-txt {
+    margin-bottom: 20px;
+  }
 }
 
 .articles__link {
@@ -7487,6 +7575,18 @@ input, textarea {
 .articles__more {
   margin: 0 auto;
   margin-bottom: 60px;
+}
+
+@media screen and (max-width: 1240px) {
+  .articles__more {
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .articles__more {
+    margin-bottom: 40px;
+  }
 }
 
 .contacts__container {
