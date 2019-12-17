@@ -9343,13 +9343,43 @@ input, textarea {
   margin-bottom: 25px;
 }
 
+@media screen and (max-width: 1240px) {
+  .search__bread {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .search__bread {
+    margin-top: 0;
+  }
+}
+
 .search__title {
   margin-bottom: 40px;
+}
+
+@media screen and (max-width: 767.9px) {
+  .search__title {
+    margin-bottom: 20px;
+  }
 }
 
 .search__field {
   position: relative;
   margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1240px) {
+  .search__field {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .search__field {
+    margin-bottom: 35px;
+  }
 }
 
 .search__input {
@@ -9362,11 +9392,26 @@ input, textarea {
   padding: 18px 60px 18px 50px;
 }
 
+@media screen and (max-width: 767.9px) {
+  .search__input {
+    font-size: 14px;
+    padding: 10px 15px;
+    padding-right: 30px;
+  }
+}
+
 .search__submit {
   position: absolute;
   top: 50%;
   margin-top: -14px;
   right: 30px;
+}
+
+@media screen and (max-width: 767.9px) {
+  .search__submit {
+    margin-top: -9.5px;
+    right: 12px;
+  }
 }
 
 .search__submit-svg {
@@ -9375,12 +9420,37 @@ input, textarea {
   fill: #000;
 }
 
+@media screen and (max-width: 767.9px) {
+  .search__submit-svg {
+    width: 19px;
+    height: 19px;
+  }
+}
+
 .search__list {
   margin-bottom: 80px;
 }
 
+@media screen and (max-width: 767.9px) {
+  .search__list {
+    margin-bottom: 40px;
+  }
+}
+
 .search__block {
   margin-bottom: 35px;
+}
+
+@media screen and (max-width: 1240px) {
+  .search__block {
+    margin-bottom: 45px;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .search__block {
+    margin-bottom: 30px;
+  }
 }
 
 .search__block:last-child {
@@ -9394,6 +9464,18 @@ input, textarea {
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 1240px) {
+  .search__block-title {
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .search__block-title {
+    font-size: 16px;
+  }
+}
+
 .search__item {
   display: block;
   border-radius: 4px;
@@ -9404,6 +9486,13 @@ input, textarea {
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
+}
+
+@media screen and (max-width: 767.9px) {
+  .search__item {
+    padding: 24px 17px;
+    margin-bottom: 30px;
+  }
 }
 
 .search__item:hover {
@@ -9432,6 +9521,12 @@ input, textarea {
   transition: .3s;
 }
 
+@media screen and (max-width: 767.9px) {
+  .search__item-title {
+    font-size: 14px;
+  }
+}
+
 .search__item-txt {
   display: block;
   color: #616161;
@@ -9439,17 +9534,59 @@ input, textarea {
   font-weight: 300;
 }
 
+@media screen and (max-width: 767.9px) {
+  .search__item-txt {
+    font-size: 12px;
+  }
+}
+
 .search__more {
   margin: 0 auto;
   margin-bottom: 80px;
+}
+
+@media screen and (max-width: 1240px) {
+  .notfound__container {
+    padding-bottom: 210px;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .notfound__container {
+    padding-bottom: 60px;
+  }
 }
 
 .notfound__bread {
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 1240px) {
+  .notfound__bread {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .notfound__bread {
+    margin-top: 0;
+  }
+}
+
 .notfound__title {
   margin-bottom: 25px;
+}
+
+@media screen and (max-width: 1240px) {
+  .notfound__title {
+    margin-bottom: 70px;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .notfound__title {
+    margin-bottom: 25px;
+  }
 }
 
 .notfound__wrap {
@@ -9472,6 +9609,14 @@ input, textarea {
   margin-bottom: 5px;
 }
 
+@media screen and (max-width: 767.9px) {
+  .notfound__sub {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+}
+
 .notfound__img {
   margin-bottom: 15px;
 }
@@ -9483,6 +9628,12 @@ input, textarea {
   margin-bottom: 60px;
 }
 
+@media screen and (max-width: 767.9px) {
+  .notfound__link {
+    margin-bottom: 30px;
+  }
+}
+
 .notfound__txt {
   color: #000000;
   font-size: 20px;
@@ -9490,6 +9641,12 @@ input, textarea {
   max-width: 560px;
   text-align: center;
   line-height: 142%;
+}
+
+@media screen and (max-width: 767.9px) {
+  .notfound__txt {
+    font-size: 14px;
+  }
 }
 
 .notfound__txt a {

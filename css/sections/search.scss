@@ -2,15 +2,30 @@
 
   &__bread {
     margin-bottom: 25px;
+    @include lg-block{
+      margin-top: 40px;
+    }
+    @include sm-block{
+      margin-top: 0;
+    }
   }
 
   &__title {
     margin-bottom: 40px;
+    @include sm-block{
+      margin-bottom: 20px;
+    }
   }
 
   &__field {
     position: relative;
     margin-bottom: 40px;
+    @include lg-block{
+      margin-bottom: 30px;
+    }
+    @include sm-block{
+      margin-bottom: 35px;
+    }
   }
 
   &__input{
@@ -21,6 +36,11 @@
     color: #000000;
     font-size: 20px;
     padding: 18px 60px 18px 50px;
+    @include sm-block{
+      font-size: 14px;
+      padding: 10px 15px;
+      padding-right: 30px;
+    }
   }
 
   &__submit {
@@ -28,21 +48,38 @@
     top: 50%;
     margin-top: -14px;
     right: 30px;
+    @include sm-block{
+      margin-top: -9.5px;
+      right: 12px;
+    }
 
 
     &-svg{
       width: 28px;
       height: 28px;
       fill: #000;
+      @include sm-block{
+        width: 19px;
+        height: 19px;
+      }
     }
   }
 
   &__list{
     margin-bottom: 80px;
+    @include sm-block{
+      margin-bottom: 40px;
+    }
   }
 
   &__block{
     margin-bottom: 35px;
+    @include lg-block{
+      margin-bottom: 45px;
+    }
+    @include sm-block{
+      margin-bottom: 30px;
+    }
 
     &:last-child{
       margin-bottom: 0;
@@ -53,6 +90,12 @@
       font-family: "Roboto Slab";
       font-size: 25px;
       margin-bottom: 20px;
+      @include lg-block{
+        margin-bottom: 25px;
+      }
+      @include sm-block{
+        font-size: 16px;
+      }
     }
   }
 
@@ -64,6 +107,11 @@
     margin-bottom: 20px;
     line-height: 142%;
     @include tr;
+
+    @include sm-block{
+      padding: 24px 17px;
+      margin-bottom: 30px;
+    }
 
     &:hover{
       box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
@@ -86,12 +134,18 @@
       margin-bottom: 15px;
       display: block;
       @include tr;
+      @include sm-block{
+        font-size: 14px;
+      }
     }
     &-txt{
       display: block;
       color: #616161;
       font-size: 14px;
       font-weight: 300;
+      @include sm-block{
+        font-size: 12px;
+      }
     }
   }
 
