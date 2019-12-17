@@ -8645,6 +8645,12 @@ input, textarea {
   transition: .3s;
 }
 
+@media screen and (max-width: 767.9px) {
+  .partners__container {
+    padding-bottom: 95px;
+  }
+}
+
 .partners__left .aside__menu {
   margin-bottom: 0;
 }
@@ -8657,12 +8663,79 @@ input, textarea {
   margin-bottom: 15px;
 }
 
+@media screen and (max-width: 1240px) {
+  .partners__bread {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .partners__bread {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+}
+
 .partners__title {
   margin-bottom: 70px;
 }
 
+@media screen and (max-width: 1240px) {
+  .partners__title {
+    margin-bottom: 30px;
+  }
+}
+
 .partners__list {
   margin-bottom: 80px;
+}
+
+@media screen and (max-width: 1240px) {
+  .partners__list {
+    padding: 0 45px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .partners__list {
+    padding: 0;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .partners__list .row {
+    margin-left: -60px;
+    margin-right: -60px;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .partners__list .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+}
+
+@media screen and (max-width: 767.9px) and (max-width: 767.9px) {
+  .partners__list .row {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+}
+
+@media screen and (max-width: 767.9px) and (max-width: 575.9px) {
+  .partners__list .row {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
 }
 
 .pslide {
@@ -8689,6 +8762,46 @@ input, textarea {
 }
 
 @media screen and (max-width: 575.9px) {
+  .pslide {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .pslide {
+    margin-bottom: 65px;
+    margin-left: 60px;
+    margin-right: 60px;
+    width: calc(50% - 120px);
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .pslide {
+    width: calc(100% - 10px);
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .pslide {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 767.9px) and (max-width: 767.9px) {
+  .pslide {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+@media screen and (max-width: 767.9px) and (max-width: 575.9px) {
   .pslide {
     margin-left: 5px;
     margin-right: 5px;

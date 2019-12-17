@@ -1,5 +1,11 @@
 .partners {
 
+  &__container{
+    @include sm-block{
+      padding-bottom: 95px;
+    }
+  }
+
   &__left {
     .aside {
       &__menu {
@@ -14,14 +20,43 @@
 
   &__bread {
     margin-bottom: 15px;
+    @include lg-block{
+      margin-top: 40px;
+      margin-bottom: 30px;
+    }
+    @include sm-block{
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
   }
 
   &__title {
     margin-bottom: 70px;
+    @include lg-block{
+      margin-bottom: 30px;
+    }
   }
 
   &__list {
     margin-bottom: 80px;
+    @include lg-block{
+      padding: 0 45px;
+      margin-bottom: 40px;
+    }
+    @include sm-block{
+      padding: 0;
+      margin-bottom: 15px;
+    }
+
+    .row{
+      @include lg-block{
+        margin-left: -60px;
+        margin-right: -60px;
+      }
+      @include sm-block{
+          @include row-flex;
+      }
+    }
   }
 
 }
@@ -31,6 +66,17 @@
   flex-direction: column;
   @include col;
   @include size(8);
+  @include lg-block{
+    margin-bottom: 65px;
+    margin-left: 60px;
+    margin-right: 60px;
+    width: calc(50% - 120px);
+  }
+  @include size-sm(24);
+  @include sm-block{
+      @include col;
+    margin-bottom: 50px;
+  }
 
   &:hover {
     .pslide {
