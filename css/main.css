@@ -4090,13 +4090,7 @@ input, textarea {
 }
 
 .imedia__row {
-  margin-bottom: 75px;
-}
-
-@media screen and (max-width: 1240px) {
-  .imedia__row {
-    margin-bottom: 0;
-  }
+  margin-bottom: 0px;
 }
 
 .imedia__left, .imedia__right {

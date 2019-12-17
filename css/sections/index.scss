@@ -1104,10 +1104,7 @@
   }
 
   &__row {
-    margin-bottom: 75px;
-    @include lg-block {
-      margin-bottom: 0;
-    }
+    margin-bottom: 0px;
   }
 
   &__left, &__right {
