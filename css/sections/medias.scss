@@ -1,15 +1,31 @@
 .medias{
 
+  &__container{
+    @include sm-block{
+      padding-bottom: 80px;
+    }
+  }
+
   &__right {
     padding-top: 18px;
+    @include lg-block{
+      padding-top: 40px;
+    }
+    @include sm-block{
+      padding-top: 0;
+    }
   }
 
   &__bread {
     margin-bottom: 15px;
+
   }
 
   &__title {
     margin-bottom: 55px;
+    @include sm-block{
+      margin-bottom: 20px;
+    }
   }
 
   &__list{
@@ -20,20 +36,55 @@
     @include col;
     @include size(8);
     margin-bottom: 40px;
+    @include size-sm(24);
+
+    .imitem{
+
+      &__img{
+        @include lg-block{
+          height: 129px;
+        }
+        @include sm-block{
+          height: 167px;
+          margin-bottom: 20px;
+        }
+      }
+
+      &__txt{
+        @include sm-block{
+          display: block;
+        }
+      }
+    }
+
   }
 
   &__more{
     margin: 0 auto;
     margin-bottom: 80px;
+    @include sm-block{
+      margin-bottom: 60px;
+    }
   }
 }
 
 .media{
 
   &__content{
+    @include lg-block{
+      margin-bottom: 70px;
+    }
+    @include sm-block{
+      margin-bottom: 50px;
+    }
     &-left {
       float: left;
       margin: 0 20px 15px 0;
+      @include lg-block{
+          float: none;
+        margin: 0;
+        margin-bottom: 25px;
+      }
     }
   }
 
@@ -42,6 +93,10 @@
     width: 440px;
     height: 273px;
     position: relative;
+    @include sm-block{
+      width: 100%;
+      height: 186px;
+    }
 
     &-img {
       display: block;
